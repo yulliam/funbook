@@ -9,8 +9,7 @@
 		"edit-link",
 		"prism", 
 		"-highlight",
-		"hide-element",
-		"extra-html"
+		"hide-element"
     ],
 	"pluginsConfig": {
         "anchor-navigation-ex": {
@@ -18,7 +17,7 @@
             "showGoTop": false
         },
         "edit-link": {
-            "base": "locahost:4000",
+            "base": "localhost:4000/../",
             "label": "编辑此页面"
         },
         "prism": {
@@ -28,35 +27,6 @@
 		},
 		"hide-element": {
             "elements": [".gitbook-link"]
-        },
-		"extra-html": {
-            "header":{
-                "files":[
-                    "要加载的html文件1",
-                    "要加载的html文件2"
-                ],
-                "modules": {
-                    "divider": true,
-                    "donate": {
-                        "buttonText":"按钮文字",
-                        "description": "按钮上方的方字",
-                        "buttonRadius":"按钮圆角大小",
-                        "qrCodes": [
-                            {
-                                "image": "二维码url",
-                                "label": "二维码名称"
-                            },
-                            {
-                                "image": "二维码url",
-                                "label": "二维码名称"
-                            }
-                        ]
-                    }
-                }
-            },
-            "footer": {
-            }
         }
-
     }
 }
