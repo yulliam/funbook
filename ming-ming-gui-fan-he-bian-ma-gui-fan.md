@@ -116,11 +116,11 @@
 
 ## 常用控件的缩写
 
-|控件|布局文件中缩写|代码中缩写|
+\|控件\|布局文件中缩写\|代码中缩写\|
 
-|---|:--:|---:|
+\|---\|--\|---\|
 
-LinearLayout|xxx_layout|xxxLLayout
+LinearLayout\|xxx\_layout\|xxxLLayout
 
 RelativeLayout
 
@@ -259,7 +259,7 @@ position
 
 pos
 
-常量命名：   
+常量命名：  
 全部单词采用大写，每个单词之间用“\_”分割。
 
 例如：
