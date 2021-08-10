@@ -34,71 +34,71 @@
 
 + com.xxx.xxx.fragments –> fragment类
 
-com.xxx.xxx.adapter –> 适配器相关
++ com.xxx.xxx.adapter –> 适配器相关
 
-com.xxx.xxx.utils –> 公共工具类
++ com.xxx.xxx.utils –> 公共工具类
 
-com.xxx.xxx.bean –> 实体类
++ com.xxx.xxx.bean –> 实体类
 
-com.xxx.xxx.service –> service服务
++ com.xxx.xxx.service –> service服务
 
-com.xxx.xxx.broadcast –> 广播接收器
++ com.xxx.xxx.broadcast –> 广播接收器
 
-com.xxx.xxx.db –> 数据库操作类
++ com.xxx.xxx.db –> 数据库操作类
 
-com.xxx.xxx.persenter –> 中间对象
++ com.xxx.xxx.persenter –> 中间对象
 
-com.xxx.xxx.model –> 数据处理类
-
-类的命名规范
++ com.xxx.xxx.model –> 数据处理类
+---
+# 类的命名规范
 ​Android中类的命名与JAVA开发采用一致的规范即可。
 
 大驼峰命名法，即所有单词首字母大写。
 
-Activity –> xxxActivity.java
+* Activity –> xxxActivity.java
 
-Application –> xxxApplication.java
+* Application –> xxxApplication.java
 
-Fragment –> xxxFragment.java
+* Fragment –> xxxFragment.java
 
-Service –> xxxService.java
+* Service –> xxxService.java
 
-BroadcastReceiver –> xxxBroReceiver.java
+* BroadcastReceiver –> xxxBroReceiver.java
 
-ContentProvider –> xxxProvider.java
+* ContentProvider –> xxxProvider.java
 
-Adapter –> xxxAdapter.java
+* Adapter –> xxxAdapter.java
 
-Handler –> xxxHandler.java
+* Handler –> xxxHandler.java
 
-接口 –> xxxInter.java
+* 接口 –> xxxInter.java
 
-接口实现类 –> xxxImpl.java
+* 接口实现类 –> xxxImpl.java
 
-Persenter –> xxxPersenter.java
+* Persenter –> xxxPersenter.java
 
-公共父类 –> BaseActivity.java、BaseFragment.java、- BaseAdapter.java等
+* 公共父类 –> BaseActivity.java、BaseFragment.java、- BaseAdapter.java等
 
-util类 –> LogUtil.java
+* util类 –> LogUtil.java
 
-数据库类 –> BaseSQLiteDBHelper.java
-
-变量的命名规范
+* 数据库类 –> BaseSQLiteDBHelper.java
+---
+# 变量的命名规范
 采用驼峰命名规则。
 
-Java普通变量：
-resultString
+## Java普通变量：
+* resultString
 
-userBean
+* userBean
 
-loginPresenter
+* loginPresenter
 
-Android控件变量：
-loginBtn
+## Android控件变量：
+* loginBtn
 
-inputPwdEt
+* inputPwdEt
 
-showNameTv
+* showNameTv
 
 有些人建议采用【控件缩写】+【控件逻辑名称】的方式，比如btnLogin。不过我个人比较习惯反过来写，比如loginBtn。与类的命名类似，把逻辑名称写在前面。
 
