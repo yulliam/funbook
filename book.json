@@ -1,4 +1,8 @@
 {
+	"title": "Yulliam's Doc",
+    "author": "Yulliam",
+    "description": "record some thing",
+    "language": "zh-hans",
 	"plugins":[
 		"expandable-chapters",
 		"-lunr", 
@@ -9,7 +13,9 @@
 		"edit-link",
 		"prism", 
 		"-highlight",
-		"hide-element"
+		"hide-element",
+		"code" ,
+		"todo"
     ],
 	"pluginsConfig": {
         "anchor-navigation-ex": {
@@ -17,7 +23,7 @@
             "showGoTop": false
         },
         "edit-link": {
-            "base": "localhost:4000/../",
+            "base": "D:/mySynologySync/gitbook/Import/myfirstbook",
             "label": "编辑此页面"
         },
         "prism": {
@@ -27,6 +33,9 @@
 		},
 		"hide-element": {
             "elements": [".gitbook-link"]
-        }
+        },
+		"code": {
+        "copyButtons": false
+		}
     }
 }
