@@ -123,11 +123,7 @@
 
 | LinearLayout | xxx_layout | xxxLLayout |
 
-RelativeLayout
-
-xxx\_layout
-
-xxxRLayout
+| RelativeLayout | xxx_layout | xxxRLayout |
 
 FrameLayout
 
