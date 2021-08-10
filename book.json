@@ -14,8 +14,7 @@
 		"prism", 
 		"-highlight",
 		"hide-element",
-		"code",
-		"todo"
+		"code"
     ],
 	"pluginsConfig": {
         "anchor-navigation-ex": {
