@@ -14,7 +14,7 @@
 		"prism", 
 		"-highlight",
 		"hide-element",
-		"code" ,
+		"code",
 		"todo"
     ],
 	"pluginsConfig": {
