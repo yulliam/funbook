@@ -116,17 +116,12 @@
 
 ## 常用控件的缩写
 
-    | 水果        | 价格    |  数量  |
-    | --------   | -----:   | :----: |
-    | 香蕉        | $1      |   5    |
-    | 苹果        | $1      |   6    |
-    | 草莓        | $1      |   7    |
 
-|控件|布局文件中缩写|代码中缩写|
+| 控件 | 布局文件中缩写 | 代码中缩写 |
 
-|---|---|---|
+| --- | --- | --- |
 
-|LinearLayout|xxx_layout|xxxLLayout|
+| LinearLayout | xxx_layout | xxxLLayout |
 
 RelativeLayout
 
