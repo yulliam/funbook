@@ -28,11 +28,11 @@
 
 常见的包分层结构如下：
 
-com.xxx.xxx.view –> 自定义view 或者是View接口
++ com.xxx.xxx.view –> 自定义view 或者是View接口
 
-com.xxx.xxx.activities –> activity类
++ com.xxx.xxx.activities –> activity类
 
-com.xxx.xxx.fragments –> fragment类
++ com.xxx.xxx.fragments –> fragment类
 
 com.xxx.xxx.adapter –> 适配器相关
 
