@@ -118,7 +118,7 @@
 
 控件|布局文件中缩写|代码中缩写
 
----|:--:|---:
+|---|:--:|---:|
 
 LinearLayout|xxx_layout|xxxLLayout
 
