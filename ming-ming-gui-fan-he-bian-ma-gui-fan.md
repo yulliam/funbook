@@ -116,11 +116,11 @@
 
 ## 常用控件的缩写
 
-控件\|布局文件中缩写\|代码中缩写
+控件|布局文件中缩写|代码中缩写
 
----\|:--:\|---:
+---|:--:|---:
 
-LinearLayout\|xxx\_layout\|xxxLLayout
+LinearLayout|xxx_layout|xxxLLayout
 
 RelativeLayout
 
