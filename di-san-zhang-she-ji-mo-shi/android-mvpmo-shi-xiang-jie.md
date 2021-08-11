@@ -4,11 +4,11 @@ https://www.cnblogs.com/lixiansheng/p/11382389.html
 
 ‌
 
-# ***一、MVP概述***
+# **一、MVP概述**
 
 ‌
 
-## ***MVP，全称 Model-View-Presenter，即模型-视图-层现器。***
+## **MVP，全称 Model-View-Presenter，即模型-视图-层现器。**
 
 ‌
 
