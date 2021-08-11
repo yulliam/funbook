@@ -39,7 +39,7 @@
 
 # **类的命名规范**
 
-[**Android**](http://lib.csdn.net/base/android)中类的命名与JAVA开发采用一致的规范即可。
+Android中类的命名与JAVA开发采用一致的规范即可。
 
 大驼峰命名法，即所有单词首字母大写。
 
