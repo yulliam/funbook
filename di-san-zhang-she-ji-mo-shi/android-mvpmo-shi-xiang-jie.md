@@ -4,11 +4,11 @@ https://www.cnblogs.com/lixiansheng/p/11382389.html
 
 ‌
 
-# ***\*一、MVP概述\****
+# ***一、MVP概述***
 
 ‌
 
-## ***\*MVP，全称 Model-View-Presenter，即模型-视图-层现器。\****
+## ***MVP，全称 Model-View-Presenter，即模型-视图-层现器。***
 
 ‌
 
@@ -40,7 +40,7 @@ Controllor：对应于Activity
 
 ‌
 
-## ***\*View 对应于Activity，负责View的绘制以及与用户交互\****
+## ***View 对应于Activity，负责View的绘制以及与用户交互***
 
 ‌
 
@@ -72,7 +72,7 @@ MVP模式通过Presenter实现数据和视图之间的交互，简化了Activity
 
 ‌
 
-## ***\*MVC和MVP的区别\****
+## ***MVC和MVP的区别***
 
 ![img](https://gblobscdn.gitbook.com/assets%2F-MVxhDL96fVN_Pxj0l04%2F-MVym5ueUaAb6vWZlta5%2F-MVyokJmDhkPNH6h1oMm%2Fimage.png?alt=media&token=f565b076-598a-403b-8144-a2135ba811ab)
 
@@ -86,7 +86,7 @@ MVC中是允许Model和View进行交互的，而MVP中很明显，Model与View�
 
 ‌
 
-# ***\*二、MVP的简单使用\****
+# ***二、MVP的简单使用***
 
 ‌
 
@@ -96,7 +96,7 @@ MVC中是允许Model和View进行交互的，而MVP中很明显，Model与View�
 
 ‌
 
-## ***\*1.Model层\****
+## ***1.Model层***
 
 ‌
 
@@ -120,7 +120,7 @@ MVC中是允许Model和View进行交互的，而MVP中很明显，Model与View�
 
 ‌
 
-### ***\**①实体类bean\**\***
+### ***①实体类bean***
 
 
 
@@ -161,7 +161,7 @@ public class User {
 
 ‌
 
-### ***\**②接口\*\****
+### **②接口**
 
 
 
@@ -177,7 +177,7 @@ public interface LoginModel {
 
 ‌
 
-### ***\**③接口实现类\*\****
+### ***③接口实现类***
 
 
 
@@ -213,7 +213,7 @@ public class LoginModelImpl implements LoginModel {
 
 ‌
 
-## ***\*2.View层\****
+## ***2.View层***
 
 ‌
 
@@ -237,7 +237,7 @@ public class LoginModelImpl implements LoginModel {
 
 ‌
 
-### ***\**①接口\*\****
+### ***①接口***
 
 
 
@@ -262,7 +262,7 @@ public interface LoginView {
 
 ‌
 
-### ***\**②接口实现类\*\****
+### ***②接口实现类***
 
 ‌
 
@@ -337,7 +337,7 @@ View层实现Presenter层需要调用的控件操作，方便Presenter层根据M
 
 ‌
 
-## ***\*3.Presenter层\****
+## ***3.Presenter层***
 
 ‌
 
@@ -357,7 +357,7 @@ Presenter是用作Model和View之间交互的桥梁。 从上图的包结构图�
 
 ‌
 
-### ***\**①接口\**\***
+### *①接口*
 
 
 
@@ -391,7 +391,7 @@ public interface LoginPresenter {
 
 ‌
 
-### ***\**②接口实现类\*\****
+### ***②接口实现类***
 
 
 
@@ -454,7 +454,7 @@ presenter里面有个OnLoginFinishedListener， 其在Presenter层实现，给Mo
 
 ‌
 
-***示例展示：\***
+**示例展示：**
 
 ![img](https://gblobscdn.gitbook.com/assets%2F-MVxhDL96fVN_Pxj0l04%2F-MVym5ueUaAb6vWZlta5%2F-MVysMrf5vh8xZ0MNy7m%2Fimage.png?alt=media&token=b9c553ff-ee09-4329-ad78-b3314570aaee)
 
@@ -464,7 +464,7 @@ presenter里面有个OnLoginFinishedListener， 其在Presenter层实现，给Mo
 
 ‌
 
-# ***\*三、总结\****
+# ***三、总结***
 
 ‌
 
