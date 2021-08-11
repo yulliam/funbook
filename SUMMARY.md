@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [MarkDown 的语法](markdown-yu-fa.md)
-* [学习的方法]（xue-xi-de-fang-fa.md）
+* [学习的方法](xue-xi-de-fang-fa.md）
 
 ## 第一章 基础知识准备
 
