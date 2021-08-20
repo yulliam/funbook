@@ -7,6 +7,7 @@
 ## 第一章 基础知识准备
 
 * [命名规范和编码规范](ming-ming-gui-fan-he-bian-ma-gui-fan.md)
+* [gitbook的使用方法](gitbookde-shi-yong-fang-fa.md)
 
 ## 第二章 GIT相关知识
 
