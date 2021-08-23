@@ -31,7 +31,7 @@ jobs:
                 
     - name: push _book to branch gh-pages 
       env:
-        TOKEN: ${{ secrets."2021-08-23 first_book" }}
+        TOKEN: ${{ secrets.2021-08-23 first_book }}
         REF: github.com/${{github.repository}}
         MYEMAIL: yulliam@163.com               # ！！记得修改为自己github设置的邮箱
         MYNAME: ${{github.repository_owner}}          
