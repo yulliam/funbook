@@ -1,5 +1,5 @@
 name: auto-generate-gitbook
-on:                                 #在main分支上进行push时触发  
+on:                                 #在master分支上进行push时触发  
   push:
     branches:
     - master
@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
         
     steps:                          
-    - name: checkout main
+    - name: checkout master
       uses: actions/checkout@v2
       with:
         ref: master
@@ -33,7 +33,7 @@ jobs:
       env:
         TOKEN: ${{ secrets.myToken }}
         REF: github.com/${{github.repository}}
-        MYEMAIL: yulliam@163.com               # ！！记得修改为自己github设置的邮箱
+        MYEMAIL: yulliam@126.com               # ！！记得修改为自己github设置的邮箱
         MYNAME: ${{github.repository_owner}}          
       run: |
         cd _book
@@ -43,5 +43,4 @@ jobs:
         git remote add origin https://${REF}
         git add . 
         git commit -m "Updated By Github Actions With Build ${{github.run_number}} of ${{github.workflow}} For Github Pages"
-        git branch -M main
         git push --force --quiet "https://${TOKEN}@${REF}" master:gh-pages
