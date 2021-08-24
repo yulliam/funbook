@@ -36,5 +36,6 @@
 		"code": {
         "copyButtons": false
 		}
-    }
+    },
+	"ignores" : ["_book", "node_modules"]
 }

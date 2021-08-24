@@ -27,6 +27,7 @@ jobs:
       run: |
         book sm
         gitbook build
+        cp SUMMARY.md _book
                 
     - name: push _book to branch gh-pages 
       env:
@@ -35,7 +36,6 @@ jobs:
         MYEMAIL: yulliam@126.com               # ！！记得修改为自己github设置的邮箱
         MYNAME: ${{github.repository_owner}}          
       run: |
-        cp SUMMARY.md _book
         cd _book
         git config --global user.email "${MYEMAIL}"
         git config --global user.name "${MYNAME}"
