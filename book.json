@@ -22,7 +22,7 @@
             "showGoTop": true
         },
         "edit-link": {
-            "base": "https://github.com/yulliam/funbook",
+            "base": "https://github.com/yulliam/funbook/edit/master/",
             "label": "编辑此页面"
         },
         "prism": {
