@@ -19,10 +19,10 @@
 	"pluginsConfig": {
         "anchor-navigation-ex": {
             "showLevel": false,
-            "showGoTop": false
+            "showGoTop": true
         },
         "edit-link": {
-            "base": "D:/mySynologySync/gitbook/Import/myfirstbook",
+            "base": "https://github.com/yulliam/funbook",
             "label": "编辑此页面"
         },
         "prism": {

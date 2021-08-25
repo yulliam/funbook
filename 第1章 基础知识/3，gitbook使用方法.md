@@ -8,15 +8,11 @@ GitBook 可以将您的内容作为网站（可定制和可扩展）或电子书
 
 [GitBook.com](https://link.zhihu.com/?target=https%3A//www.gitbook.com/) 是使用 GitBook 格式创建和托管图书的在线平台。它提供托管，协作功能和易于使用的编辑器。
 
-![img](https://pic4.zhimg.com/80/v2-27463fdb3fae62b3aff9e0f72bb35d13_720w.jpg)
-
-
-
-**GitBook 安装**
+# **GitBook 安装**
 
 ## 本地安装
 
-## 环境要求
+### 环境要求
 
 安装 GitBook 是很简单的。您的系统只需要满足这两个要求：
 
@@ -49,7 +45,7 @@ $ gitbook fetch beta
 
 使用 `gitbook ls-remote` 会列举可以下载的版本。
 
-## 创建一本书
+# 创建一本书
 
 ## 初始化
 
@@ -164,7 +160,7 @@ gitbook build --log=debug
 gitbook builid --debug
 ```
 
-**Gitbook 目录结构**
+# **Gitbook 目录结构**
 
 ## GitBook 项目结构
 
@@ -343,7 +339,7 @@ With it's definition, this can contain bold text
 and all other kinds of inline markup ...
 ```
 
-**Gitbook 配置**
+# **Gitbook 配置**
 
 > GitBook 允许您使用灵活的配置自定义您的电子书。
 > 这些选项在 `book.json` 文件中指定。对于不熟悉 JSON 语法的作者，您可以使用 [JSONlint](https://link.zhihu.com/?target=http%3A//jsonlint.com/) 等工具验证语法。
@@ -469,7 +465,7 @@ title
 "title" : "gitbook-notes",
 ```
 
-## plugins
+# plugins
 
 插件及其配置在 `book.json` 中指定。有关详细信息。
 
@@ -515,7 +511,7 @@ Gitbook 默认带有 5 个插件：
 
 ![img](https://pic1.zhimg.com/80/v2-7021e3f05aeaa99e0ebebee3e10473f0_720w.jpg)
 
-**生成电子书**
+# **生成电子书**
 
 GitBook 可以生成一个网站，但也可以输出内容作为电子书（ePub，Mobi，PDF）。
 
@@ -547,16 +543,6 @@ $ sudo aptitude install calibre
 ```text
 $sudo ln -s /usr/bin/nodejs /usr/bin/node
 ```
-
-## OS X
-
-下载 [Calibre application](https://link.zhihu.com/?target=https%3A//calibre-ebook.com/download)。将 `calibre.app` 移动到应用程序文件夹后，创建一个符号链接到 `ebook-convert` 工具：
-
-```text
-$ sudo ln -s ~/Applications/calibre.app/Contents/MacOS/ebook-convert /usr/bin
-```
-
-您可以使用 $PATH 中的任何目录替换 `/usr/bin` 。
 
 ## 封面
 

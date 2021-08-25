@@ -124,7 +124,7 @@ MVC中是允许Model和View进行交互的，而MVP中很明显，Model与View�
 
 
 
-```
+```java
 public class User {
     private String password;
     private String username;
@@ -165,7 +165,7 @@ public class User {
 
 
 
-```
+```java
 public interface LoginModel {
     void login(User user, OnLoginFinishedListener listener);
 }
@@ -181,7 +181,7 @@ public interface LoginModel {
 
 
 
-```
+```java
 public class LoginModelImpl implements LoginModel {
     @Override
     public void login(User user, final OnLoginFinishedListener listener) {
@@ -241,7 +241,7 @@ public class LoginModelImpl implements LoginModel {
 
 
 
-```
+```java
 public interface LoginView {
     //login是个耗时操作，我们需要给用户一个友好的提示，一般就是操作ProgressBar
     void showProgress();
@@ -270,7 +270,7 @@ public interface LoginView {
 
 
 
-```
+```java
 public class LoginActivity extends AppCompatActivity implements LoginView, View.OnClickListener {
     private ProgressBar progressBar;
     private EditText username;
@@ -361,7 +361,7 @@ Presenter是用作Model和View之间交互的桥梁。 从上图的包结构图�
 
 
 
-```
+```java
 public interface OnLoginFinishedListener {
     void onUsernameError();
 
@@ -377,7 +377,7 @@ public interface OnLoginFinishedListener {
 
 
 
-```
+```java
 public interface LoginPresenter {
     void validateCredentials(User user);
 
@@ -395,7 +395,7 @@ public interface LoginPresenter {
 
 
 
-```
+```java
 public class LoginPresenterImpl implements LoginPresenter, OnLoginFinishedListener {
     private LoginView loginView;
     private LoginModel loginModel;
