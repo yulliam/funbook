@@ -2,6 +2,8 @@
 
 
 
+## 简单介绍
+
 FragmentPagerAdapter 是另外一种可用的 PagerAdapter ，其用法与 FragmentState-PagerAdapter 基本一致。
 
 唯一的区别在于：卸载不再需要的fragment时，各自采用的处理方法有所不同。
@@ -24,7 +26,7 @@ PagerAdapter 会选择调用事务的 detach(Fragment) 方法来处理它，而�
 
 
 
-### 下面我们来比较一下两者在加载和销毁fragment item时都做了什么：
+## 下面我们来比较一下两者在加载和销毁fragment item时都做了什么：
 
 #### FragmentPagerAdapter源码：
 
@@ -57,7 +59,7 @@ PagerAdapter 会选择调用事务的 detach(Fragment) 方法来处理它，而�
 
 在instantiateItem方法中，主要是将Fragment添加到FragmentManager中。未添加到FragmentManager中的执行add操作，已添加到FragmentManager中的只进行attach操作。
 
-```csharp
+```java
 @Override
     public void destroyItem(ViewGroup container, int position, Object object) {
         if (mCurTransaction == null) {
@@ -73,7 +75,7 @@ PagerAdapter 会选择调用事务的 detach(Fragment) 方法来处理它，而�
 
 #### FragmentStatePagerAdapter源码：
 
-```csharp
+```java
  @Override
     public Object instantiateItem(ViewGroup container, int position) {
         if (mFragments.size() > position) {
@@ -106,7 +108,7 @@ PagerAdapter 会选择调用事务的 detach(Fragment) 方法来处理它，而�
 
 FragmentStatePagerAdapter是通过一个mFragments数组来存储fragment的，通过mSavedState数组来存储fragment销毁时的状态，通过position获取到的fragment可能为空（被回收），如果为空，则会再次调用getItem方法重新创建新的fragment，然后将mSavedState中存储的状态重新赋予这个新的fragment， 达到fragment恢复的效果。
 
-```csharp
+```java
  @Override
     public void destroyItem(ViewGroup container, int position, Object object) {
         Fragment fragment = (Fragment) object;
@@ -159,3 +161,39 @@ FragmentStatePagerAdapter是通过一个mFragments数组来存储fragment的，�
 > 能增强应用的触摸体验。此外，将fragment保存在内存中，更易于管理控制层的代码。
 >
 > 对于这种类型的用户界面，每个activity通常只有两三个fragment，基本不用担心有内存不足的风险。
+
+## notifyDataSetChanged后页面不刷新问题解决参考如下链接：
+
+https://www.cnblogs.com/lianghui66/p/3607091.html
+
+对于 FragmentPagerAdapter 的解决方案就是，分别重载 getItem() 以及 instantiateItem() 对象。getItem() 只用于生成新的与数据无关的 Fragment；而 instantiateItem() 函数则先调用父类中的 instantiateItem() 取得所对应的 Fragment 对象，然后，根据对应的数据，调用该对象对应的方法进行数据设置。
+
+当然，不要忘记重载 getItemPosition() 函数，返回 POSITION_NONE，这个两个类的解决方案都需要的。二者不同之处在于，FragmentStatePagerAdapter 在会在因 POSITION_NONE 触发调用的 destroyItem() 中真正的释放资源，重新建立一个新的 Fragment；而 FragmentPagerAdapter 仅仅会在 destroyItem() 中 detach 这个 Fragment，在 instantiateItem() 时会使用旧的 Fragment，并触发 attach，因此没有释放资源及重建的过程。
+
+这样，当 notifyDataSetChanged() 被调用后，会最终触发 instantiateItem()，而不管 getItem() 是否被调用，我们都在重载的 instantiateItem() 函数中已经将所需要的数据传递给了相应的 Fragment。在 Fragment 接下来的 onCreateView(), onStart() 以及 onResume() 的事件中，它可以正确的读取新的数据，Fragment 被成功复用了。
+
+这里需要注意一个问题，在 Fragment 没有被添加到 FragmentManager 之前，我们可以通过 Fragment.setArguments() 来设置参数，并在 Fragment 中，使用 getArguments() 来取得参数。这是常用的参数传递方式。但是这种方式对于我们说的情况不适用。因为这种数据传递方式只可能用一次，在 Fragment 被添加到 FragmentManager 后，一旦被使用，我们再次调用 setArguments() 将会导致 **java.lang.IllegalStateException: Fragment already active** 异常。因此，我们这里的参数传递方式选择是，在继承的 Fragment 子类中，新增几个 setter，然后通过这些 setter 将数据传递过去。反向也是类似。相关信息可以参考 [5]。哦，这些 setter 中要注意不要操作那些 View，这些 View 只有在 onCreateView() 事件后才可以操作。
+
+
+针对 FragmentPagerAdapter 的解决办法如下列代码所示：
+
+```java
+@Override
+public Fragment getItem(int position) {
+   MyFragment f = new MyFragment();
+   return f;
+}
+
+@Override
+public Object instantiateItem(ViewGroup container, int position) {
+   MyFragment f = (MyFragment) super.instantiateItem(container, position);
+   String title = mList.get(position);
+   f.setTitle(title);
+   return f;
+}
+
+@Override
+public int getItemPosition(Object object) {
+   return PagerAdapter.POSITION_NONE;
+}
+```
