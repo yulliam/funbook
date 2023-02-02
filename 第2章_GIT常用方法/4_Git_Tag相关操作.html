@@ -1,0 +1,605 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>4_Git_Tag相关操作 · Yulliam's Doc</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Yulliam">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-accordion/accordion.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="3_HEAD和HEAD^的作用和区别.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    第1章_基础知识
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../第1章_基础知识/1_学习的方法.html">
+            
+                <a href="../第1章_基础知识/1_学习的方法.html">
+            
+                    
+                    1_学习的方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../第1章_基础知识/2_markdown语法.html">
+            
+                <a href="../第1章_基础知识/2_markdown语法.html">
+            
+                    
+                    2_markdown语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../第1章_基础知识/3_gitbook使用方法.html">
+            
+                <a href="../第1章_基础知识/3_gitbook使用方法.html">
+            
+                    
+                    3_gitbook使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../第1章_基础知识/4_命名规范.html">
+            
+                <a href="../第1章_基础知识/4_命名规范.html">
+            
+                    
+                    4_命名规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../第1章_基础知识/5_混淆.html">
+            
+                <a href="../第1章_基础知识/5_混淆.html">
+            
+                    
+                    5_混淆
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    第2章_GIT常用方法
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="1_gitreset三种模式.html">
+            
+                <a href="1_gitreset三种模式.html">
+            
+                    
+                    1_gitreset三种模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="2_git撤销回滚操作.html">
+            
+                <a href="2_git撤销回滚操作.html">
+            
+                    
+                    2_git撤销回滚操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="3_HEAD和HEAD^的作用和区别.html">
+            
+                <a href="3_HEAD和HEAD^的作用和区别.html">
+            
+                    
+                    3_HEAD和HEAD^的作用和区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.4" data-path="4_Git_Tag相关操作.html">
+            
+                <a href="4_Git_Tag相关操作.html">
+            
+                    
+                    4_Git_Tag相关操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    第3章_设计模式
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../第3章_设计模式/1_android_MVP模式详解.html">
+            
+                <a href="../第3章_设计模式/1_android_MVP模式详解.html">
+            
+                    
+                    1_android_MVP模式详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    第4章_AndroidUI
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" >
+            
+                <span>
+            
+                    
+                    第1节_Fragment
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="../第4章_AndroidUI/第1节_Fragment/1_FragmentPagerAdapter和FragmentStatePagerAdapter区别.html">
+            
+                <a href="../第4章_AndroidUI/第1节_Fragment/1_FragmentPagerAdapter和FragmentStatePagerAdapter区别.html">
+            
+                    
+                    1_FragmentPagerAdapter和FragmentStatePagerAdapter区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="../第4章_AndroidUI/第1节_Fragment/2_fragment的onResume，setUserVisibleHint，onHiddenChanged，isVisible方法.html">
+            
+                <a href="../第4章_AndroidUI/第1节_Fragment/2_fragment的onResume，setUserVisibleHint，onHiddenChanged，isVisible方法.html">
+            
+                    
+                    2_fragment的onResume，setUserVisibleHint，onHiddenChanged，isVisible方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    第5章_JAVA知识
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../第5章_JAVA知识/1_Sychronize同步机制总结.html">
+            
+                <a href="../第5章_JAVA知识/1_Sychronize同步机制总结.html">
+            
+                    
+                    1_Sychronize同步机制总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    第6章_技巧
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../第6章_技巧/1_app反调试.html">
+            
+                <a href="../第6章_技巧/1_app反调试.html">
+            
+                    
+                    1_app反调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >4_Git_Tag相关操作</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#git&#x6253;tag&#x76F8;&#x5173;&#x64CD;&#x4F5C;"><b></b>Git&#x6253;Tag&#x76F8;&#x5173;&#x64CD;&#x4F5C;</a></li><li><span class="title-icon "></span><a href="#&#x6253;&#x6807;&#x7B7E;"><b></b>&#x6253;&#x6807;&#x7B7E;</a></li><ul><ul><li><span class="title-icon "></span><a href="#&#x8BE6;&#x89E3;&#xFF1A;"><b></b>&#x8BE6;&#x89E3;&#xFF1A;</a></li></ul></ul><li><span class="title-icon "></span><a href="#&#x76F8;&#x5173;&#x64CD;&#x4F5C;"><b></b>&#x76F8;&#x5173;&#x64CD;&#x4F5C;</a></li><ul><ul><li><span class="title-icon "></span><a href="#&#x63D0;&#x4EA4;"><b></b>&#x63D0;&#x4EA4;</a></li></ul></ul><li><span class="title-icon "></span><a href="#&#x5206;&#x4EAB;&#x63D0;&#x4EA4;&#x6807;&#x7B7E;&#x5230;&#x8FDC;&#x7A0B;&#x670D;&#x52A1;&#x5668;&#x4E0A;"><b></b>&#x5206;&#x4EAB;&#x63D0;&#x4EA4;&#x6807;&#x7B7E;&#x5230;&#x8FDC;&#x7A0B;&#x670D;&#x52A1;&#x5668;&#x4E0A;</a></li><li><span class="title-icon "></span><a href="#&#x5207;&#x6362;&#x5230;&#x5DF2;&#x6709;tag"><b></b>&#x5207;&#x6362;&#x5230;&#x5DF2;&#x6709;Tag</a></li><li><span class="title-icon "></span><a href="#&#x5220;&#x9664;&#x6807;&#x7B7E;&#x7684;&#x547D;&#x4EE4;"><b></b>&#x5220;&#x9664;&#x6807;&#x7B7E;&#x7684;&#x547D;&#x4EE4;</a></li><li><span class="title-icon "></span><a href="#&#x5220;&#x9664;&#x8FDC;&#x7AEF;&#x670D;&#x52A1;&#x5668;&#x7684;&#x6807;&#x7B7E;"><b></b>&#x5220;&#x9664;&#x8FDC;&#x7AEF;&#x670D;&#x52A1;&#x5668;&#x7684;&#x6807;&#x7B7E;</a></li></ul></div><a href="#git&#x6253;tag&#x76F8;&#x5173;&#x64CD;&#x4F5C;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="git&#x6253;tag&#x76F8;&#x5173;&#x64CD;&#x4F5C;"><a name="git&#x6253;tag&#x76F8;&#x5173;&#x64CD;&#x4F5C;" class="anchor-navigation-ex-anchor" href="#git&#x6253;tag&#x76F8;&#x5173;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>Git&#x6253;Tag&#x76F8;&#x5173;&#x64CD;&#x4F5C;</h1>
+<p><a href="https://www.jianshu.com/p/dab7da2a0721" target="_blank">https://www.jianshu.com/p/dab7da2a0721</a></p>
+<p>&#x200C;</p>
+<p>&#x9879;&#x76EE;&#x7684;&#x7248;&#x672C;&#x7BA1;&#x7406;&#x4E2D;,&#x6BCF;&#x5F53;&#x4E00;&#x4E2A;release&#x7248;&#x672C;&#x53D1;&#x5E03;&#x65F6;,&#x9700;&#x8981;&#x505A;&#x4E00;&#x4E2A;&#x8BB0;&#x5F55;,&#x4EE5;&#x4FBF;&#x4EE5;&#x540E;&#x9700;&#x8981;&#x7684;&#x65F6;&#x5019;&#x91CD;&#x65B0;&#x6253;&#x5305;&#x8FD9;&#x4E2A;&#x7248;&#x672C;,&#x8FD9;&#x65F6;&#x5019;&#x5C31;&#x7528;&#x5230;tag&#x8FD9;&#x4E2A;&#x529F;&#x80FD;.</p>
+<p>&#x200C;</p>
+<p><a href="https://links.jianshu.com/go?to=http%3A%2F%2Fblog.csdn.net%2Fwangjia55%2Farticle%2Fdetails%2F8793577" target="_blank">&#x66F4;&#x8BE6;&#x7EC6;&#x5185;&#x5BB9;</a></p>
+<p>&#x200C;</p>
+<h1 id="&#x6253;&#x6807;&#x7B7E;"><a name="&#x6253;&#x6807;&#x7B7E;" class="anchor-navigation-ex-anchor" href="#&#x6253;&#x6807;&#x7B7E;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>&#x6253;&#x6807;&#x7B7E;</strong></h1>
+<pre class="language-"><code>git tag -a 0.1.3 -m &#x201C;Release version 0.1.3&#x2033;
+</code></pre><p>&#x200C;</p>
+<h3 id="&#x8BE6;&#x89E3;&#xFF1A;"><a name="&#x8BE6;&#x89E3;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x8BE6;&#x89E3;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>&#x8BE6;&#x89E3;&#xFF1A;</strong></h3>
+<pre class="language-"><code>git tag &#x662F;&#x547D;&#x4EE4;
+-a 0.1.3&#x662F;&#x589E;&#x52A0; &#x540D;&#x4E3A;0.1.3&#x7684;&#x6807;&#x7B7E;
+-m &#x540E;&#x9762;&#x8DDF;&#x7740;&#x7684;&#x662F;&#x6807;&#x7B7E;&#x7684;&#x6CE8;&#x91CA;
+</code></pre><p>&#x200C;</p>
+<p>&#x6253;&#x6807;&#x7B7E;&#x7684;&#x64CD;&#x4F5C;&#x53D1;&#x751F;&#x5728;&#x6211;&#x4EEC;commit&#x4FEE;&#x6539;&#x5230;&#x672C;&#x5730;&#x4ED3;&#x5E93;&#x4E4B;&#x540E;&#x3002;</p>
+<p>&#x200C;</p>
+<h1 id="&#x76F8;&#x5173;&#x64CD;&#x4F5C;"><a name="&#x76F8;&#x5173;&#x64CD;&#x4F5C;" class="anchor-navigation-ex-anchor" href="#&#x76F8;&#x5173;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>&#x76F8;&#x5173;&#x64CD;&#x4F5C;</strong></h1>
+<p>&#x200C;</p>
+<h3 id="&#x63D0;&#x4EA4;"><a name="&#x63D0;&#x4EA4;" class="anchor-navigation-ex-anchor" href="#&#x63D0;&#x4EA4;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>&#x63D0;&#x4EA4;</strong></h3>
+<pre class="language-"><code>git add .
+git commit -m &#x201C;fixed some bugs&#x201D;
+git tag -a 0.1.3 -m &#x201C;Release version 0.1.3&#x2033;
+</code></pre><p>&#x200C;</p>
+<h1 id="&#x5206;&#x4EAB;&#x63D0;&#x4EA4;&#x6807;&#x7B7E;&#x5230;&#x8FDC;&#x7A0B;&#x670D;&#x52A1;&#x5668;&#x4E0A;"><a name="&#x5206;&#x4EAB;&#x63D0;&#x4EA4;&#x6807;&#x7B7E;&#x5230;&#x8FDC;&#x7A0B;&#x670D;&#x52A1;&#x5668;&#x4E0A;" class="anchor-navigation-ex-anchor" href="#&#x5206;&#x4EAB;&#x63D0;&#x4EA4;&#x6807;&#x7B7E;&#x5230;&#x8FDC;&#x7A0B;&#x670D;&#x52A1;&#x5668;&#x4E0A;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>&#x5206;&#x4EAB;&#x63D0;&#x4EA4;&#x6807;&#x7B7E;&#x5230;&#x8FDC;&#x7A0B;&#x670D;&#x52A1;&#x5668;&#x4E0A;</strong></h1>
+<pre class="language-"><code>git push origin master
+git push origin --tags
+</code></pre><p>&#x200C;</p>
+<p>&#x2013;tags&#x53C2;&#x6570;&#x8868;&#x793A;&#x63D0;&#x4EA4;&#x6240;&#x6709;tag&#x81F3;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#xFF0C;&#x666E;&#x901A;&#x7684;git push origin master&#x64CD;&#x4F5C;&#x4E0D;&#x4F1A;&#x63A8;&#x9001;&#x6807;&#x7B7E;&#x5230;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x3002;</p>
+<p>&#x200C;</p>
+<h1 id="&#x5207;&#x6362;&#x5230;&#x5DF2;&#x6709;tag"><a name="&#x5207;&#x6362;&#x5230;&#x5DF2;&#x6709;tag" class="anchor-navigation-ex-anchor" href="#&#x5207;&#x6362;&#x5230;&#x5DF2;&#x6709;tag"><i class="fa fa-link" aria-hidden="true"></i></a><strong>&#x5207;&#x6362;&#x5230;&#x5DF2;&#x6709;Tag</strong></h1>
+<pre class="language-"><code>git tag --list  // &#x67E5;&#x770B;&#x5DF2;&#x6709;tag&#x5217;&#x8868;
+git checkout [tag/branch/commit]  // &#x5207;&#x6362;&#x5230;&#x6307;&#x5B9A;tag/branch/commit&#x90FD;&#x662F;&#x6B64;&#x547D;&#x4EE4;
+</code></pre><p>&#x200C;</p>
+<h1 id="&#x5220;&#x9664;&#x6807;&#x7B7E;&#x7684;&#x547D;&#x4EE4;"><a name="&#x5220;&#x9664;&#x6807;&#x7B7E;&#x7684;&#x547D;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#&#x5220;&#x9664;&#x6807;&#x7B7E;&#x7684;&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>&#x5220;&#x9664;&#x6807;&#x7B7E;&#x7684;&#x547D;&#x4EE4;</strong></h1>
+<pre class="language-"><code>git tag -d 0.1.3
+</code></pre><p>&#x200C;</p>
+<h1 id="&#x5220;&#x9664;&#x8FDC;&#x7AEF;&#x670D;&#x52A1;&#x5668;&#x7684;&#x6807;&#x7B7E;"><a name="&#x5220;&#x9664;&#x8FDC;&#x7AEF;&#x670D;&#x52A1;&#x5668;&#x7684;&#x6807;&#x7B7E;" class="anchor-navigation-ex-anchor" href="#&#x5220;&#x9664;&#x8FDC;&#x7AEF;&#x670D;&#x52A1;&#x5668;&#x7684;&#x6807;&#x7B7E;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>&#x5220;&#x9664;&#x8FDC;&#x7AEF;&#x670D;&#x52A1;&#x5668;&#x7684;&#x6807;&#x7B7E;</strong></h1>
+<pre class="language-"><code>git push origin :refs/tags/0.1.3
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="3_HEAD和HEAD^的作用和区别.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 3_HEAD和HEAD^的作用和区别">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"4_Git_Tag相关操作","level":"1.3.4","depth":2,"next":{"title":"第3章_设计模式","level":"1.4","depth":1,"ref":"","articles":[{"title":"1_android_MVP模式详解","level":"1.4.1","depth":2,"path":"第3章_设计模式/1_android_MVP模式详解.md","ref":"第3章_设计模式/1_android_MVP模式详解.md","articles":[]}]},"previous":{"title":"3_HEAD和HEAD^的作用和区别","level":"1.3.3","depth":2,"path":"第2章_GIT常用方法/3_HEAD和HEAD^的作用和区别.md","ref":"第2章_GIT常用方法/3_HEAD和HEAD^的作用和区别.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","-lunr","-search","search-pro","anchor-navigation-ex","accordion","edit-link","prism","-highlight","hide-element","code"],"ignores":["_book","node_modules"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"search-pro":{},"accordion":{},"code":{"copyButtons":false},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"编辑此页面","base":"https://github.com/yulliam/funbook/edit/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"Yulliam","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Yulliam's Doc","language":"zh-hans","gitbook":"*","description":"record some thing"},"file":{"path":"第2章_GIT常用方法/4_Git_Tag相关操作.md","mtime":"2023-02-02T08:41:28.233Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-02-02T08:42:37.475Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-accordion/accordionSelector.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

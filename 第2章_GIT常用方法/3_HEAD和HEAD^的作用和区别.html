@@ -1,0 +1,744 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>3_HEAD和HEAD^的作用和区别 · Yulliam's Doc</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Yulliam">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-accordion/accordion.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="4_Git_Tag相关操作.html" />
+    
+    
+    <link rel="prev" href="2_git撤销回滚操作.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    第1章_基础知识
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../第1章_基础知识/1_学习的方法.html">
+            
+                <a href="../第1章_基础知识/1_学习的方法.html">
+            
+                    
+                    1_学习的方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../第1章_基础知识/2_markdown语法.html">
+            
+                <a href="../第1章_基础知识/2_markdown语法.html">
+            
+                    
+                    2_markdown语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../第1章_基础知识/3_gitbook使用方法.html">
+            
+                <a href="../第1章_基础知识/3_gitbook使用方法.html">
+            
+                    
+                    3_gitbook使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../第1章_基础知识/4_命名规范.html">
+            
+                <a href="../第1章_基础知识/4_命名规范.html">
+            
+                    
+                    4_命名规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../第1章_基础知识/5_混淆.html">
+            
+                <a href="../第1章_基础知识/5_混淆.html">
+            
+                    
+                    5_混淆
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    第2章_GIT常用方法
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="1_gitreset三种模式.html">
+            
+                <a href="1_gitreset三种模式.html">
+            
+                    
+                    1_gitreset三种模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="2_git撤销回滚操作.html">
+            
+                <a href="2_git撤销回滚操作.html">
+            
+                    
+                    2_git撤销回滚操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.3" data-path="3_HEAD和HEAD^的作用和区别.html">
+            
+                <a href="3_HEAD和HEAD^的作用和区别.html">
+            
+                    
+                    3_HEAD和HEAD^的作用和区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="4_Git_Tag相关操作.html">
+            
+                <a href="4_Git_Tag相关操作.html">
+            
+                    
+                    4_Git_Tag相关操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    第3章_设计模式
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../第3章_设计模式/1_android_MVP模式详解.html">
+            
+                <a href="../第3章_设计模式/1_android_MVP模式详解.html">
+            
+                    
+                    1_android_MVP模式详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    第4章_AndroidUI
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" >
+            
+                <span>
+            
+                    
+                    第1节_Fragment
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="../第4章_AndroidUI/第1节_Fragment/1_FragmentPagerAdapter和FragmentStatePagerAdapter区别.html">
+            
+                <a href="../第4章_AndroidUI/第1节_Fragment/1_FragmentPagerAdapter和FragmentStatePagerAdapter区别.html">
+            
+                    
+                    1_FragmentPagerAdapter和FragmentStatePagerAdapter区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="../第4章_AndroidUI/第1节_Fragment/2_fragment的onResume，setUserVisibleHint，onHiddenChanged，isVisible方法.html">
+            
+                <a href="../第4章_AndroidUI/第1节_Fragment/2_fragment的onResume，setUserVisibleHint，onHiddenChanged，isVisible方法.html">
+            
+                    
+                    2_fragment的onResume，setUserVisibleHint，onHiddenChanged，isVisible方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    第5章_JAVA知识
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../第5章_JAVA知识/1_Sychronize同步机制总结.html">
+            
+                <a href="../第5章_JAVA知识/1_Sychronize同步机制总结.html">
+            
+                    
+                    1_Sychronize同步机制总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    第6章_技巧
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../第6章_技巧/1_app反调试.html">
+            
+                <a href="../第6章_技巧/1_app反调试.html">
+            
+                    
+                    1_app反调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >3_HEAD和HEAD^的作用和区别</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#git&#x5728;&#x56DE;&#x9000;&#x7248;&#x672C;&#x65F6;head&#x548C;head&#x7684;&#x4F5C;&#x7528;&#x548C;&#x533A;&#x522B;"><b></b>git&#x5728;&#x56DE;&#x9000;&#x7248;&#x672C;&#x65F6;HEAD~&#x548C;HEAD^&#x7684;&#x4F5C;&#x7528;&#x548C;&#x533A;&#x522B;</a></li><li><span class="title-icon "></span><a href="#&#x524D;&#x8A00;"><b></b>&#x524D;&#x8A00;</a></li><li><span class="title-icon "></span><a href="#head"><b></b>HEAD</a></li><li><span class="title-icon "></span><a href="#head-&#x548C;-head"><b></b>HEAD~ &#x548C; HEAD^</a></li><li><span class="title-icon "></span><a href="#head-&#x540E;&#x9762;--&#x548C;--&#x7684;&#x533A;&#x522B;"><b></b>HEAD &#x540E;&#x9762; ~ &#x548C; ^ &#x7684;&#x533A;&#x522B;</a></li><ul><li><span class="title-icon "></span><a href="#head-&#x548C;-head&#x540E;&#x9762;&#x90FD;&#x52A0;1"><b></b>HEAD~ &#x548C; HEAD^&#x540E;&#x9762;&#x90FD;&#x52A0;1</a></li><li><span class="title-icon "></span><a href="#head-&#x548C;-head&#x540E;&#x9762;&#x90FD;&#x52A0;0"><b></b>HEAD~ &#x548C; HEAD^&#x540E;&#x9762;&#x90FD;&#x52A0;0</a></li><li><span class="title-icon "></span><a href="#head-&#x548C;-head&#x540E;&#x9762;&#x90FD;&#x52A0;&#x5927;&#x4E8E;1&#x7684;&#x6570;&#x5B57;"><b></b>HEAD~ &#x548C; HEAD^&#x540E;&#x9762;&#x90FD;&#x52A0;&#x5927;&#x4E8E;1&#x7684;&#x6570;&#x5B57;</a></li></ul><li><span class="title-icon "></span><a href="#&#x5177;&#x4F53;&#x793A;&#x4F8B;"><b></b>&#x5177;&#x4F53;&#x793A;&#x4F8B;</a></li><ul><li><span class="title-icon "></span><a href="#&#x51C6;&#x5907;&#x5DE5;&#x4F5C;"><b></b>&#x51C6;&#x5907;&#x5DE5;&#x4F5C;</a></li><li><span class="title-icon "></span><a href="#&#x6811;&#x5F62;&#x8BB0;&#x5F55;"><b></b>&#x6811;&#x5F62;&#x8BB0;&#x5F55;</a></li><li><span class="title-icon "></span><a href="#&#x67E5;&#x770B;&#x547D;&#x4EE4;"><b></b>&#x67E5;&#x770B;&#x547D;&#x4EE4;</a></li><li><span class="title-icon "></span><a href="#&#x5F00;&#x59CB;&#x6D4B;&#x8BD5;"><b></b>&#x5F00;&#x59CB;&#x6D4B;&#x8BD5;</a></li><ul><li><span class="title-icon "></span><a href="#head&#x3001;head&#x3001;head1&#x3001;head1"><b></b>HEAD~&#x3001;HEAD^&#x3001;HEAD~1&#x3001;HEAD^1</a></li><li><span class="title-icon "></span><a href="#head&#x3001;head&#x3001;head2&#x3001;head2"><b></b>HEAD~~&#x3001;HEAD^^&#x3001;HEAD~2&#x3001;HEAD^2</a></li><li><span class="title-icon "></span><a href="#&#x548C;--&#x6DF7;&#x5408;&#x4F7F;&#x7528;"><b></b>~ &#x548C; ^ &#x6DF7;&#x5408;&#x4F7F;&#x7528;</a></li><li><span class="title-icon "></span><a href="#&#x5173;&#x4E8E;-git-reset-&#x7684;&#x4E00;&#x70B9;&#x601D;&#x8003;"><b></b>&#x5173;&#x4E8E; git reset &#x7684;&#x4E00;&#x70B9;&#x601D;&#x8003;</a></li></ul></ul><li><span class="title-icon "></span><a href="#&#x603B;&#x7ED3;"><b></b>&#x603B;&#x7ED3;</a></li></ul></div><a href="#git&#x5728;&#x56DE;&#x9000;&#x7248;&#x672C;&#x65F6;head&#x548C;head&#x7684;&#x4F5C;&#x7528;&#x548C;&#x533A;&#x522B;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="git&#x5728;&#x56DE;&#x9000;&#x7248;&#x672C;&#x65F6;head&#x548C;head&#x7684;&#x4F5C;&#x7528;&#x548C;&#x533A;&#x522B;"><a name="git&#x5728;&#x56DE;&#x9000;&#x7248;&#x672C;&#x65F6;head&#x548C;head&#x7684;&#x4F5C;&#x7528;&#x548C;&#x533A;&#x522B;" class="anchor-navigation-ex-anchor" href="#git&#x5728;&#x56DE;&#x9000;&#x7248;&#x672C;&#x65F6;head&#x548C;head&#x7684;&#x4F5C;&#x7528;&#x548C;&#x533A;&#x522B;"><i class="fa fa-link" aria-hidden="true"></i></a>git&#x5728;&#x56DE;&#x9000;&#x7248;&#x672C;&#x65F6;HEAD~&#x548C;HEAD^&#x7684;&#x4F5C;&#x7528;&#x548C;&#x533A;&#x522B;</h1>
+<p><a href="https://blog.csdn.net/albertsh/article/details/106448035" target="_blank">https://blog.csdn.net/albertsh/article/details/106448035</a></p>
+<p>&#x200C;</p>
+<h1 id="&#x524D;&#x8A00;"><a name="&#x524D;&#x8A00;" class="anchor-navigation-ex-anchor" href="#&#x524D;&#x8A00;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>&#x524D;&#x8A00;</strong></h1>
+<p>&#x200C;</p>
+<p>&#x4ECA;&#x5929;&#x603B;&#x7ED3;&#x4E00;&#x4E2A;&#x5C0F;&#x77E5;&#x8BC6;&#x70B9;&#xFF0C;&#x867D;&#x7136;&#x4E0D;&#x96BE;&#xFF0C;&#x4F46;&#x662F;&#x5BF9;&#x65B0;&#x624B;&#x6709;&#x5F88;&#x5F3A;&#x7684;&#x8FF7;&#x60D1;&#x6027;&#xFF0C;&#x4E86;&#x89E3;&#x4E00;&#x4E0B;&#x4E5F;&#x633A;&#x597D;&#x3002;&#x6211;&#x4EEC;&#x5728;&#x4F7F;&#x7528; Git &#x56DE;&#x9000;&#x5230;&#x7248;&#x672C;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x53EF;&#x80FD;&#x89C1;&#x8FC7;&#x8FD9;&#x79CD;&#x5199;&#x6CD5; <code>git reset --hard HEAD~</code>&#xFF0C;&#x6709;&#x65F6;&#x5019;&#x4E5F;&#x4F1A;&#x9047;&#x5230;&#x8FD9;&#x79CD;&#x5199;&#x6CD5; <code>git reset --hard HEAD^</code>&#xFF0C;&#x8FD9;&#x4E24;&#x4E2A;&#x8BED;&#x53E5;&#x90FD;&#x662F;&#x5C06;&#x4EE3;&#x7801;&#x5E93;&#x8FD8;&#x539F;&#x5230;&#x4E0A;&#x4E00;&#x4E2A;&#x7248;&#x672C;&#xFF0C;&#x4F46;&#x662F;&#x53EA;&#x5DEE;&#x4E86;&#x4E00;&#x4E2A;&#x7B26;&#x53F7;&#xFF0C;&#x4ED6;&#x4EEC;&#x7A76;&#x7ADF;&#x6709;&#x4EC0;&#x4E48;&#x533A;&#x522B;&#x5462;&#xFF1F;&#x8FD9;&#x91CC;&#x5148;&#x7ED9;&#x51FA;&#x7ED3;&#x8BBA;&#xFF1A;<code>HEAD~</code> &#x548C; <code>HEAD^</code> &#x542B;&#x4E49;&#x4E0D;&#x540C;&#xFF0C;&#x529F;&#x80FD;&#x4E00;&#x6837;&#xFF01;</p>
+<p>&#x200C;</p>
+<h1 id="head"><a name="head" class="anchor-navigation-ex-anchor" href="#head"><i class="fa fa-link" aria-hidden="true"></i></a><strong>HEAD</strong></h1>
+<p>&#x200C;</p>
+<p><code>HEAD</code> &#x8FD9;&#x4E2A;&#x8BCD;&#x5728; <code>git</code> &#x4F7F;&#x7528;&#x8FC7;&#x7A0B;&#x4E2D;&#x7ECF;&#x5E38;&#x51FA;&#x73B0;&#xFF0C;&#x4F5C;&#x7528;&#x5F88;&#x50CF;&#x662F;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x4E2D;&#x6307;&#x5411;&#x4E8C;&#x53C9;&#x6811;&#x6839;&#x8282;&#x70B9;<code>root</code>&#x7684;&#x6307;&#x9488;&#x3002;&#x6709;&#x4E2A; <code>root</code> &#x6307;&#x9488;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x5BF9;&#x4E8C;&#x53C9;&#x6811;&#x8FDB;&#x884C;&#x4EFB;&#x610F;&#x64CD;&#x4F5C;&#xFF0C;&#x5B83;&#x662F;&#x4E8C;&#x53C9;&#x6811;&#x7684;&#x6839;&#x57FA;&#x3002;&#x800C; <code>git</code> &#x4E2D;&#x7684; <code>HEAD</code> &#x6982;&#x5FF5;&#x4E5F;&#x7C7B;&#x4F3C;&#x4E00;&#x4E2A;&#x6307;&#x9488;&#xFF0C;&#x5B83;&#x6307;&#x5411;&#x662F;&#x5F53;&#x524D;&#x5206;&#x652F;&#x7684;&#x201C;&#x5934;&#x201D;&#xFF0C;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x5934;&#x8282;&#x70B9;&#x53EF;&#x4EE5;&#x8FFD;&#x5BFB;&#x5230;&#x5F53;&#x524D;&#x5206;&#x652F;&#x4E4B;&#x524D;&#x7684;&#x6240;&#x6709;&#x63D0;&#x4EA4;&#x8BB0;&#x5F55;&#x3002;</p>
+<p>&#x200C;</p>
+<p><code>git</code> &#x7684;&#x63D0;&#x4EA4;&#x8BB0;&#x5F55;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;&#x5F88;&#x50CF;&#x4E00;&#x68F5;&#x6811;&#xFF0C;&#x6216;&#x8005;&#x8BF4;&#x662F;&#x4E00;&#x5F20;&#x56FE;&#xFF0C;&#x901A;&#x8FC7;&#x5F53;&#x524D;&#x7684;&#x63D0;&#x4EA4;&#x8BB0;&#x5F55;&#x6307;&#x5411;&#x4E0A;&#x4E00;&#x6B21;&#x63D0;&#x4EA4;&#x8BB0;&#x5F55;&#x4E32;&#x8054;&#x8D77;&#x6765;&#xFF0C;&#x5F62;&#x6210;&#x4E00;&#x4E2A;&#x5934;&#x7ED3;&#x6784;&#xFF0C;&#x800C;&#x5728; <code>git</code> &#x4E2D;&#x6211;&#x4EEC;&#x5E38;&#x5E38;&#x8BF4;&#x7684;&#x5207;&#x6362;&#x5206;&#x652F;&#xFF0C;&#x53EA;&#x4E0D;&#x8FC7;&#x662F; <code>git</code> &#x5BA2;&#x6237;&#x7AEF;&#x5E2E;&#x4F60;&#x628A;&#x8981;&#x64CD;&#x4F5C;&#x7684;&#x90A3;&#x6761;&#x8DEF;&#x5F84;&#x7684;&#x5934;&#x8282;&#x70B9;&#xFF0C;&#x5B58;&#x50A8;&#x5230;&#x4E86; <code>HEAD</code> &#x6587;&#x4EF6;&#x4E2D;&#x3002;</p>
+<p>&#x200C;</p>
+<p><code>HEAD</code> &#x5728; <code>git</code> &#x7248;&#x672C;&#x63A7;&#x5236;&#x4E2D;&#x4EE3;&#x8868;&#x5934;&#x8282;&#x70B9;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x5206;&#x652F;&#x7684;&#x6700;&#x540E;&#x4E00;&#x6B21;&#x63D0;&#x4EA4;&#xFF0C;&#x540C;&#x65F6;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x901A;&#x5E38;&#x5728;&#x7248;&#x672C;&#x5E93;&#x4E2D; <code>repository/.git/HEAD</code>&#xFF0C;&#x5176;&#x4E2D;&#x4FDD;&#x5B58;&#x7684;&#x4E00;&#x822C;&#x662F; <code>ref: refs/heads/master</code> &#x8FD9;&#x79CD;&#x5206;&#x652F;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x800C;&#x672C;&#x8D28;&#x4E0A;&#x5C31;&#x662F;&#x6307;&#x5411;&#x4E00;&#x6B21;&#x63D0;&#x4EA4;&#x7684; <code>hash</code> &#x503C;&#xFF0C;&#x4E00;&#x822C;&#x957F;&#x6210;&#x8FD9;&#x4E2A;&#x6837;&#x5B50; <code>ce11d9be5cc7007995b607fb12285a43cd03154b</code>&#x3002;</p>
+<p>&#x200C;</p>
+<h1 id="head-&#x548C;-head"><a name="head-&#x548C;-head" class="anchor-navigation-ex-anchor" href="#head-&#x548C;-head"><i class="fa fa-link" aria-hidden="true"></i></a><strong>HEAD~ &#x548C; HEAD^</strong></h1>
+<p>&#x200C;</p>
+<p>&#x5728; <code>HEAD</code> &#x540E;&#x9762;&#x52A0; <code>^</code> &#x6216;&#x8005; <code>~</code> &#x5176;&#x5B9E;&#x5C31;&#x662F;&#x4EE5; <code>HEAD</code> &#x4E3A;&#x57FA;&#x51C6;&#xFF0C;&#x6765;&#x8868;&#x793A;&#x4E4B;&#x524D;&#x7684;&#x7248;&#x672C;&#xFF0C;&#x56E0;&#x4E3A; <code>HEAD</code> &#x88AB;&#x8BA4;&#x4E3A;&#x662F;&#x5F53;&#x524D;&#x5206;&#x652F;&#x7684;&#x6700;&#x65B0;&#x7248;&#x672C;&#xFF0C;&#x90A3;&#x4E48; <code>HEAD~</code> &#x548C; <code>HEAD^</code> &#x90FD;&#x662F;&#x6307;&#x6B21;&#x65B0;&#x7248;&#x672C;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x5012;&#x6570;&#x7B2C;&#x4E8C;&#x4E2A;&#x7248;&#x672C;&#xFF0C;<code>HEAD~~</code> &#x548C; <code>HEAD^^</code> &#x90FD;&#x662F;&#x6307;&#x6B21;&#x6B21;&#x65B0;&#x7248;&#x672C;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x5012;&#x6570;&#x7B2C;&#x4E09;&#x4E2A;&#x7248;&#x672C;&#xFF0C;&#x4EE5;&#x6B64;&#x7C7B;&#x63A8;&#x3002;</p>
+<p>&#x200C;</p>
+<p>&#x8FD9;&#x4E2A;&#x8BF4;&#x6CD5;&#x5728;&#x4E4B;&#x524D;&#x7684;&#x603B;&#x7ED3; <a href="https://blog.csdn.net/albertsh/article/details/104719370" target="_blank">&#x300A;git checkout/git reset/git revert/git restore&#x5E38;&#x7528;&#x56DE;&#x9000;&#x64CD;&#x4F5C;&#x300B;</a> &#x4E2D;&#x63D0;&#x5230;&#x8FC7;&#xFF0C;&#x4F46;&#x662F;&#x5E76;&#x672A;&#x5C55;&#x5F00;&#x8BF4;&#xFF0C;&#x4ECA;&#x5929;&#x5C31;&#x6765;&#x6D4B;&#x8BD5;&#x4E00;&#x4E0B;&#x3002;</p>
+<p>&#x200C;</p>
+<h1 id="head-&#x540E;&#x9762;--&#x548C;--&#x7684;&#x533A;&#x522B;"><a name="head-&#x540E;&#x9762;--&#x548C;--&#x7684;&#x533A;&#x522B;" class="anchor-navigation-ex-anchor" href="#head-&#x540E;&#x9762;--&#x548C;--&#x7684;&#x533A;&#x522B;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>HEAD &#x540E;&#x9762; ~ &#x548C; ^ &#x7684;&#x533A;&#x522B;</strong></h1>
+<p>&#x200C;</p>
+<p>&#x5176;&#x5B9E; <code>HEAD~</code> &#x548C; <code>HEAD^</code> &#x7684;&#x4F5C;&#x7528;&#x662F;&#x76F8;&#x540C;&#x7684;&#xFF0C;&#x8FD9;&#x4E24;&#x8005;&#x7684;&#x533A;&#x522B;&#x51FA;&#x73B0;&#x5728;&#x91CD;&#x590D;&#x4F7F;&#x7528;&#x6216;&#x8005;&#x52A0;&#x6570;&#x5B57;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x4E0B;&#x9762;&#x6765;&#x5206;&#x60C5;&#x51B5;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#x3002;</p>
+<p>&#x200C;</p>
+<h2 id="head-&#x548C;-head&#x540E;&#x9762;&#x90FD;&#x52A0;1"><a name="head-&#x548C;-head&#x540E;&#x9762;&#x90FD;&#x52A0;1" class="anchor-navigation-ex-anchor" href="#head-&#x548C;-head&#x540E;&#x9762;&#x90FD;&#x52A0;1"><i class="fa fa-link" aria-hidden="true"></i></a><strong><code>HEAD~</code> &#x548C; <code>HEAD^</code>&#x540E;&#x9762;&#x90FD;&#x52A0;1</strong></h2>
+<p>&#x200C;</p>
+<p>&#x52A0;&#x4E0A;&#x53C2;&#x6570;1&#x4E4B;&#x540E;&#x53D8;&#x6210;&#x4E86; <code>HEAD~1</code> &#x548C; <code>HEAD^1</code>&#xFF0C;&#x5176;&#x5B9E;&#x8FD9;&#x5C31;&#x662F;&#x4ED6;&#x4EEC;&#x672C;&#x6765;&#x7684;&#x9762;&#x8C8C;&#xFF0C;&#x5728;&#x53C2;&#x6570;&#x4E3A; 1 &#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x53EF;&#x4EE5;&#x7701;&#x7565;&#xFF0C;<code>HEAD~1</code> &#x8868;&#x793A;&#x56DE;&#x9000;&#x4E00;&#x6B65;&#xFF0C;&#x53C2;&#x6570;1&#x8868;&#x793A;&#x540E;&#x9000;&#x7684;&#x6B65;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;&#x63A8;&#x5230;&#x7B2C;&#x4E00;&#x4E2A;&#x7236;&#x63D0;&#x4EA4;&#x4E0A;&#xFF0C;&#x800C;<code>HEAD^1</code>&#x8868;&#x793A;&#x540E;&#x9000;&#x4E00;&#x6B65;&#xFF0C;&#x76F4;&#x63A5;&#x540E;&#x9000;&#x5230;&#x7B2C;n&#x4E2A;&#x7236;&#x63D0;&#x4EA4;&#x4E0A;&#xFF0C;&#x6570;&#x5B57;1&#x8868;&#x793A;&#x662F;&#x7B2C;&#x4E00;&#x4E2A;&#x7236;&#x63D0;&#x4EA4;&#x3002;</p>
+<p>&#x200C;</p>
+<p>&#x8FD9;&#x91CC;&#x5F15;&#x5165;&#x4E00;&#x4E2A;&#x7236;&#x63D0;&#x4EA4;&#x7684;&#x6982;&#x5FF5;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x5728;&#x6700;&#x65B0;&#x63D0;&#x4EA4;&#x4E4B;&#x524D;&#x7684;&#x6700;&#x8FD1;&#x7684;&#x63D0;&#x4EA4;&#x6211;&#x79F0;&#x5B83;&#x4E3A;&#x7236;&#x63D0;&#x4EA4;&#xFF0C;&#x4F46;&#x662F;&#x7236;&#x63D0;&#x4EA4;&#x4F1A;&#x6709;&#x4E24;&#x4E2A;&#x5417;&#xFF1F;&#x5B9E;&#x9645;&#x4E0A;&#x4F1A;&#x7684;&#xFF0C;&#x76F4;&#x63A5;&#x7684;&#x7236;&#x63D0;&#x4EA4;&#x53EF;&#x80FD;&#x4F1A;&#x6709;&#x5F88;&#x591A;&#xFF0C;&#x5206;&#x652F;&#x5408;&#x5E76;&#x662F;&#x4EA7;&#x751F;&#x7236;&#x63D0;&#x4EA4;&#x7684;&#x4E00;&#x79CD;&#x5E38;&#x89C1;&#x539F;&#x56E0;&#xFF0C;&#x4E24;&#x4E2A;&#x5206;&#x652F;&#x5408;&#x5E76;&#x5230;&#x4E00;&#x8D77;&#x65F6;&#xFF0C;&#x8FD9;&#x4E24;&#x4E2A;&#x5206;&#x652F;&#x7684;&#x539F; <code>HEAD</code> &#x90FD;&#x4F1A;&#x6210;&#x4E3A;&#x5408;&#x5E76;&#x540E;&#x6700;&#x65B0;&#x63D0;&#x4EA4;&#x7684;&#x7236;&#x63D0;&#x4EA4;&#x3002;</p>
+<p>&#x200C;</p>
+<p>&#x7406;&#x89E3;&#x4E86;&#x8FD9;&#x4E2A;&#x6982;&#x5FF5;&#xFF0C;&#x6211;&#x4EEC;&#x53D1;&#x73B0;&#x867D;&#x7136;&#x6570;&#x5B57;&#x662F;&#x4E00;&#x6837;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x542B;&#x4E49;&#x5374;&#x4E0D;&#x76F8;&#x540C;&#xFF0C;<code>HEAD~1</code> &#x4E2D;&#x6307;&#x7684;&#x662F;&#x540E;&#x9000;&#x7684;&#x6B65;&#x6570;&#xFF0C;<code>HEAD^1</code>&#x6307;&#x7684;&#x662F;&#x9000;&#x5230;&#x7B2C;&#x51E0;&#x4E2A;&#x7236;&#x63D0;&#x4EA4;&#x4E0A;&#x3002;</p>
+<p>&#x200C;</p>
+<h2 id="head-&#x548C;-head&#x540E;&#x9762;&#x90FD;&#x52A0;0"><a name="head-&#x548C;-head&#x540E;&#x9762;&#x90FD;&#x52A0;0" class="anchor-navigation-ex-anchor" href="#head-&#x548C;-head&#x540E;&#x9762;&#x90FD;&#x52A0;0"><i class="fa fa-link" aria-hidden="true"></i></a><strong><code>HEAD~</code> &#x548C; <code>HEAD^</code>&#x540E;&#x9762;&#x90FD;&#x52A0;0</strong></h2>
+<p>&#x200C;</p>
+<p>&#x8FD9;&#x662F;&#x4E00;&#x79CD;&#x6BD4;&#x8F83;&#x7279;&#x6B8A;&#x7684;&#x60C5;&#x51B5;&#xFF0C; &#x52A0;&#x4E0A;&#x53C2;&#x6570;0&#x4E4B;&#x540E;&#x53D8;&#x6210;&#x4E86; <code>HEAD~0</code> &#x548C; <code>HEAD^0</code>&#xFF0C;&#x5176;&#x5B9E;&#x4ED6;&#x4EEC;&#x6307;&#x5411;&#x7684;&#x8282;&#x70B9;&#x6CA1;&#x6709;&#x6539;&#x53D8;&#xFF0C;&#x8FD8;&#x662F;&#x4EE3;&#x8868;&#x4E86; <code>HEAD</code>&#xFF0C;&#x53EA;&#x8981;&#x4E86;&#x89E3;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x5C31;&#x884C;&#x4E86;&#xFF0C;&#x6211;&#x8FD8;&#x6CA1;&#x6709;&#x89C1;&#x8FC7;&#x8C01;&#x8FD9;&#x6837;&#x5199;&#x8FC7;&#x3002;</p>
+<p>&#x200C;</p>
+<h2 id="head-&#x548C;-head&#x540E;&#x9762;&#x90FD;&#x52A0;&#x5927;&#x4E8E;1&#x7684;&#x6570;&#x5B57;"><a name="head-&#x548C;-head&#x540E;&#x9762;&#x90FD;&#x52A0;&#x5927;&#x4E8E;1&#x7684;&#x6570;&#x5B57;" class="anchor-navigation-ex-anchor" href="#head-&#x548C;-head&#x540E;&#x9762;&#x90FD;&#x52A0;&#x5927;&#x4E8E;1&#x7684;&#x6570;&#x5B57;"><i class="fa fa-link" aria-hidden="true"></i></a><strong><code>HEAD~</code> &#x548C; <code>HEAD^</code>&#x540E;&#x9762;&#x90FD;&#x52A0;&#x5927;&#x4E8E;1&#x7684;&#x6570;&#x5B57;</strong></h2>
+<p>&#x200C;</p>
+<p>&#x8FD9;&#x65F6;&#x5C31;&#x4F1A;&#x53D1;&#x73B0;&#x4E24;&#x8005;&#x7684;&#x4E0D;&#x540C;&#x4E86;&#xFF0C;&#x6BD4;&#x5982;&#x6211;&#x4EEC;&#x628A;&#x6570;&#x5B57;&#x90FD;&#x5B9A;&#x4E3A;2&#xFF0C;&#x90A3;&#x4E48; <code>HEAD~2</code> &#x4EE3;&#x8868;&#x540E;&#x9000;&#x4E24;&#x6B65;&#xFF0C;&#x6BCF;&#x4E00;&#x6B65;&#x90FD;&#x540E;&#x9000;&#x5230;&#x7B2C;&#x4E00;&#x4E2A;&#x7236;&#x63D0;&#x4EA4;&#x4E0A;&#xFF0C;&#x800C; <code>HEAD^2</code> &#x4EE3;&#x8868;&#x540E;&#x9000;&#x4E00;&#x6B65;&#xFF0C;&#x8FD9;&#x4E00;&#x6B65;&#x9000;&#x5230;&#x7B2C;&#x4E8C;&#x4E2A;&#x7236;&#x63D0;&#x4EA4;&#x4E0A;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x7B2C;&#x4E8C;&#x4E2A;&#x7236;&#x63D0;&#x4EA4;&#x5C31;&#x4F1A;&#x62A5;&#x51FA;&#x4EE5;&#x4E0B;&#x9519;&#x8BEF;&#xFF1A;</p>
+<blockquote>
+<p>fatal: ambiguous argument &#x2018;HEAD^2&#x2019;: unknown revision or path not in the working tree. Use &#x2018;&#x2013;&#x2019; to separate paths from revisions, like this: &#x2018;git [&#x2026;] &#x2013; [&#x2026;]&#x2019;</p>
+</blockquote>
+<p>&#x200C;</p>
+<h1 id="&#x5177;&#x4F53;&#x793A;&#x4F8B;"><a name="&#x5177;&#x4F53;&#x793A;&#x4F8B;" class="anchor-navigation-ex-anchor" href="#&#x5177;&#x4F53;&#x793A;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>&#x5177;&#x4F53;&#x793A;&#x4F8B;</strong></h1>
+<p>&#x200C;</p>
+<p>&#x4E0A;&#x9762;&#x8BF4;&#x4E86;&#x51E0;&#x79CD;&#x52A0;&#x6570;&#x5B57;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x7B2C;&#x4E00;&#x6B21;&#x63A5;&#x89E6;&#x53EF;&#x80FD;&#x8FD8;&#x662F;&#x4E0D;&#x592A;&#x660E;&#x767D;&#xFF0C;&#x6CA1;&#x5173;&#x7CFB;&#xFF0C;&#x6211;&#x53EF;&#x4EE5;&#x5B9E;&#x9645;&#x64CD;&#x4F5C;&#x4E00;&#x4E0B;&#xFF0C;&#x770B;&#x4E2A;&#x5177;&#x4F53;&#x7684;&#x4F8B;&#x5B50;&#x5C31;&#x660E;&#x767D;&#x4E86;&#x3002;</p>
+<p>&#x200C;</p>
+<h2 id="&#x51C6;&#x5907;&#x5DE5;&#x4F5C;"><a name="&#x51C6;&#x5907;&#x5DE5;&#x4F5C;" class="anchor-navigation-ex-anchor" href="#&#x51C6;&#x5907;&#x5DE5;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>&#x51C6;&#x5907;&#x5DE5;&#x4F5C;</strong></h2>
+<p>&#x200C;</p>
+<p>&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;&#x5E93;&#x7684;&#x5206;&#x652F;&#x7ED3;&#x6784;&#xFF0C;&#x4E00;&#x5171;&#x6709; <code>dev1</code>&#x3001;<code>dev2</code>&#x3001;<code>dev3</code>&#x3001;<code>dev4</code> &#x56DB;&#x4E2A;&#x5206;&#x652F;&#xFF0C;&#x6700;&#x7EC8;&#x5408;&#x5E76;&#x5230; <code>dev1</code> &#x5206;&#x652F;&#xFF0C;&#x63D0;&#x4EA4;&#x8BB0;&#x5F55;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code>albert@home-pc MINGW64 /d/gitstart (dev1)
+$ git alllog
+*   ce11d9b (HEAD -&gt; dev1) Merge branch &apos;dev3&apos; into dev1
+|\
+| * e330eac (dev3) update at dev3 - 3
+| *   7ab3c98 Merge branch &apos;dev4&apos; into dev3
+| |\
+| | * c8795e8 (dev4) update at dev4 - 2
+| | * 155d3db update at dev4 - 1
+| * | ccdf16a update at dev3 - 2
+| * | 9f08bb0 update at dev3 - 1
+| |/
+* | f82b57b update at dev1 - 3
+* |   dcdcb87 Merge branch &apos;dev2&apos; into dev1
+|\ \
+| * | 32d6213 (dev2) update at dev2 - 2
+| * | ca4db4a update at dev2 - 1
+| |/
+| * d8d80b7 update readme at dev2
+* | 034ccb6 update readme at dev1 - 2
+* | d58fedc update readme at dev1 - 1
+</code></pre><p>&#x200C;</p>
+<p>&#x4E5F;&#x8BB8;&#x6709;&#x989C;&#x8272;&#x6807;&#x8BB0;&#x4F1A;&#x770B;&#x5F97;&#x66F4;&#x6E05;&#x695A;&#x4E00;&#x4E9B;&#xFF0C;&#x6240;&#x4EE5;&#x622A;&#x4E2A;&#x56FE;&#x653E;&#x5728;&#x8FD9;&#xFF1A;</p>
+<p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L2doL2FsYmVydGdpdGh1YmhvbWUvY2RuL2ltZy9jYXJkL2dpdGhlYWQucG5n?x-oss-process=image%2Fformat%2Cpng" alt="img"></p>
+<p>git_branch_head</p>
+<p>&#x200C;</p>
+<p>&#x521A;&#x770B;&#x8FD9;&#x79CD;&#x56FE;&#x7684;&#x65F6;&#x5019;&#x8981;&#x6CE8;&#x610F;&#x4E00;&#x70B9;&#xFF0C;&#x8BB0;&#x5F55;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x5148;&#x540E;&#x5173;&#x7CFB;&#x4E0D;&#x4EE3;&#x8868;&#x63D0;&#x4EA4;&#x65F6;&#x95F4;&#x7684;&#x5148;&#x540E;&#xFF0C;&#x5982;&#x679C;&#x4E60;&#x60EF;&#x4E8E;&#x770B;SVN&#x7684;&#x8BB0;&#x5F55;&#x4EE5;&#x540E;&#xFF0C;&#x5F88;&#x5BB9;&#x6613;&#x5728;&#x770B;&#x65E5;&#x5FD7;&#x4FE1;&#x606F;&#x65F6;&#x52A0;&#x4E0A;&#x65F6;&#x95F4;&#x56E0;&#x7D20;&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x4E2A;&#x65F6;&#x95F4;&#x56E0;&#x7D20;&#x5728; <code>git</code> &#x67E5;&#x770B;&#x8BB0;&#x5F55;&#x65F6;&#x53D8;&#x5F97;&#x4E0D;&#x518D;&#x660E;&#x663E;&#xFF0C;&#x6BD4;&#x5982;&#x4E0A;&#x9762;&#x8BB0;&#x5F55;&#x4E2D;&#x7684; <code>e330eac</code> &#x5728;&#x56FE;&#x5F62;&#x4E0A;&#x8981;&#x6BD4; <code>f82b57b</code> &#x66F4;&#x63A5;&#x8FD1; HEAD &#x63D0;&#x4EA4; <code>ce11d9b</code>&#xFF0C;&#x4F46;&#x662F;&#x56E0;&#x4E3A;&#x5904;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x5206;&#x652F;&#x4E0A;&#xFF0C;&#x5728;&#x5408;&#x5E76;&#x4E4B;&#x524D;&#x4ED6;&#x4FE9;&#x7684;&#x4FEE;&#x6539;&#x65F6;&#x95F4;&#x8FD8;&#x771F;&#x4E0D;&#x4E00;&#x5B9A;&#x662F;&#x54EA;&#x4E2A;&#x66F4;&#x65E9;&#x4E00;&#x4E9B;&#x3002;</p>
+<p>&#x200C;</p>
+<h2 id="&#x6811;&#x5F62;&#x8BB0;&#x5F55;"><a name="&#x6811;&#x5F62;&#x8BB0;&#x5F55;" class="anchor-navigation-ex-anchor" href="#&#x6811;&#x5F62;&#x8BB0;&#x5F55;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>&#x6811;&#x5F62;&#x8BB0;&#x5F55;</strong></h2>
+<p>&#x200C;</p>
+<p>&#x5728; <code>git</code> &#x7684;&#x63D0;&#x4EA4;&#x8BB0;&#x5F55;&#x56FE;&#x4E0A;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x786E;&#x5B9A;&#x5F53;&#x524D;&#x63D0;&#x4EA4;&#x7684;&#x7236;&#x63D0;&#x4EA4;&#xFF08;&#x6240;&#x4F9D;&#x8D56;&#x7684;&#x63D0;&#x4EA4;&#xFF09;&#x662F;&#x54EA;&#x4E00;&#x4E2A;&#x6216;&#x8005;&#x54EA;&#x51E0;&#x4E2A;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x80FD;&#x786E;&#x5B9A;&#x4EFB;&#x610F;&#x4E24;&#x4E2A;&#x63D0;&#x4EA4;&#x7684;&#x65F6;&#x95F4;&#x5148;&#x540E;&#xFF0C;&#x4E3A;&#x4E86;&#x80FD;&#x66F4;&#x6E05;&#x695A;&#x7684;&#x770B;&#x6E05;&#x5206;&#x652F;&#x63D0;&#x4EA4;&#x7684;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#xFF0C;&#x8FD8;&#x662F;&#x770B;&#x4E0B;&#x9762;&#x8FD9;&#x4E2A;&#x6811;&#x5F62;&#x56FE;&#x66F4;&#x65B9;&#x4FBF;&#x4E00;&#x4E9B;&#x3002;</p>
+<p>&#x200C;</p>
+<p><img src="https://gblobscdn.gitbook.com/assets%2F-MVxhDL96fVN_Pxj0l04%2F-MWbo-yAgpnce7Mn4sLj%2F-MWbx7PJDq7E8h86iEuY%2Fimage.png?alt=media&amp;token=cabea09d-278c-4216-96c6-fbe8b29d5d8b" alt="img"></p>
+<p>&#x200C;</p>
+<h2 id="&#x67E5;&#x770B;&#x547D;&#x4EE4;"><a name="&#x67E5;&#x770B;&#x547D;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x770B;&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>&#x67E5;&#x770B;&#x547D;&#x4EE4;</strong></h2>
+<p>&#x200C;</p>
+<p>&#x5728;&#x9A8C;&#x8BC1; <code>HEAD~</code> &#x548C; <code>HEAD^</code> &#x4E4B;&#x524D;&#x6211;&#x4EEC;&#x5148;&#x5B66;&#x4E60;&#x4E00;&#x4E2A;&#x547D;&#x4EE4; <code>git rev-parse HEAD</code> &#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x663E;&#x793A;&#x51FA; <code>HEAD</code> &#x5BF9;&#x5E94;&#x7684;&#x63D0;&#x4EA4;&#x7684; hash &#x503C;&#xFF0C;&#x52A0;&#x4E0A; <code>--short</code> &#x53C2;&#x6570;&#x5C31;&#x53EF;&#x4EE5;&#x663E;&#x793A;&#x51FA;&#x957F;&#x5EA6;&#x4E3A;7&#x4F4D;&#x7684;&#x77ED; hash&#xFF0C;&#x7528;&#x8D77;&#x6765;&#x6BD4;&#x8F83;&#x65B9;&#x4FBF;&#xFF0C;&#x6D4B;&#x8BD5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code>albert@home-pc MINGW64 /d/gitstart (dev1)
+$ git rev-parse HEAD
+ce11d9be5cc7007995b607fb12285a43cd03154b
+
+albert@home-pc MINGW64 /d/gitstart (dev1)
+$ git rev-parse --short HEAD
+ce11d9b
+</code></pre><p>&#x200C;</p>
+<h2 id="&#x5F00;&#x59CB;&#x6D4B;&#x8BD5;"><a name="&#x5F00;&#x59CB;&#x6D4B;&#x8BD5;" class="anchor-navigation-ex-anchor" href="#&#x5F00;&#x59CB;&#x6D4B;&#x8BD5;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>&#x5F00;&#x59CB;&#x6D4B;&#x8BD5;</strong></h2>
+<p>&#x200C;</p>
+<p>&#x4E0B;&#x9762;&#x53EF;&#x4EE5;&#x7528; <code>git rev-parse --short</code> &#x547D;&#x4EE4;&#x6765;&#x6D4B;&#x8BD5; <code>HEAD</code> &#x540E;&#x9762;&#x8DDF;&#x4E0D;&#x540C;&#x53C2;&#x6570;&#x65F6;&#x5BF9;&#x5E94;&#x7684;&#x63D0;&#x4EA4;&#x662F;&#x54EA;&#x4E00;&#x4E2A;&#x4E86;&#xFF0C;&#x6D4B;&#x8BD5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p>&#x200C;</p>
+<h3 id="head&#x3001;head&#x3001;head1&#x3001;head1"><a name="head&#x3001;head&#x3001;head1&#x3001;head1" class="anchor-navigation-ex-anchor" href="#head&#x3001;head&#x3001;head1&#x3001;head1"><i class="fa fa-link" aria-hidden="true"></i></a><strong><code>HEAD~</code>&#x3001;<code>HEAD^</code>&#x3001;<code>HEAD~1</code>&#x3001;<code>HEAD^1</code></strong></h3>
+<pre class="language-"><code>albert@home-pc MINGW64 /d/gitstart (dev1)
+$ git rev-parse --short HEAD~
+f82b57b
+
+albert@home-pc MINGW64 /d/gitstart (dev1)
+$ git rev-parse --short HEAD^
+f82b57b
+
+albert@home-pc MINGW64 /d/gitstart (dev1)
+$ git rev-parse --short HEAD~1
+f82b57b
+
+albert@home-pc MINGW64 /d/gitstart (dev1)
+$ git rev-parse --short HEAD^1
+f82b57b
+</code></pre><p>&#x200C;</p>
+<p>&#x6D4B;&#x8BD5;&#x540E;&#x53D1;&#x73B0;&#xFF0C;&#x8FD9;&#x56DB;&#x79CD;&#x5199;&#x6CD5;&#x7ED3;&#x679C;&#x662F;&#x4E00;&#x6837;&#x7684;&#xFF0C;&#x90FD;&#x662F;&#x6307;&#x5411; <code>HEAD</code> &#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x7236;&#x63D0;&#x4EA4;&#xFF0C;&#x8FD9;&#x548C;&#x6211;&#x4EEC;&#x524D;&#x9762;&#x8BF4;&#x7684;&#x89C2;&#x70B9;&#x4E00;&#x81F4;&#x3002;</p>
+<p>&#x200C;</p>
+<h3 id="head&#x3001;head&#x3001;head2&#x3001;head2"><a name="head&#x3001;head&#x3001;head2&#x3001;head2" class="anchor-navigation-ex-anchor" href="#head&#x3001;head&#x3001;head2&#x3001;head2"><i class="fa fa-link" aria-hidden="true"></i></a><strong><code>HEAD~~</code>&#x3001;<code>HEAD^^</code>&#x3001;<code>HEAD~2</code>&#x3001;<code>HEAD^2</code></strong></h3>
+<pre class="language-"><code>albert@home-pc MINGW64 /d/gitstart (dev1)
+$ git rev-parse --short HEAD~~
+dcdcb87
+
+albert@home-pc MINGW64 /d/gitstart (dev1)
+$ git rev-parse --short HEAD^^
+dcdcb87
+
+albert@home-pc MINGW64 /d/gitstart (dev1)
+$ git rev-parse --short HEAD~2
+dcdcb87
+
+albert@home-pc MINGW64 /d/gitstart (dev1)
+$ git rev-parse --short HEAD^2
+e330eac
+</code></pre><p>&#x200C;</p>
+<p>&#x8FD9;&#x6B21;&#x6211;&#x4EEC;&#x53D1;&#x73B0;&#xFF0C;&#x524D;&#x4E09;&#x4E2A;&#x8868;&#x793A;&#x65B9;&#x6CD5;&#x662F;&#x4E00;&#x6837;&#x7684;&#xFF0C;&#x6307;&#x5411;&#x540C;&#x4E00;&#x4E2A;&#x63D0;&#x4EA4;&#x8BB0;&#x5F55;&#xFF0C;&#x4F46;&#x662F;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x4E0E;&#x4ED6;&#x4EEC;&#x4E0D;&#x540C;&#xFF0C;&#x8FD9;&#x65F6;&#x6839;&#x636E;&#x524D;&#x9762;&#x63D0;&#x5230;&#x5B9A;&#x4E49;&#x6765;&#x770B;&#x5C31;&#x884C;&#x4E86;&#xFF0C;<code>HEAD~~</code> &#x5B9E;&#x9645;&#x4E0A;&#x662F; <code>HEAD~1~1</code>&#x7684;&#x7B80;&#x5199;&#xFF0C;&#x800C;<code>~</code> &#x540E;&#x7684;&#x6570;&#x5B57;&#x5C31;&#x662F;&#x6307;&#x7684;&#x540E;&#x9000;&#x7684;&#x6B65;&#x6570;&#xFF0C;&#x6240;&#x4EE5; <code>HEAD~~</code> &#x7B49;&#x4EF7;&#x4E8E; <code>HEAD~2</code>&#xFF0C;&#x5C5E;&#x4E8E;&#x4E00;&#x79CD;&#x5408;&#x5E76;&#x8BA1;&#x7B97;&#x3002;</p>
+<p>&#x200C;</p>
+<p><code>HEAD^^</code> &#x662F; <code>HEAD^1^1</code> &#x7684;&#x7B80;&#x5199;&#xFF0C;&#x800C; <code>^</code> &#x540E;&#x9762;&#x7684;&#x6570;&#x5B57;&#x8868;&#x793A;&#x540E;&#x9000;&#x4E00;&#x6B65;&#x5230;&#x7B2C;&#x51E0;&#x4E2A;&#x7236;&#x63D0;&#x4EA4;&#x4E0A;&#xFF0C;&#x56E0;&#x4E3A;&#x6570;&#x5B57;&#x662F;1&#xFF0C;&#x6240;&#x4EE5; <code>HEAD^^</code> &#x8868;&#x793A;&#x9000;&#x4E00;&#x6B65;&#x5230;&#x7B2C;&#x4E00;&#x4E2A;&#x7236;&#x63D0;&#x4EA4;&#x4E0A;&#xFF0C;&#x5728;&#x9000;&#x4E00;&#x6B65;&#x5230;&#x7B2C;&#x4E00;&#x4E2A;&#x7236;&#x63D0;&#x4EA4;&#x4E0A;&#xFF0C;&#x8FD9;&#x65F6;&#x4E0E; <code>HEAD~~</code> &#x7684;&#x4F5C;&#x7528;&#x662F;&#x76F8;&#x540C;&#x7684;&#x3002;</p>
+<p>&#x200C;</p>
+<p><code>HEAD^2</code> &#x5C31;&#x6709;&#x4E9B;&#x4E0D;&#x540C;&#x4E86;&#xFF0C;&#x5B83;&#x8868;&#x793A;&#x540E;&#x9000;&#x4E00;&#x6B65;&#x5230;&#x7B2C;&#x4E8C;&#x4E2A;&#x7236;&#x63D0;&#x4EA4;&#x4E0A;&#xFF0C;&#x6240;&#x4EE5;&#x5BF9;&#x7167;&#x6811;&#x5F62;&#x56FE;&#x662F;&#x7B2C;&#x4E8C;&#x6392;&#x7684;&#x7B2C;&#x4E8C;&#x4E2A;&#x8282;&#x70B9;&#x3002;</p>
+<p>&#x200C;</p>
+<h3 id="&#x548C;--&#x6DF7;&#x5408;&#x4F7F;&#x7528;"><a name="&#x548C;--&#x6DF7;&#x5408;&#x4F7F;&#x7528;" class="anchor-navigation-ex-anchor" href="#&#x548C;--&#x6DF7;&#x5408;&#x4F7F;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>~ &#x548C; ^ &#x6DF7;&#x5408;&#x4F7F;&#x7528;</strong></h3>
+<p>&#x200C;</p>
+<p>&#x770B;&#x4E86;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x5BF9;&#x4E8E; <code>~</code> &#x548C; <code>^</code> &#x7684;&#x4F7F;&#x7528;&#x5E94;&#x8BE5;&#x6709;&#x4E9B;&#x660E;&#x767D;&#x4E86;&#xFF0C;&#x5B83;&#x4FE9;&#x5176;&#x5B9E;&#x53EF;&#x4EE5;&#x7EC4;&#x5408;&#x4F7F;&#x7528;&#x7684;&#xFF0C;&#x6BD4;&#x5982;&#x60F3;&#x9000;&#x5230;&#x7B2C;5&#x6392;&#x3001;&#x7B2C;2&#x4E2A;&#x8282;&#x70B9;&#x4E0A;&#xFF0C;&#x4E5F;&#x5C31;&#x662F; <code>ca4db4a</code> &#x4E0A;&#xFF0C;&#x7B80;&#x5355;&#x6765;&#x770B;&#x9700;&#x8981;&#x7B2C;&#x4E00;&#x6B65;&#x5230;&#x7B2C;&#x4E00;&#x4E2A;&#x7236;&#x63D0;&#x4EA4;&#x4E0A;&#xFF0C;&#x5728;&#x9000;&#x4E00;&#x6B65;&#x5230;&#x7B2C;&#x4E00;&#x4E2A;&#x7236;&#x63D0;&#x4EA4;&#x4E0A;&#xFF0C;&#x7136;&#x540E;&#x9000;&#x4E00;&#x6B65;&#x5230;&#x7B2C;&#x4E8C;&#x4E2A;&#x7236;&#x63D0;&#x4EA4;&#x4E0A;&#xFF0C;&#x6700;&#x540E;&#x9000;&#x4E00;&#x6B65;&#x5230;&#x7B2C;&#x4E00;&#x4E2A;&#x7236;&#x63D0;&#x4EA4;&#x4E0A;&#x3002;</p>
+<p>&#x200C;</p>
+<p>&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x6839;&#x636E;&#x9700;&#x6C42;&#x53EF;&#x4EE5;&#x5199;&#x6210; <code>HEAD^1^1^2^1</code>&#xFF0C;&#x6D4B;&#x8BD5;&#x4E00;&#x4E0B;&#x770B;&#x770B; hash &#x662F;&#x5426;&#x6B63;&#x786E;&#xFF1A;</p>
+<pre class="language-"><code>albert@home-pc MINGW64 /d/gitstart (dev1)
+$ git rev-parse --short HEAD^1^1^2^1
+ca4db4a
+</code></pre><p>&#x200C;</p>
+<p>&#x6D4B;&#x8BD5;&#x53D1;&#x73B0;&#x6CA1;&#x6709;&#x95EE;&#x9898;&#xFF0C;&#x5176;&#x5B9E;&#x8FD8;&#x53EF;&#x4EE5;&#x5408;&#x5E76;&#x554A;&#xFF0C;&#x6211;&#x4EEC;&#x77E5;&#x9053;1&#x662F;&#x53EF;&#x4EE5;&#x7701;&#x7565;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x7B80;&#x5199;&#x6210; <code>HEAD^^^2^</code>&#xFF0C;&#x53E6;&#x5916;&#x591A;&#x4E2A; <code>^</code> &#x8FD8;&#x53EF;&#x4EE5;&#x5199;&#x6210; <code>~n</code> &#x7684;&#x5F62;&#x5F0F;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x4E2A;&#x8282;&#x70B9;&#x8FD8;&#x53EF;&#x4EE5;&#x8868;&#x793A;&#x6210; <code>HEAD~2^2^</code>&#x7684;&#x6837;&#x5B50;&#xFF0C;&#x6D4B;&#x8BD5;&#x5982;&#x4E0B;&#xFF0C;&#x7ED3;&#x679C;&#x662F;&#x4E00;&#x6837;&#x7684;&#x3002;</p>
+<pre class="language-"><code>albert@home-pc MINGW64 /d/gitstart (dev1)
+$ git rev-parse --short HEAD^^^2^
+ca4db4a
+
+albert@home-pc MINGW64 /d/gitstart (dev1)
+$ git rev-parse --short HEAD~2^2^
+ca4db4a
+</code></pre><p>&#x200C;</p>
+<h3 id="&#x5173;&#x4E8E;-git-reset-&#x7684;&#x4E00;&#x70B9;&#x601D;&#x8003;"><a name="&#x5173;&#x4E8E;-git-reset-&#x7684;&#x4E00;&#x70B9;&#x601D;&#x8003;" class="anchor-navigation-ex-anchor" href="#&#x5173;&#x4E8E;-git-reset-&#x7684;&#x4E00;&#x70B9;&#x601D;&#x8003;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>&#x5173;&#x4E8E; git reset &#x7684;&#x4E00;&#x70B9;&#x601D;&#x8003;</strong></h3>
+<p>&#x200C;</p>
+<p>&#x521A;&#x5B66;&#x4E60; <code>git reset</code> &#x7684;&#x547D;&#x4EE4;&#x65F6;&#x4E00;&#x76F4;&#x8BA4;&#x4E3A;&#x662F;&#x4E00;&#x4E2A;&#x56DE;&#x9000;&#x547D;&#x4EE4;&#xFF0C;&#x5176;&#x5B9E;&#x5B66;&#x4E60;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x4E4B;&#x540E;&#x53D1;&#x73B0;&#xFF0C;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x5176;&#x5B9E;&#x5F88;&#x7B26;&#x5408;&#x5B83;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x91CD;&#x7F6E;(reset)&#x547D;&#x4EE4;&#xFF0C;&#x901A;&#x8FC7; <code>git reset</code> &#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x4FEE;&#x6539; <code>HEAD</code> &#x6307;&#x5411;&#x4E0D;&#x540C;&#x7684;&#x63D0;&#x4EA4;&#xFF0C;&#x8FD9;&#x4E2A;&#x63D0;&#x4EA4;&#x751A;&#x81F3;&#x90FD;&#x4E0D;&#x5FC5;&#x662F;&#x5F53;&#x524D;&#x5206;&#x652F;&#x4E0A;&#x7684;&#x67D0;&#x6B21;&#x63D0;&#x4EA4;&#xFF0C;&#x6D4B;&#x8BD5;&#x540E;&#x53D1;&#x73B0;&#xFF0C;&#x53EA;&#x8981;&#x662F;&#x7248;&#x672C;&#x5E93;&#x4E2D;&#x5408;&#x6CD5;&#x63D0;&#x4EA4;&#x90FD;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x8FDB;&#x884C;&#x8BBE;&#x7F6E;&#xFF0C;&#x76F8;&#x5E94;&#x7684;&#x7248;&#x672C;&#x5E93;&#x7684;&#x5185;&#x5BB9;&#x4E5F;&#x4F1A;&#x53D1;&#x751F;&#x5BF9;&#x5E94;&#x7684;&#x53D8;&#x5316;&#xFF0C;&#x4ECE;&#x8FD9;&#x4E00;&#x70B9;&#x6765;&#x770B;&#xFF0C;&#x5B83;&#x771F;&#x7684;&#x592A;&#x5F3A;&#x5927;&#x4E86;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x4F7F;&#x4F60;&#x6B63;&#x5728;&#x5F00;&#x53D1;&#x7684; <code>dev</code> &#x5206;&#x652F;&#x77AC;&#x95F4;&#x53D8;&#x6210; <code>master</code> &#x5206;&#x652F;&#x3002;</p>
+<p>&#x200C;</p>
+<h1 id="&#x603B;&#x7ED3;"><a name="&#x603B;&#x7ED3;" class="anchor-navigation-ex-anchor" href="#&#x603B;&#x7ED3;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>&#x603B;&#x7ED3;</strong></h1>
+<p>&#x200C;</p>
+<ul>
+<li><code>HEAD~</code> &#x540E;&#x9762;&#x52A0;&#x6570;&#x5B57;&#x8868;&#x793A;&#x540E;&#x9000;&#x7684;&#x6B65;&#x6570;&#xFF0C;&#x6BCF;&#x6B21;&#x540E;&#x9000;&#x90FD;&#x9ED8;&#x8BA4;&#x9000;&#x5230;&#x7B2C;&#x4E00;&#x4E2A;&#x7236;&#x63D0;&#x4EA4;&#x4E0A;&#xFF0C;<code>HEAD~2</code> &#x8868;&#x793A;&#x8FDE;&#x9000;&#x4E24;&#x6B65;&#x3002;</li>
+<li><code>HEAD^</code> &#x540E;&#x9762;&#x52A0;&#x6570;&#x5B57;&#x8868;&#x793A;&#x53EA;&#x9000;&#x4E00;&#x6B65;&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x4E00;&#x6B65;&#x540E;&#x9000;&#x5230;&#x6570;&#x5B57;&#x8868;&#x793A;&#x7684;&#x7236;&#x63D0;&#x4EA4;&#x4E0A;&#xFF0C;<code>HEAD^2</code> &#x8868;&#x793A;&#x9000;&#x4E00;&#x6B65;&#x5230;&#x7B2C;&#x4E8C;&#x4E2A;&#x7236;&#x63D0;&#x4EA4;&#x4E0A;&#x3002;</li>
+<li><code>git</code> &#x5728;&#x67E5;&#x770B;&#x591A;&#x5206;&#x652F;&#x63D0;&#x4EA4;&#x8BB0;&#x5F55;&#x65F6;&#xFF0C;&#x65E5;&#x5FD7;&#x7684;&#x5148;&#x540E;&#x987A;&#x5E8F;&#x4E0D;&#x4EE3;&#x8868;&#x63D0;&#x4EA4;&#x65F6;&#x95F4;&#x7684;&#x5148;&#x540E;&#x987A;&#x5E8F;&#x3002;</li>
+<li><code>git reset</code> &#x547D;&#x4EE4;&#x662F;&#x4E00;&#x4E2A;&#x91CD;&#x7F6E; <code>HEAD</code> &#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x53EF;&#x4EE5;&#x6307;&#x6325;&#x7248;&#x672C;&#x5E93;&#x6307;&#x5411;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x5408;&#x6CD5;&#x63D0;&#x4EA4;&#x3002;</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="2_git撤销回滚操作.html" class="navigation navigation-prev " aria-label="Previous page: 2_git撤销回滚操作">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="4_Git_Tag相关操作.html" class="navigation navigation-next " aria-label="Next page: 4_Git_Tag相关操作">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"3_HEAD和HEAD^的作用和区别","level":"1.3.3","depth":2,"next":{"title":"4_Git_Tag相关操作","level":"1.3.4","depth":2,"path":"第2章_GIT常用方法/4_Git_Tag相关操作.md","ref":"第2章_GIT常用方法/4_Git_Tag相关操作.md","articles":[]},"previous":{"title":"2_git撤销回滚操作","level":"1.3.2","depth":2,"path":"第2章_GIT常用方法/2_git撤销回滚操作.md","ref":"第2章_GIT常用方法/2_git撤销回滚操作.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","-lunr","-search","search-pro","anchor-navigation-ex","accordion","edit-link","prism","-highlight","hide-element","code"],"ignores":["_book","node_modules"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"search-pro":{},"accordion":{},"code":{"copyButtons":false},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"编辑此页面","base":"https://github.com/yulliam/funbook/edit/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"Yulliam","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Yulliam's Doc","language":"zh-hans","gitbook":"*","description":"record some thing"},"file":{"path":"第2章_GIT常用方法/3_HEAD和HEAD^的作用和区别.md","mtime":"2023-02-02T08:41:28.233Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-02-02T08:42:37.475Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-accordion/accordionSelector.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

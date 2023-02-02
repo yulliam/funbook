@@ -1,0 +1,990 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>5_混淆 · Yulliam's Doc</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Yulliam">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-accordion/accordion.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="4_命名规范.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    第1章_基础知识
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="1_学习的方法.html">
+            
+                <a href="1_学习的方法.html">
+            
+                    
+                    1_学习的方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="2_markdown语法.html">
+            
+                <a href="2_markdown语法.html">
+            
+                    
+                    2_markdown语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="3_gitbook使用方法.html">
+            
+                <a href="3_gitbook使用方法.html">
+            
+                    
+                    3_gitbook使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="4_命名规范.html">
+            
+                <a href="4_命名规范.html">
+            
+                    
+                    4_命名规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.5" data-path="5_混淆.html">
+            
+                <a href="5_混淆.html">
+            
+                    
+                    5_混淆
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    第2章_GIT常用方法
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../第2章_GIT常用方法/1_gitreset三种模式.html">
+            
+                <a href="../第2章_GIT常用方法/1_gitreset三种模式.html">
+            
+                    
+                    1_gitreset三种模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../第2章_GIT常用方法/2_git撤销回滚操作.html">
+            
+                <a href="../第2章_GIT常用方法/2_git撤销回滚操作.html">
+            
+                    
+                    2_git撤销回滚操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../第2章_GIT常用方法/3_HEAD和HEAD^的作用和区别.html">
+            
+                <a href="../第2章_GIT常用方法/3_HEAD和HEAD^的作用和区别.html">
+            
+                    
+                    3_HEAD和HEAD^的作用和区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../第2章_GIT常用方法/4_Git_Tag相关操作.html">
+            
+                <a href="../第2章_GIT常用方法/4_Git_Tag相关操作.html">
+            
+                    
+                    4_Git_Tag相关操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    第3章_设计模式
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../第3章_设计模式/1_android_MVP模式详解.html">
+            
+                <a href="../第3章_设计模式/1_android_MVP模式详解.html">
+            
+                    
+                    1_android_MVP模式详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    第4章_AndroidUI
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" >
+            
+                <span>
+            
+                    
+                    第1节_Fragment
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="../第4章_AndroidUI/第1节_Fragment/1_FragmentPagerAdapter和FragmentStatePagerAdapter区别.html">
+            
+                <a href="../第4章_AndroidUI/第1节_Fragment/1_FragmentPagerAdapter和FragmentStatePagerAdapter区别.html">
+            
+                    
+                    1_FragmentPagerAdapter和FragmentStatePagerAdapter区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="../第4章_AndroidUI/第1节_Fragment/2_fragment的onResume，setUserVisibleHint，onHiddenChanged，isVisible方法.html">
+            
+                <a href="../第4章_AndroidUI/第1节_Fragment/2_fragment的onResume，setUserVisibleHint，onHiddenChanged，isVisible方法.html">
+            
+                    
+                    2_fragment的onResume，setUserVisibleHint，onHiddenChanged，isVisible方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    第5章_JAVA知识
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../第5章_JAVA知识/1_Sychronize同步机制总结.html">
+            
+                <a href="../第5章_JAVA知识/1_Sychronize同步机制总结.html">
+            
+                    
+                    1_Sychronize同步机制总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    第6章_技巧
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../第6章_技巧/1_app反调试.html">
+            
+                <a href="../第6章_技巧/1_app反调试.html">
+            
+                    
+                    1_app反调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >5_混淆</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#android&#x5F00;&#x53D1;&#x4E4B;&#x4EE3;&#x7801;&#x6DF7;&#x6DC6;"><b></b>Android&#x5F00;&#x53D1;&#x4E4B;&#x4EE3;&#x7801;&#x6DF7;&#x6DC6;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5E94;&#x7528;&#x6DF7;&#x6DC6;&#xFF08;proguard&#xFF09;"><b></b>&#x5E94;&#x7528;&#x6DF7;&#x6DC6;&#xFF08;ProGuard&#xFF09;</a></li><ul><li><span class="title-icon "></span><a href="#&#x6211;&#x4EEC;&#x4E3A;&#x5565;&#x8981;&#x4F7F;&#x7528;proguard"><b></b>&#x6211;&#x4EEC;&#x4E3A;&#x5565;&#x8981;&#x4F7F;&#x7528;ProGuard?</a></li><li><span class="title-icon "></span><a href="#&#x6709;&#x4E9B;&#x4EC0;&#x4E48;&#x53C2;&#x6570;&#x53EF;&#x7528;&#xFF1F;"><b></b>&#x6709;&#x4E9B;&#x4EC0;&#x4E48;&#x53C2;&#x6570;&#x53EF;&#x7528;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#&#x6709;&#x54EA;&#x4E9B;&#x4FDD;&#x7559;&#x9009;&#x9879;&#xFF1F;"><b></b>&#x6709;&#x54EA;&#x4E9B;&#x4FDD;&#x7559;&#x9009;&#x9879;&#xFF1F;</a></li></ul><li><span class="title-icon "></span><a href="#&#x5173;&#x952E;&#x5B57;2"><b></b>&#x5173;&#x952E;&#x5B57;[2]</a></li><ul><li><span class="title-icon "></span><a href="#&#x538B;&#x7F29;"><b></b>&#x538B;&#x7F29;</a></li><li><span class="title-icon "></span><a href="#&#x4F18;&#x5316;"><b></b>&#x4F18;&#x5316;</a></li><li><span class="title-icon "></span><a href="#&#x6DF7;&#x6DC6;"><b></b>&#x6DF7;&#x6DC6;</a></li></ul><li><span class="title-icon "></span><a href="#&#x4E0A;&#x9762;&#x4ECB;&#x7ECD;&#x4E86;&#x4E00;&#x4E0B;proguard&#x7684;&#x57FA;&#x672C;&#x65B9;&#x6CD5;"><b></b>&#x4E0A;&#x9762;&#x4ECB;&#x7ECD;&#x4E86;&#x4E00;&#x4E0B;ProGuard&#x7684;&#x57FA;&#x672C;&#x65B9;&#x6CD5;</a></li><ul><li><span class="title-icon "></span><a href="#&#x57FA;&#x672C;&#x914D;&#x7F6E;&#x9879;"><b></b>&#x57FA;&#x672C;&#x914D;&#x7F6E;&#x9879;</a></li><li><span class="title-icon "></span><a href="#android&#x4E2D;&#x7684;&#x914D;&#x7F6E;&#x9879;"><b></b>Android&#x4E2D;&#x7684;&#x914D;&#x7F6E;&#x9879;</a></li></ul><li><span class="title-icon "></span><a href="#&#x6700;&#x540E;"><b></b>&#x6700;&#x540E;</a></li><ul><li><span class="title-icon "></span><a href="#&#x6DF7;&#x6DC6;&#x65F6;&#x662F;&#x5426;&#x8BB0;&#x5F55;&#x65E5;&#x5FD7;"><b></b>&#x6DF7;&#x6DC6;&#x65F6;&#x662F;&#x5426;&#x8BB0;&#x5F55;&#x65E5;&#x5FD7;</a></li></ul></ul><li><span class="title-icon "></span><a href="#&#x53C2;&#x8003;&#x914D;&#x7F6E;"><b></b>&#x53C2;&#x8003;&#x914D;&#x7F6E;</a></li></ul></div><a href="#android&#x5F00;&#x53D1;&#x4E4B;&#x4EE3;&#x7801;&#x6DF7;&#x6DC6;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="android&#x5F00;&#x53D1;&#x4E4B;&#x4EE3;&#x7801;&#x6DF7;&#x6DC6;"><a name="android&#x5F00;&#x53D1;&#x4E4B;&#x4EE3;&#x7801;&#x6DF7;&#x6DC6;" class="anchor-navigation-ex-anchor" href="#android&#x5F00;&#x53D1;&#x4E4B;&#x4EE3;&#x7801;&#x6DF7;&#x6DC6;"><i class="fa fa-link" aria-hidden="true"></i></a>Android&#x5F00;&#x53D1;&#x4E4B;&#x4EE3;&#x7801;&#x6DF7;&#x6DC6;</h1>
+<h2 id="&#x5E94;&#x7528;&#x6DF7;&#x6DC6;&#xFF08;proguard&#xFF09;"><a name="&#x5E94;&#x7528;&#x6DF7;&#x6DC6;&#xFF08;proguard&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x5E94;&#x7528;&#x6DF7;&#x6DC6;&#xFF08;proguard&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5E94;&#x7528;&#x6DF7;&#x6DC6;&#xFF08;ProGuard&#xFF09;</h2>
+<p>ProGuard&#x662F;&#x4E00;&#x4E2A;&#x514D;&#x8D39;&#x7684;JAVA&#x7C7B;&#x6587;&#x4EF6;&#x538B;&#x7F29;&#xFF0C;&#x4F18;&#x5316;&#xFF0C;&#x6DF7;&#x6DC6;&#x5668;&#x3002;</p>
+<p>&#x5B83;&#x63A2;&#x6D4B;&#x5E76;&#x5220;&#x9664;&#x6CA1;&#x6709;&#x4F7F;&#x7528;&#x7684;&#x7C7B;&#xFF0C;&#x5B57;&#x6BB5;&#xFF0C;&#x65B9;&#x6CD5;&#x548C;&#x5C5E;&#x6027;&#xFF0C;&#x5B83;&#x5220;&#x9664;&#x6CA1;&#x6709;&#x7528;&#x7684;&#x8BF4;&#x660E;&#x5E76;&#x4F7F;&#x7528;&#x5B57;&#x8282;&#x7801;&#x5F97;&#x5230;&#x6700;&#x5927;&#x4F18;&#x5316;&#xFF0C;&#x5B83;&#x4F7F;&#x7528;&#x65E0;&#x610F;&#x4E49;&#x7684;&#x540D;&#x5B57;&#x91CD;&#x547D;&#x540D;&#x7C7B;&#xFF0C;&#x5B57;&#x6BB5;&#x548C;&#x65B9;&#x6CD5;&#x3002;</p>
+<p><strong>&#x6211;&#x4EEC;&#x5148;&#x6765;&#x4ECB;&#x7ECD;&#x4E0B;ProGuard</strong></p>
+<h3 id="&#x6211;&#x4EEC;&#x4E3A;&#x5565;&#x8981;&#x4F7F;&#x7528;proguard"><a name="&#x6211;&#x4EEC;&#x4E3A;&#x5565;&#x8981;&#x4F7F;&#x7528;proguard" class="anchor-navigation-ex-anchor" href="#&#x6211;&#x4EEC;&#x4E3A;&#x5565;&#x8981;&#x4F7F;&#x7528;proguard"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6211;&#x4EEC;&#x4E3A;&#x5565;&#x8981;&#x4F7F;&#x7528;ProGuard?</h3>
+<ul>
+<li>&#x4F18;&#x5316;&#x5E94;&#x7528;&#xFF1A;&#x521B;&#x5EFA;&#x7D27;&#x51D1;&#x7684;&#x4EE3;&#x7801;&#x6587;&#x6863;&#x662F;&#x4E3A;&#x4E86;&#x66F4;&#x5FEB;&#x7684;&#x7F51;&#x7EDC;&#x4F20;&#x8F93;&#xFF0C;&#x5FEB;&#x901F;&#x88C5;&#x8F7D;&#x548C;&#x66F4;&#x5C0F;&#x7684;&#x5185;&#x5B58;&#x5360;&#x7528;&#xFF1B;</li>
+<li>&#x9632;&#x6B62;&#x53CD;&#x5411;&#xFF1A;&#x521B;&#x5EFA;&#x7684;&#x7A0B;&#x5E8F;&#x548C;&#x7A0B;&#x5E8F;&#x5E93;&#x5F88;&#x96BE;&#x4F7F;&#x7528;&#x53CD;&#x5411;&#x5DE5;&#x7A0B;&#xFF1B;</li>
+<li>&#x9884;&#x5904;&#x7406;&#x5E94;&#x7528;&#xFF1A;&#x5145;&#x5206;&#x5229;&#x7528;JAVA&#x7684;&#x5FEB;&#x6377;&#x52A0;&#x8F7D;&#x7684;&#x4F18;&#x70B9;&#x6765;&#x63D0;&#x524D;&#x68C0;&#x6D4B;&#x548C;&#x8FD4;&#x56DE;JAVA&#x4E2D;&#x5B58;&#x5728;&#x7684;&#x7C7B;&#x6587;&#x4EF6;&#x3002;</li>
+</ul>
+<h3 id="&#x6709;&#x4E9B;&#x4EC0;&#x4E48;&#x53C2;&#x6570;&#x53EF;&#x7528;&#xFF1F;"><a name="&#x6709;&#x4E9B;&#x4EC0;&#x4E48;&#x53C2;&#x6570;&#x53EF;&#x7528;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#&#x6709;&#x4E9B;&#x4EC0;&#x4E48;&#x53C2;&#x6570;&#x53EF;&#x7528;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6709;&#x4E9B;&#x4EC0;&#x4E48;&#x53C2;&#x6570;&#x53EF;&#x7528;&#xFF1F;</h3>
+<ul>
+<li>-include {filename} &#x4ECE;&#x6307;&#x5B9A;&#x7684;&#x6587;&#x4EF6;&#x4E2D;&#x8BFB;&#x53D6;&#x914D;&#x7F6E;&#x53C2;&#x6570;</li>
+<li>-basedirectory {directoryname} &#x6307;&#x5B9A;&#x57FA;&#x7840;&#x76EE;&#x5F55;&#x4E3A;&#x4EE5;&#x540E;&#x76F8;&#x5BF9;&#x7684;&#x6863;&#x6848;&#x6587;&#x4EF6;</li>
+<li>-injars {class_path} &#x6307;&#x5B9A;&#x8981;&#x5904;&#x7406;&#x7684;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;jar,war,ear&#x7684;&#x76EE;&#x5F55;</li>
+<li>-outjars {class_path} &#x6307;&#x5B9A;&#x5904;&#x7406;&#x5B8C;&#x540E;&#x8981;&#x8F93;&#x51FA;&#x7684;jar,war,ear&#x76EE;&#x5F55;&#x7684;&#x540D;&#x79F0;</li>
+<li>-libraryjars {class_path} &#x6307;&#x5B9A;&#x8981;&#x5904;&#x7406;&#x7684;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;jar,war,ear&#x548C;&#x76EE;&#x5F55;&#x6240;&#x9700;&#x8981;&#x7684;&#x7A0B;&#x5E8F;&#x5E93;&#x6587;&#x4EF6;</li>
+<li>dontskipnonpubliclibraryclasses &#x6307;&#x5B9A;&#x4E0D;&#x53BB;&#x5FFD;&#x7565;&#x975E;&#x516C;&#x5171;&#x7684;&#x5E93;&#x7C7B;</li>
+<li>dontskipnonpubliclibraryclassmebmbers &#x6307;&#x5B9A;&#x4E0D;&#x53BB;&#x5FFD;&#x7565;&#x53EF;&#x89C1;&#x7684;&#x5E93;&#x7C7B;&#x7684;&#x6210;&#x5458;</li>
+</ul>
+<p>&#x4E0A;&#x9762;&#x63D0;&#x5230;&#x4E86;Jar&#x3001;war&#x3001;ear&#x4E09;&#x79CD;&#x6587;&#x4EF6;
+Jar&#x3001;war&#x3001;ear&#x3001;&#x5728;&#x6587;&#x4EF6;&#x7ED3;&#x6784;&#x4E0A;&#xFF0C;&#x4E09;&#x8005;&#x5E76;&#x6CA1;&#x6709;&#x4EC0;&#x4E48;&#x4E0D;&#x540C;&#xFF0C;&#x5B83;&#x4EEC;&#x90FD;&#x91C7;&#x7528;zip&#x6216;jar&#x6863;&#x6848;&#x6587;&#x4EF6;&#x538B;&#x7F29;&#x683C;&#x5F0F;&#x3002;&#x4F46;&#x662F;&#x5B83;&#x4EEC;&#x7684;&#x4F7F;&#x7528;&#x76EE;&#x7684;&#x6709;&#x6240;&#x533A;&#x522B;&#xFF1A;
+Jar&#x6587;&#x4EF6;&#xFF08;&#x6269;&#x5C55;&#x540D;&#x4E3A;. Jar&#xFF0C;Java Application Archive&#xFF09;&#x5305;&#x542B;Java&#x7C7B;&#x7684;&#x666E;&#x901A;&#x5E93;&#x3001;&#x8D44;&#x6E90;&#xFF08;resources&#xFF09;&#x3001;&#x8F85;&#x52A9;&#x6587;&#x4EF6;&#xFF08;auxiliary files&#xFF09;&#x7B49;&#x3002;</p>
+<p>War&#x6587;&#x4EF6;&#xFF08;&#x6269;&#x5C55;&#x540D;&#x4E3A;.War,Web Application Archive&#xFF09;&#x5305;&#x542B;&#x5168;&#x90E8;Web&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x3002;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x5F62;&#x4E0B;&#xFF0C;&#x4E00;&#x4E2A;Web&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x88AB;&#x5B9A;&#x4E49;&#x4E3A;&#x5355;&#x72EC;&#x7684;&#x4E00;&#x7EC4;&#x6587;&#x4EF6;&#x3001;&#x7C7B;&#x548C;&#x8D44;&#x6E90;&#xFF0C;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x5BF9;jar&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x5C01;&#x88C5;&#xFF0C;&#x5E76;&#x628A;&#x5B83;&#x4F5C;&#x4E3A;&#x5C0F;&#x578B;&#x670D;&#x52A1;&#x7A0B;&#x5E8F;&#xFF08;servlet&#xFF09;&#x6765;&#x8BBF;&#x95EE;&#x3002;</p>
+<p>Ear&#x6587;&#x4EF6;&#xFF08;&#x6269;&#x5C55;&#x540D;&#x4E3A;.Ear,Enterprise Application Archive&#xFF09;&#x5305;&#x542B;&#x5168;&#x90E8;&#x4F01;&#x4E1A;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x3002;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x5F62;&#x4E0B;&#xFF0C;&#x4E00;&#x4E2A;&#x4F01;&#x4E1A;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x88AB;&#x5B9A;&#x4E49;&#x4E3A;&#x591A;&#x4E2A;jar&#x6587;&#x4EF6;&#x3001;&#x8D44;&#x6E90;&#x3001;&#x7C7B;&#x548C;Web&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684;&#x96C6;&#x5408;&#x3002;</p>
+<p>&#x6BCF;&#x4E00;&#x79CD;&#x6587;&#x4EF6;&#xFF08;.jar, .war, .ear&#xFF09;&#x53EA;&#x80FD;&#x7531;&#x5E94;&#x7528;&#x670D;&#x52A1;&#x5668;&#xFF08;application servers&#xFF09;&#x3001;&#x5C0F;&#x578B;&#x670D;&#x52A1;&#x7A0B;&#x5E8F;&#x5BB9;&#x5668;&#xFF08;servlet containers&#xFF09;&#x3001;EJB&#x5BB9;&#x5668;&#xFF08;EJB containers&#xFF09;&#x7B49;&#x8FDB;&#x884C;&#x5904;&#x7406;&#x3002;</p>
+<h3 id="&#x6709;&#x54EA;&#x4E9B;&#x4FDD;&#x7559;&#x9009;&#x9879;&#xFF1F;"><a name="&#x6709;&#x54EA;&#x4E9B;&#x4FDD;&#x7559;&#x9009;&#x9879;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#&#x6709;&#x54EA;&#x4E9B;&#x4FDD;&#x7559;&#x9009;&#x9879;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6709;&#x54EA;&#x4E9B;&#x4FDD;&#x7559;&#x9009;&#x9879;&#xFF1F;</h3>
+<h2 id="&#x5173;&#x952E;&#x5B57;2"><a name="&#x5173;&#x952E;&#x5B57;2" class="anchor-navigation-ex-anchor" href="#&#x5173;&#x952E;&#x5B57;2"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5173;&#x952E;&#x5B57;<a href="#fn2">[2]</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x5173;&#x952E;&#x5B57;</th>
+<th style="text-align:center">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">dontwarn</td>
+<td style="text-align:center">dontwarn&#x662F;&#x4E00;&#x4E2A;&#x548C;keep&#x53EF;&#x4EE5;&#x8BF4;&#x662F;&#x5F62;&#x5F71;&#x4E0D;&#x79BB;,&#x5C24;&#x5176;&#x662F;&#x5904;&#x7406;&#x5F15;&#x5165;&#x7684;library&#x65F6;.</td>
+</tr>
+<tr>
+<td style="text-align:center">keep</td>
+<td style="text-align:center">&#x4FDD;&#x7559;&#x7C7B;&#x548C;&#x7C7B;&#x4E2D;&#x7684;&#x6210;&#x5458;&#xFF0C;&#x9632;&#x6B62;&#x88AB;&#x6DF7;&#x6DC6;&#x6216;&#x79FB;&#x9664;</td>
+</tr>
+<tr>
+<td style="text-align:center">keepnames</td>
+<td style="text-align:center">&#x4FDD;&#x7559;&#x7C7B;&#x548C;&#x7C7B;&#x4E2D;&#x7684;&#x6210;&#x5458;&#xFF0C;&#x9632;&#x6B62;&#x88AB;&#x6DF7;&#x6DC6;&#xFF0C;&#x6210;&#x5458;&#x6CA1;&#x6709;&#x88AB;&#x5F15;&#x7528;&#x4F1A;&#x88AB;&#x79FB;&#x9664;</td>
+</tr>
+<tr>
+<td style="text-align:center">keepclassmembers</td>
+<td style="text-align:center">&#x53EA;&#x4FDD;&#x7559;&#x7C7B;&#x4E2D;&#x7684;&#x6210;&#x5458;&#xFF0C;&#x9632;&#x6B62;&#x88AB;&#x6DF7;&#x6DC6;&#x6216;&#x79FB;&#x9664;</td>
+</tr>
+<tr>
+<td style="text-align:center">keepclassmembernames</td>
+<td style="text-align:center">&#x53EA;&#x4FDD;&#x7559;&#x7C7B;&#x4E2D;&#x7684;&#x6210;&#x5458;&#xFF0C;&#x9632;&#x6B62;&#x88AB;&#x6DF7;&#x6DC6;&#xFF0C;&#x6210;&#x5458;&#x6CA1;&#x6709;&#x5F15;&#x7528;&#x4F1A;&#x88AB;&#x79FB;&#x9664;</td>
+</tr>
+<tr>
+<td style="text-align:center">keepclasseswithmembers</td>
+<td style="text-align:center">&#x4FDD;&#x7559;&#x7C7B;&#x548C;&#x7C7B;&#x4E2D;&#x7684;&#x6210;&#x5458;&#xFF0C;&#x9632;&#x6B62;&#x88AB;&#x6DF7;&#x6DC6;&#x6216;&#x79FB;&#x9664;&#xFF0C;&#x4FDD;&#x7559;&#x6307;&#x660E;&#x7684;&#x6210;&#x5458;</td>
+</tr>
+<tr>
+<td style="text-align:center">keepclasseswithmembernames</td>
+<td style="text-align:center">&#x4FDD;&#x7559;&#x7C7B;&#x548C;&#x7C7B;&#x4E2D;&#x7684;&#x6210;&#x5458;&#xFF0C;&#x9632;&#x6B62;&#x88AB;&#x6DF7;&#x6DC6;&#xFF0C;&#x4FDD;&#x7559;&#x6307;&#x660E;&#x7684;&#x6210;&#x5458;&#xFF0C;&#x6210;&#x5458;&#x6CA1;&#x6709;&#x5F15;&#x7528;&#x4F1A;&#x88AB;&#x79FB;&#x9664;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x538B;&#x7F29;"><a name="&#x538B;&#x7F29;" class="anchor-navigation-ex-anchor" href="#&#x538B;&#x7F29;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x538B;&#x7F29;</h3>
+<ul>
+<li>dontshrink &#x4E0D;&#x538B;&#x7F29;&#x8F93;&#x5165;&#x7684;&#x7C7B;&#x6587;&#x4EF6;</li>
+<li>printusage {filename}</li>
+<li>whyareyoukeeping {class_specification}</li>
+</ul>
+<h3 id="&#x4F18;&#x5316;"><a name="&#x4F18;&#x5316;" class="anchor-navigation-ex-anchor" href="#&#x4F18;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F18;&#x5316;</h3>
+<ul>
+<li>-dontoptimize &#x4E0D;&#x4F18;&#x5316;&#x8F93;&#x5165;&#x7684;&#x7C7B;&#x6587;&#x4EF6;</li>
+<li>-assumenosideeffects {class_specification} &#x4F18;&#x5316;&#x65F6;&#x5047;&#x8BBE;&#x6307;&#x5B9A;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x526F;&#x4F5C;&#x7528;</li>
+<li>-allowaccessmodification &#x4F18;&#x5316;&#x65F6;&#x5141;&#x8BB8;&#x8BBF;&#x95EE;&#x5E76;&#x4FEE;&#x6539;&#x6709;&#x4FEE;&#x9970;&#x7B26;&#x7684;&#x7C7B;&#x548C;&#x7C7B;&#x7684;&#x6210;&#x5458;</li>
+</ul>
+<h3 id="&#x6DF7;&#x6DC6;"><a name="&#x6DF7;&#x6DC6;" class="anchor-navigation-ex-anchor" href="#&#x6DF7;&#x6DC6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6DF7;&#x6DC6;</h3>
+<ul>
+<li>-dontobfuscate &#x4E0D;&#x6DF7;&#x6DC6;&#x8F93;&#x5165;&#x7684;&#x7C7B;&#x6587;&#x4EF6;</li>
+<li>-printmapping {filename}</li>
+<li>-applymapping {filename} &#x91CD;&#x7528;&#x6620;&#x5C04;&#x589E;&#x52A0;&#x6DF7;&#x6DC6;</li>
+<li>-obfuscationdictionary {filename} &#x4F7F;&#x7528;&#x7ED9;&#x5B9A;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x5173;&#x952E;&#x5B57;&#x4F5C;&#x4E3A;&#x8981;&#x6DF7;&#x6DC6;&#x65B9;&#x6CD5;&#x7684;&#x540D;&#x79F0;</li>
+<li>-overloadaggressively &#x6DF7;&#x6DC6;&#x65F6;&#x5E94;&#x7528;&#x4FB5;&#x5165;&#x5F0F;&#x91CD;&#x8F7D;</li>
+<li>-useuniqueclassmembernames &#x786E;&#x5B9A;&#x7EDF;&#x4E00;&#x7684;&#x6DF7;&#x6DC6;&#x7C7B;&#x7684;&#x6210;&#x5458;&#x540D;&#x79F0;&#x6765;&#x589E;&#x52A0;&#x6DF7;&#x6DC6;</li>
+<li>-flattenpackagehierarchy {package_name} &#x91CD;&#x65B0;&#x5305;&#x88C5;&#x6240;&#x6709;&#x91CD;&#x547D;&#x540D;&#x7684;&#x5305;&#x5E76;&#x653E;&#x5728;&#x7ED9;&#x5B9A;&#x7684;&#x5355;&#x4E00;&#x5305;&#x4E2D;</li>
+<li>-repackageclass {package_name} &#x91CD;&#x65B0;&#x5305;&#x88C5;&#x6240;&#x6709;&#x91CD;&#x547D;&#x540D;&#x7684;&#x7C7B;&#x6587;&#x4EF6;&#x4E2D;&#x653E;&#x5728;&#x7ED9;&#x5B9A;&#x7684;&#x5355;&#x4E00;&#x5305;&#x4E2D;</li>
+<li>-dontusemixedcaseclassnames &#x6DF7;&#x6DC6;&#x65F6;&#x4E0D;&#x4F1A;&#x4EA7;&#x751F;&#x5F62;&#x5F62;&#x8272;&#x8272;&#x7684;&#x7C7B;&#x540D;</li>
+<li>-keepattributes {attribute_name,...} &#x4FDD;&#x62A4;&#x7ED9;&#x5B9A;&#x7684;&#x53EF;&#x9009;&#x5C5E;&#x6027;&#xFF0C;&#x4F8B;&#x5982;LocalVariableTable&#xFF08;&#x672C;&#x5730;&#x53D8;&#x91CF;&#xFF09;, SourceFile&#xFF08;&#x6E90;&#x6587;&#x4EF6;&#xFF09;&#xFF0C; InnerClasses&#xFF08;&#x5185;&#x90E8;&#x7C7B;&#xFF09;</li>
+<li>-renamesourcefileattribute {string} &#x8BBE;&#x7F6E;&#x6E90;&#x6587;&#x4EF6;&#x4E2D;&#x7ED9;&#x5B9A;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x5E38;&#x91CF;</li>
+</ul>
+<h2 id="&#x4E0A;&#x9762;&#x4ECB;&#x7ECD;&#x4E86;&#x4E00;&#x4E0B;proguard&#x7684;&#x57FA;&#x672C;&#x65B9;&#x6CD5;"><a name="&#x4E0A;&#x9762;&#x4ECB;&#x7ECD;&#x4E86;&#x4E00;&#x4E0B;proguard&#x7684;&#x57FA;&#x672C;&#x65B9;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x4E0A;&#x9762;&#x4ECB;&#x7ECD;&#x4E86;&#x4E00;&#x4E0B;proguard&#x7684;&#x57FA;&#x672C;&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E0A;&#x9762;&#x4ECB;&#x7ECD;&#x4E86;&#x4E00;&#x4E0B;ProGuard&#x7684;&#x57FA;&#x672C;&#x65B9;&#x6CD5;</h2>
+<p><strong>&#x4E0B;&#x9762;&#x6765;&#x4ECB;&#x7ECD;&#x4E00;&#x4E0B;Android&#x4E2D;&#x7684;&#x6DF7;&#x6DC6;&#x6587;&#x4EF6;&#x3002;</strong>
+&#x5BF9;&#x5E94;&#x4E8E;&#x9879;&#x76EE;&#x4E0B;&#x7684;proguard-rules.pro&#x6587;&#x4EF6;</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/4623465-dc62b0187cfe6796.png?imageMogr2/auto-orient/strip|imageView2/2/w/203/format/webp" alt="img"></p>
+<h3 id="&#x57FA;&#x672C;&#x914D;&#x7F6E;&#x9879;"><a name="&#x57FA;&#x672C;&#x914D;&#x7F6E;&#x9879;" class="anchor-navigation-ex-anchor" href="#&#x57FA;&#x672C;&#x914D;&#x7F6E;&#x9879;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x57FA;&#x672C;&#x914D;&#x7F6E;&#x9879;</h3>
+<p>1.&#x6307;&#x5B9A;&#x8981;&#x5904;&#x7406;&#x7684;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;jar,war,ear&#x548C;&#x76EE;&#x5F55;&#x6240;&#x9700;&#x8981;&#x7684;&#x7A0B;&#x5E8F;&#x5E93;&#x6587;&#x4EF6;</p>
+<pre class="language-"><code class="lang-undefined">-libraryjars libs/apns_1.0.6.jar
+-libraryjars libs/armeabi/libBaiduMapSDK_v2_3_1.so
+-libraryjars libs/armeabi/liblocSDK4.so
+-libraryjars libs/core.jar
+-libraryjars libs/gesture-imageview.jar
+-libraryjars libs/gson-2.6.2.jar
+-libraryjars libs/infogracesound.jar
+-libraryjars libs/universal-image-loader-1.9.0.jar
+</code></pre>
+<p><strong>&#x65B9;&#x6CD5;&#xFF1A;</strong> libraryjars jar&#x8DEF;&#x5F84; -&gt;libraryjars &#x9879;&#x76EE;&#x4E2D;&#x5BFC;&#x5165;&#x7684;jar&#x5305;&#x7B49;
+&#x73B0;&#x5728;Studio&#x7684;&#x8BDD;&#x53EF;&#x4EE5;&#x5FFD;&#x7565;&#x6B64;&#x914D;&#x7F6E;&#x4E86;&#x3002;</p>
+<p>2.&#x4E0D;&#x4F18;&#x5316;&#x8F93;&#x5165;&#x7684;class&#x6587;&#x4EF6;&#xFF0C;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x662F;&#x542F;&#x7528;&#x4F18;&#x5316;&#x7684;</p>
+<pre class="language-"><code class="lang-kotlin">#&#x4E0D;&#x4F18;&#x5316;&#x8F93;&#x5165;&#x7684;<span class="token keyword">class</span>&#x6587;&#x4EF6;&#xFF0C;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x662F;&#x542F;&#x7528;&#x4F18;&#x5316;&#x7684;
+<span class="token operator">-</span>dontoptimize
+</code></pre>
+<p>3.Proguard&#x5BF9;&#x4F60;&#x7684;&#x4EE3;&#x7801;&#x8FDB;&#x884C;&#x8FED;&#x4EE3;&#x4F18;&#x5316;&#x7684;&#x6B21;&#x6570; 0~7&#xFF0C;&#x4E00;&#x76F4;&#x4F18;&#x5316;&#x5230;&#x4EE3;&#x7801;&#x4E0D;&#x80FD;&#x88AB;&#x4F18;&#x5316;&#x4E3A;&#x6B62;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment">#Proguard&#x5BF9;&#x4F60;&#x7684;&#x4EE3;&#x7801;&#x8FDB;&#x884C;&#x8FED;&#x4EE3;&#x4F18;&#x5316;&#x7684;&#x6B21;&#x6570; 0~7&#xFF0C;&#x4E00;&#x76F4;&#x4F18;&#x5316;&#x5230;&#x4EE3;&#x7801;&#x4E0D;&#x80FD;&#x88AB;&#x4F18;&#x5316;&#x4E3A;&#x6B62;</span>
+<span class="token parameter variable">-optimizationpasses</span> <span class="token number">5</span>
+</code></pre>
+<p>4.&#x8DF3;&#x8FC7;&#x5E93;&#x4E2D;&#x975E;public&#x7684;&#x7C7B;&#xFF0C;&#x53EF;&#x4EE5;&#x52A0;&#x5FEB;proguard&#x5904;&#x7406;&#x901F;&#x5EA6;&#xFF1B;&#x4F46;&#x662F;&#x6709;&#x4E9B;&#x7C7B;&#x5E93;&#x5305;&#x542B;&#x4ECE;public&#x7C7B;&#x4E2D;&#x7EE7;&#x627F;&#x6765;&#x7684;&#x975E;public&#x7C7B;&#x3002;&#x8FD9;&#x65F6;&#x5982;&#x679C;&#x52A0;&#x4E86;&#x8FD9;&#x6761;&#x4F1A;&#x4EA7;&#x751F;&#x4E00;&#x4E2A;warning(find classes)</p>
+<pre class="language-"><code class="lang-undefined">-skipnonpubliclibraryclasses
+</code></pre>
+<p>5.&#x6307;&#x5B9A;&#x4E0D;&#x53BB;&#x5FFD;&#x7565;&#x975E;&#x516C;&#x5171;&#x7684;&#x5E93;&#x7C7B;</p>
+<pre class="language-"><code class="lang-undefined">-dontskipnonpubliclibraryclasses
+</code></pre>
+<p>6.&#x6307;&#x5B9A;&#x4E0D;&#x53BB;&#x5FFD;&#x7565;&#x5305;&#x53EF;&#x89C1;&#x7684;&#x5E93;&#x7C7B;&#x7684;&#x6210;&#x5458;&#x3002;</p>
+<pre class="language-"><code class="lang-undefined">-dontskipnonpubliclibraryclassmembers
+</code></pre>
+<p>7.&#x786E;&#x5B9A;&#x7EDF;&#x4E00;&#x7684;&#x6DF7;&#x6DC6;&#x7C7B;&#x7684;&#x6210;&#x5458;&#x540D;&#x79F0;&#x6765;&#x589E;&#x52A0;&#x6DF7;&#x6DC6;</p>
+<pre class="language-"><code class="lang-undefined">-useuniqueclassmembernames
+</code></pre>
+<p>8.&#x6DF7;&#x6DC6;&#x65F6;&#x4E0D;&#x4F1A;&#x4EA7;&#x751F;&#x5F62;&#x5F62;&#x8272;&#x8272;&#x7684;&#x7C7B;&#x540D;</p>
+<pre class="language-"><code class="lang-undefined">-dontusemixedcaseclassnames
+</code></pre>
+<p>9.&#x6DF7;&#x6DC6;&#x524D;&#x8BA4;&#x8BC1;,&#x53BB;&#x6389;&#x53EF;&#x52A0;&#x5FEB;&#x6DF7;&#x6DC6;&#x901F;&#x5EA6;</p>
+<pre class="language-"><code class="lang-undefined">-dontpreverify
+</code></pre>
+<p>10.&#x5047;&#x5982;&#x9879;&#x76EE;&#x4E2D;&#x6709;&#x7528;&#x5230;&#x6CE8;&#x89E3;,&#x4FDD;&#x7559;&#x6CE8;&#x89E3;&#xFF0C;&#x4E0D;&#x6DF7;&#x6DC6;</p>
+<pre class="language-"><code class="lang-undefined">-keepattributes *Annotation*
+</code></pre>
+<h3 id="android&#x4E2D;&#x7684;&#x914D;&#x7F6E;&#x9879;"><a name="android&#x4E2D;&#x7684;&#x914D;&#x7F6E;&#x9879;" class="anchor-navigation-ex-anchor" href="#android&#x4E2D;&#x7684;&#x914D;&#x7F6E;&#x9879;"><i class="fa fa-link" aria-hidden="true"></i></a>Android&#x4E2D;&#x7684;&#x914D;&#x7F6E;&#x9879;</h3>
+<p>1.&#x4FDD;&#x7559;&#x6240;&#x6709;&#x7684;v4&#x5305;&#x4E2D;&#x7C7B;&#x4E0D;&#x88AB;&#x6DF7;&#x6DC6;</p>
+<pre class="language-"><code class="lang-css">-keep class android.support.v4.**
+</code></pre>
+<p>2.&#x4FDD;&#x7559;&#x6240;&#x6709;&#x7684;v4&#x5305;&#x4E2D;&#x63A5;&#x53E3;&#x4E0D;&#x88AB;&#x6DF7;&#x6DC6;</p>
+<pre class="language-"><code class="lang-css">-keep interface android.support.v4.**
+</code></pre>
+<p>3.&#x4FDD;&#x7559;&#x7CFB;&#x7EDF;&#x4E2D;&#x7EE7;&#x627F;v4/v7&#x5305;&#x7684;&#x7C7B;&#xFF0C;&#x4E0D;&#x88AB;&#x6DF7;&#x6DC6;</p>
+<pre class="language-"><code class="lang-java"><span class="token operator">-</span>keep <span class="token keyword">class</span> android<span class="token punctuation">.</span>support<span class="token punctuation">.</span>*<span class="token operator">*</span> <span class="token punctuation">{</span> <span class="token operator">*</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token operator">-</span>keep <span class="token keyword">class</span> android<span class="token punctuation">.</span>support<span class="token punctuation">.</span>v4<span class="token punctuation">.</span>*<span class="token operator">*</span> <span class="token punctuation">{</span> <span class="token operator">*</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token operator">-</span>keep <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token operator">*</span> <span class="token keyword">extends</span> android<span class="token punctuation">.</span>support<span class="token punctuation">.</span>v4<span class="token punctuation">.</span>*<span class="token operator">*</span>
+<span class="token operator">-</span>keep <span class="token keyword">interface</span> android<span class="token punctuation">.</span>support<span class="token punctuation">.</span>v4<span class="token punctuation">.</span>app<span class="token punctuation">.</span>*<span class="token operator">*</span> <span class="token punctuation">{</span> <span class="token operator">*</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token operator">-</span>keep <span class="token keyword">class</span> android<span class="token punctuation">.</span>support<span class="token punctuation">.</span>v7<span class="token punctuation">.</span>*<span class="token operator">*</span> <span class="token punctuation">{</span> <span class="token operator">*</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token operator">-</span>keep <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token operator">*</span> <span class="token keyword">extends</span> android<span class="token punctuation">.</span>support<span class="token punctuation">.</span>v7<span class="token punctuation">.</span>*<span class="token operator">*</span>
+<span class="token operator">-</span>keep <span class="token keyword">interface</span> android<span class="token punctuation">.</span>support<span class="token punctuation">.</span>v7<span class="token punctuation">.</span>app<span class="token punctuation">.</span>*<span class="token operator">*</span> <span class="token punctuation">{</span> <span class="token operator">*</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token operator">-</span>dontwarn android<span class="token punctuation">.</span>support<span class="token punctuation">.</span>*<span class="token operator">*</span>
+</code></pre>
+<p>4.&#x4FDD;&#x7559;&#x7CFB;&#x7EDF;&#x4E2D;&#x7EE7;&#x5B9E;&#x73B0;v4/v7&#x5305;&#x7684;&#x63A5;&#x53E3;&#xFF0C;&#x4E0D;&#x88AB;&#x6DF7;&#x6DC6;</p>
+<pre class="language-"><code class="lang-css">-keep public class * implements android.support.v4.**
+-dontwarn android.support.v4.**
+</code></pre>
+<p>5.&#x6240;&#x6709;&#x7684;native&#x65B9;&#x6CD5;&#x4E0D;&#x88AB;&#x6DF7;&#x6DC6;</p>
+<pre class="language-"><code class="lang-java"><span class="token operator">-</span>keepclasseswithmembers <span class="token keyword">class</span> <span class="token operator">*</span> <span class="token punctuation">{</span>
+    <span class="token keyword">native</span> <span class="token generics"><span class="token punctuation">&lt;</span>methods<span class="token punctuation">&gt;</span></span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>6.&#x81EA;&#x5B9A;&#x4E49;View&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x4E0D;&#x6DF7;&#x6DC6;</p>
+<pre class="language-"><code class="lang-kotlin"><span class="token operator">-</span>keepclasseswithmembers <span class="token keyword">class</span> <span class="token operator">*</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token operator">&lt;</span><span class="token keyword">init</span><span class="token operator">&gt;</span><span class="token punctuation">(</span>android<span class="token punctuation">.</span>content<span class="token punctuation">.</span>Context<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token operator">-</span>keepclasseswithmembers <span class="token keyword">class</span> <span class="token operator">*</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token operator">&lt;</span><span class="token keyword">init</span><span class="token operator">&gt;</span><span class="token punctuation">(</span>android<span class="token punctuation">.</span>content<span class="token punctuation">.</span>Context<span class="token punctuation">,</span>android<span class="token punctuation">.</span>util<span class="token punctuation">.</span>AttributeSet<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token operator">-</span>keepclasseswithmembers <span class="token keyword">class</span> <span class="token operator">*</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token operator">&lt;</span><span class="token keyword">init</span><span class="token operator">&gt;</span><span class="token punctuation">(</span>android<span class="token punctuation">.</span>content<span class="token punctuation">.</span>Context<span class="token punctuation">,</span>android<span class="token punctuation">.</span>util<span class="token punctuation">.</span>AttributeSet<span class="token punctuation">,</span>int<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x88AB;Android Resource &#x6587;&#x4EF6;&#x5F15;&#x7528;&#x5230;&#xFF0C;&#x540D;&#x5B57;&#x5DF2;&#x7ECF;&#x56FA;&#x5B9A;&#xFF0C;&#x4E0D;&#x80FD;&#x6DF7;&#x6DC6;&#x3002;</p>
+<p>7.&#x679A;&#x4E3E;&#x4E0D;&#x88AB;&#x6DF7;&#x6DC6;</p>
+<pre class="language-"><code class="lang-cpp"><span class="token operator">-</span>keepclassmembers <span class="token keyword">enum</span> <span class="token operator">*</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token operator">*</span><span class="token operator">*</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token function">values</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token operator">*</span><span class="token operator">*</span> <span class="token function">valueOf</span><span class="token punctuation">(</span>java<span class="token punctuation">.</span>lang<span class="token punctuation">.</span>String<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>8.release&#x7248;&#x4E0D;&#x6253;&#x5370;log</p>
+<pre class="language-"><code class="lang-cpp"><span class="token operator">-</span>assumenosideeffects <span class="token keyword">class</span> <span class="token class-name">android</span><span class="token punctuation">.</span>util<span class="token punctuation">.</span>Log <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token operator">*</span><span class="token operator">*</span><span class="token operator">*</span> <span class="token function">d</span><span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token operator">*</span><span class="token operator">*</span><span class="token operator">*</span> <span class="token function">v</span><span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token operator">*</span><span class="token operator">*</span><span class="token operator">*</span> <span class="token function">i</span><span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token operator">*</span><span class="token operator">*</span><span class="token operator">*</span> <span class="token function">e</span><span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token operator">*</span><span class="token operator">*</span><span class="token operator">*</span> <span class="token function">w</span><span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>9.&#x56DB;&#x5927;&#x7EC4;&#x4EF6;&#x4E0D;&#x80FD;&#x6DF7;&#x6DC6;</p>
+<pre class="language-"><code class="lang-kotlin"><span class="token operator">-</span>dontwarn android<span class="token punctuation">.</span>support<span class="token punctuation">.</span>v4<span class="token punctuation">.</span><span class="token operator">*</span><span class="token operator">*</span>
+<span class="token operator">-</span>keep <span class="token keyword">class</span> android<span class="token punctuation">.</span>support<span class="token punctuation">.</span>v4<span class="token punctuation">.</span>app<span class="token punctuation">.</span><span class="token operator">*</span><span class="token operator">*</span> <span class="token punctuation">{</span> <span class="token operator">*</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token operator">-</span>keep <span class="token keyword">interface</span> android<span class="token punctuation">.</span>support<span class="token punctuation">.</span>v4<span class="token punctuation">.</span>app<span class="token punctuation">.</span><span class="token operator">*</span><span class="token operator">*</span> <span class="token punctuation">{</span> <span class="token operator">*</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token operator">-</span>keep <span class="token keyword">class</span> android<span class="token punctuation">.</span>support<span class="token punctuation">.</span>v4<span class="token punctuation">.</span><span class="token operator">*</span><span class="token operator">*</span> <span class="token punctuation">{</span> <span class="token operator">*</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token operator">-</span>keep <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token operator">*</span> extends android<span class="token punctuation">.</span>app<span class="token punctuation">.</span>Application
+
+<span class="token operator">-</span>dontwarn android<span class="token punctuation">.</span>support<span class="token punctuation">.</span>v7<span class="token punctuation">.</span><span class="token operator">*</span><span class="token operator">*</span>
+<span class="token operator">-</span>keep <span class="token keyword">class</span> android<span class="token punctuation">.</span>support<span class="token punctuation">.</span>v7<span class="token punctuation">.</span>internal<span class="token punctuation">.</span><span class="token operator">*</span><span class="token operator">*</span> <span class="token punctuation">{</span> <span class="token operator">*</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token operator">-</span>keep <span class="token keyword">interface</span> android<span class="token punctuation">.</span>support<span class="token punctuation">.</span>v7<span class="token punctuation">.</span>internal<span class="token punctuation">.</span><span class="token operator">*</span><span class="token operator">*</span> <span class="token punctuation">{</span> <span class="token operator">*</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token operator">-</span>keep <span class="token keyword">class</span> android<span class="token punctuation">.</span>support<span class="token punctuation">.</span>v7<span class="token punctuation">.</span><span class="token operator">*</span><span class="token operator">*</span> <span class="token punctuation">{</span> <span class="token operator">*</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+
+<span class="token operator">-</span>keep <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token operator">*</span> extends android<span class="token punctuation">.</span>app<span class="token punctuation">.</span>Activity
+<span class="token operator">-</span>keep <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token operator">*</span> extends android<span class="token punctuation">.</span>app<span class="token punctuation">.</span>Fragment
+<span class="token operator">-</span>keep <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token operator">*</span> extends android<span class="token punctuation">.</span>app<span class="token punctuation">.</span>Application
+<span class="token operator">-</span>keep <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token operator">*</span> extends android<span class="token punctuation">.</span>app<span class="token punctuation">.</span>Service
+<span class="token operator">-</span>keep <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token operator">*</span> extends android<span class="token punctuation">.</span>content<span class="token punctuation">.</span>BroadcastReceiver
+<span class="token operator">-</span>keep <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token operator">*</span> extends android<span class="token punctuation">.</span>content<span class="token punctuation">.</span>ContentProvider
+<span class="token operator">-</span>keep <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token operator">*</span> extends android<span class="token punctuation">.</span>app<span class="token punctuation">.</span>backup<span class="token punctuation">.</span>BackupAgentHelper
+<span class="token operator">-</span>keep <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token operator">*</span> extends android<span class="token punctuation">.</span>preference<span class="token punctuation">.</span>Preference
+</code></pre>
+<p>10.Design&#x5305;&#x4E0D;&#x6DF7;&#x6DC6;</p>
+<pre class="language-"><code class="lang-java"><span class="token operator">-</span>dontwarn android<span class="token punctuation">.</span>support<span class="token punctuation">.</span>design<span class="token punctuation">.</span>*<span class="token operator">*</span>
+<span class="token operator">-</span>keep <span class="token keyword">class</span> android<span class="token punctuation">.</span>support<span class="token punctuation">.</span>design<span class="token punctuation">.</span>*<span class="token operator">*</span> <span class="token punctuation">{</span> <span class="token operator">*</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token operator">-</span>keep <span class="token keyword">interface</span> android<span class="token punctuation">.</span>support<span class="token punctuation">.</span>design<span class="token punctuation">.</span>*<span class="token operator">*</span> <span class="token punctuation">{</span> <span class="token operator">*</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token operator">-</span>keep <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name"><span class="token namespace">android<span class="token punctuation">.</span>support<span class="token punctuation">.</span>design<span class="token punctuation">.</span></span>R</span>$<span class="token operator">*</span> <span class="token punctuation">{</span> <span class="token operator">*</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+</code></pre>
+<p>11.&#x786E;&#x4FDD;JavaBean&#x4E0D;&#x88AB;&#x6DF7;&#x6DC6;-&#x5426;&#x5219;Gson&#x5C06;&#x65E0;&#x6CD5;&#x5C06;&#x6570;&#x636E;&#x89E3;&#x6790;&#x6210;&#x5177;&#x4F53;&#x5BF9;&#x8C61;</p>
+<pre class="language-"><code class="lang-cpp"><span class="token operator">-</span>keep <span class="token keyword">class</span> <span class="token class-name">com</span><span class="token punctuation">.</span>rair<span class="token punctuation">.</span>circle<span class="token punctuation">.</span>bean<span class="token punctuation">.</span><span class="token operator">*</span><span class="token operator">*</span> <span class="token punctuation">{</span> <span class="token operator">*</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token operator">-</span>keep <span class="token keyword">class</span> <span class="token class-name">com</span><span class="token punctuation">.</span>rair<span class="token punctuation">.</span>circle<span class="token punctuation">.</span>db<span class="token punctuation">.</span>bean<span class="token punctuation">.</span><span class="token operator">*</span><span class="token operator">*</span> <span class="token punctuation">{</span> <span class="token operator">*</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+</code></pre>
+<p>12.&#x4E0D;&#x6DF7;&#x6DC6;&#x8D44;&#x6E90;&#x7C7B;</p>
+<pre class="language-"><code class="lang-cpp"><span class="token operator">-</span>keepclassmembers <span class="token keyword">class</span> <span class="token operator">*</span><span class="token operator">*</span><span class="token punctuation">.</span>R$<span class="token operator">*</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token operator">&lt;</span>fields<span class="token operator">&gt;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>13.&#x5FFD;&#x7565;&#x8B66;&#x544A;</p>
+<pre class="language-"><code class="lang-undefined">-ignorewarning
+</code></pre>
+<p>&#x5F53;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x7B2C;&#x4E09;&#x65B9;&#x6846;&#x67B6;&#xFF0C;jar&#x5305;&#xFF0C;&#x5982;&#x679C;&#x914D;&#x7F6E;&#x6DF7;&#x6DC6;&#xFF0C;&#x90FD;&#x6709;&#x5BF9;&#x5E94;&#x7684;&#x6DF7;&#x6DC6;&#x914D;&#x7F6E;&#x63D0;&#x4F9B;&#x3002;
+&#x4F8B;&#x5982;Jpush(&#x6781;&#x5149;&#x63A8;&#x9001;)</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/4623465-57c6ce79ecae7150.png?imageMogr2/auto-orient/strip|imageView2/2/w/958/format/webp" alt="img"></p>
+<p>&#x6211;&#x4EEC;&#x53EA;&#x8981;copy&#x5230;&#x9879;&#x76EE;&#x6DF7;&#x6DC6;&#x6587;&#x4EF6;&#x4E2D;&#x5C31;&#x884C;</p>
+<h2 id="&#x6700;&#x540E;"><a name="&#x6700;&#x540E;" class="anchor-navigation-ex-anchor" href="#&#x6700;&#x540E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6700;&#x540E;</h2>
+<h3 id="&#x6DF7;&#x6DC6;&#x65F6;&#x662F;&#x5426;&#x8BB0;&#x5F55;&#x65E5;&#x5FD7;"><a name="&#x6DF7;&#x6DC6;&#x65F6;&#x662F;&#x5426;&#x8BB0;&#x5F55;&#x65E5;&#x5FD7;" class="anchor-navigation-ex-anchor" href="#&#x6DF7;&#x6DC6;&#x65F6;&#x662F;&#x5426;&#x8BB0;&#x5F55;&#x65E5;&#x5FD7;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6DF7;&#x6DC6;&#x65F6;&#x662F;&#x5426;&#x8BB0;&#x5F55;&#x65E5;&#x5FD7;</h3>
+<pre class="language-"><code class="lang-undefined">-verbose
+</code></pre>
+<p>1.apk&#x5305;&#x5185;&#x6240;&#x6709; class &#x7684;&#x5185;&#x90E8;&#x7ED3;&#x6784;</p>
+<pre class="language-"><code class="lang-css">-dump class_files.txt
+</code></pre>
+<p>2.&#x672A;&#x6DF7;&#x6DC6;&#x7684;&#x7C7B;&#x548C;&#x6210;&#x5458;</p>
+<pre class="language-"><code class="lang-css">-printseeds seeds.txt
+</code></pre>
+<p>3.&#x5217;&#x51FA;&#x4ECE; apk &#x4E2D;&#x5220;&#x9664;&#x7684;&#x4EE3;&#x7801;</p>
+<pre class="language-"><code class="lang-css">-printusage unused.txt
+</code></pre>
+<p>4.&#x6DF7;&#x6DC6;&#x524D;&#x540E;&#x7684;&#x6620;&#x5C04;</p>
+<pre class="language-"><code class="lang-css">-printmapping mapping.txt
+</code></pre>
+<h1 id="&#x53C2;&#x8003;&#x914D;&#x7F6E;"><a name="&#x53C2;&#x8003;&#x914D;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#&#x53C2;&#x8003;&#x914D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53C2;&#x8003;&#x914D;&#x7F6E;</h1>
+<pre class="language-"><code class="lang-ruby"><span class="token comment">#######################-----app&#x4E2D;-----############################</span>
+<span class="token comment">#&#x5982;&#x679C;&#x4F7F;&#x7528;&#x4E86;Gson&#x4E4B;&#x7C7B;&#x7684;&#x5DE5;&#x5177;&#x8981;&#x4F7F;&#x88AB;&#x5B83;&#x89E3;&#x6790;&#x7684;JavaBean&#x7C7B;&#x5373;&#x5B9E;&#x4F53;&#x7C7B;&#x4E0D;&#x88AB;&#x6DF7;&#x6DC6;</span>
+
+<span class="token comment">#######################-----&#x7B2C;&#x4E09;&#x65B9;-----############################</span>
+
+<span class="token comment">#######################-----WebView(&#x9879;&#x76EE;&#x4E2D;&#x6CA1;&#x6709;&#x53EF;&#x4EE5;&#x5FFD;&#x7565;)-----############################</span>
+<span class="token comment">#webView&#x9700;&#x8981;&#x8FDB;&#x884C;&#x7279;&#x6B8A;&#x5904;&#x7406;</span>
+<span class="token operator">-</span>keepclassmembers <span class="token keyword">class</span> <span class="token class-name">fqcn<span class="token punctuation">.</span>of<span class="token punctuation">.</span>javascript<span class="token punctuation">.</span>interface<span class="token punctuation">.</span>for<span class="token punctuation">.</span>Webview</span> <span class="token punctuation">{</span>
+   <span class="token keyword">public</span> <span class="token operator">*</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token operator">-</span>keepclassmembers <span class="token keyword">class</span> <span class="token operator">*</span> extends android<span class="token punctuation">.</span>webkit<span class="token punctuation">.</span>WebViewClient <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> void <span class="token operator">*</span><span class="token punctuation">(</span>android<span class="token punctuation">.</span>webkit<span class="token punctuation">.</span>WebView<span class="token punctuation">,</span> java<span class="token punctuation">.</span>lang<span class="token punctuation">.</span><span class="token builtin">String</span><span class="token punctuation">,</span> android<span class="token punctuation">.</span>graphics<span class="token punctuation">.</span>Bitmap<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> boolean <span class="token operator">*</span><span class="token punctuation">(</span>android<span class="token punctuation">.</span>webkit<span class="token punctuation">.</span>WebView<span class="token punctuation">,</span> java<span class="token punctuation">.</span>lang<span class="token punctuation">.</span><span class="token builtin">String</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token operator">-</span>keepclassmembers <span class="token keyword">class</span> <span class="token operator">*</span> extends android<span class="token punctuation">.</span>webkit<span class="token punctuation">.</span>WebViewClient <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> void <span class="token operator">*</span><span class="token punctuation">(</span>android<span class="token punctuation">.</span>webkit<span class="token punctuation">.</span>WebView<span class="token punctuation">,</span> jav<span class="token punctuation">.</span>lang<span class="token punctuation">.</span><span class="token builtin">String</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">#&#x5728;app&#x4E2D;&#x4E0E;HTML5&#x7684;JavaScript&#x7684;&#x4EA4;&#x4E92;&#x8FDB;&#x884C;&#x7279;&#x6B8A;&#x5904;&#x7406;</span>
+<span class="token comment">#&#x6211;&#x4EEC;&#x9700;&#x8981;&#x786E;&#x4FDD;&#x8FD9;&#x4E9B;js&#x8981;&#x8C03;&#x7528;&#x7684;&#x539F;&#x751F;&#x65B9;&#x6CD5;&#x4E0D;&#x80FD;&#x591F;&#x88AB;&#x6DF7;&#x6DC6;&#xFF0C;&#x4E8E;&#x662F;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x505A;&#x5982;&#x4E0B;&#x5904;&#x7406;&#xFF1A;</span>
+<span class="token operator">-</span>keepclassmembers <span class="token keyword">class</span> <span class="token class-name">com<span class="token punctuation">.</span>ljd<span class="token punctuation">.</span>example<span class="token punctuation">.</span>JSInterface</span> <span class="token punctuation">{</span>
+    <span class="token operator">&lt;</span>methods<span class="token operator">&gt;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token comment">#######################-----&#x5176;&#x4ED6;-----############################</span>
+<span class="token comment"># &#x5220;&#x9664;&#x4EE3;&#x7801;&#x4E2D;Log&#x76F8;&#x5173;&#x7684;&#x4EE3;&#x7801;</span>
+<span class="token operator">-</span>assumenosideeffects <span class="token keyword">class</span> <span class="token class-name">android<span class="token punctuation">.</span>util<span class="token punctuation">.</span>Log</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> static boolean isLoggable<span class="token punctuation">(</span>java<span class="token punctuation">.</span>lang<span class="token punctuation">.</span><span class="token builtin">String</span><span class="token punctuation">,</span> int<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> static int v<span class="token punctuation">(</span><span class="token operator">...</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> static int i<span class="token punctuation">(</span><span class="token operator">...</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> static int w<span class="token punctuation">(</span><span class="token operator">...</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> static int d<span class="token punctuation">(</span><span class="token operator">...</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> static int e<span class="token punctuation">(</span><span class="token operator">...</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment"># &#x4FDD;&#x6301;&#x6D4B;&#x8BD5;&#x76F8;&#x5173;&#x7684;&#x4EE3;&#x7801;</span>
+<span class="token operator">-</span>dontnote junit<span class="token punctuation">.</span>framework<span class="token punctuation">.</span><span class="token operator">**</span>
+<span class="token operator">-</span>dontnote junit<span class="token punctuation">.</span>runner<span class="token punctuation">.</span><span class="token operator">**</span>
+<span class="token operator">-</span>dontwarn android<span class="token punctuation">.</span>test<span class="token punctuation">.</span><span class="token operator">**</span>
+<span class="token operator">-</span>dontwarn android<span class="token punctuation">.</span>support<span class="token punctuation">.</span>test<span class="token punctuation">.</span><span class="token operator">**</span>
+<span class="token operator">-</span>dontwarn org<span class="token punctuation">.</span>junit<span class="token punctuation">.</span><span class="token operator">**</span>
+
+<span class="token comment">#######################-----&#x57FA;&#x672C;-----############################</span>
+<span class="token comment">#&#x6307;&#x5B9A;&#x4EE3;&#x7801;&#x7684;&#x538B;&#x7F29;&#x7EA7;&#x522B; 0 - 7(&#x6307;&#x5B9A;&#x4EE3;&#x7801;&#x8FDB;&#x884C;&#x8FED;&#x4EE3;&#x4F18;&#x5316;&#x7684;&#x6B21;&#x6570;&#xFF0C;&#x5728;Android&#x91CC;&#x9762;&#x9ED8;&#x8BA4;&#x662F;5&#xFF0C;&#x8FD9;&#x6761;&#x6307;&#x4EE4;&#x4E5F;&#x53EA;&#x6709;&#x5728;&#x53EF;&#x4EE5;&#x4F18;&#x5316;&#x65F6;&#x8D77;&#x4F5C;&#x7528;&#x3002;)</span>
+<span class="token operator">-</span>optimizationpasses <span class="token number">5</span>
+
+<span class="token comment">#&#x6DF7;&#x6DC6;&#x65F6;&#x4E0D;&#x4F1A;&#x4EA7;&#x751F;&#x5F62;&#x5F62;&#x8272;&#x8272;&#x7684;&#x7C7B;&#x540D;(&#x6DF7;&#x6DC6;&#x65F6;&#x4E0D;&#x4F7F;&#x7528;&#x5927;&#x5C0F;&#x5199;&#x6DF7;&#x5408;&#x7C7B;&#x540D;,&#x6DF7;&#x6DC6;&#x540E;&#x7C7B;&#x540D;&#x90FD;&#x4E3A;&#x5C0F;&#x5199;)</span>
+<span class="token operator">-</span>dontusemixedcaseclassnames
+
+<span class="token comment">#&#x6307;&#x5B9A;&#x4E0D;&#x53BB;&#x5FFD;&#x7565;&#x975E;&#x516C;&#x5171;&#x7684;&#x5E93;&#x7684;&#x7C7B;</span>
+<span class="token comment">#&#x9ED8;&#x8BA4;&#x8DF3;&#x8FC7;&#xFF0C;&#x6709;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#x7F16;&#x5199;&#x7684;&#x4EE3;&#x7801;&#x4E0E;&#x7C7B;&#x5E93;&#x4E2D;&#x7684;&#x7C7B;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x5305;&#x4E0B;&#xFF0C;&#x5E76;&#x4E14;&#x6301;&#x6709;&#x5305;&#x4E2D;&#x5185;&#x5BB9;&#x7684;&#x5F15;&#x7528;&#xFF0C;&#x6B64;&#x65F6;&#x5C31;&#x9700;&#x8981;&#x52A0;&#x5165;&#x6B64;&#x6761;&#x58F0;&#x660E;</span>
+<span class="token operator">-</span>dontskipnonpubliclibraryclasses
+<span class="token comment">#&#x6307;&#x5B9A;&#x4E0D;&#x53BB;&#x5FFD;&#x7565;&#x975E;&#x516C;&#x5171;&#x7684;&#x5E93;&#x7684;&#x7C7B;&#x7684;&#x6210;&#x5458;</span>
+<span class="token operator">-</span>dontskipnonpubliclibraryclassmembers
+
+<span class="token comment">#Optimization is turned off by default. Dex does not like code run</span>
+<span class="token comment">#hrough the ProGuard optimize and preverify steps (and performs some</span>
+<span class="token comment">#of these optimizations on its own).</span>
+<span class="token comment">#&#x4E0D;&#x8FDB;&#x884C;&#x4F18;&#x5316;&#xFF0C;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x6B64;&#x9009;&#x9879;&#xFF0C;&#x4E0D;&#x4F18;&#x5316;&#x8F93;&#x5165;&#x7684;&#x7C7B;&#x6587;&#x4EF6;&#xFF08;&#x539F;&#x56E0;&#x89C1;&#x4E0A;&#x8FB9;&#x7684;&#x539F;&#x82F1;&#x6587;&#x6CE8;&#x91CA;&#xFF09;</span>
+<span class="token operator">-</span>dontoptimize
+<span class="token comment">#&#x4E0D;&#x505A;&#x9884;&#x68C0;&#x9A8C;&#xFF0C;preverify&#x662F;proguard&#x7684;&#x56DB;&#x4E2A;&#x6B65;&#x9AA4;&#x4E4B;&#x4E00;</span>
+<span class="token comment">#Android&#x4E0D;&#x9700;&#x8981;preverify&#xFF0C;&#x53BB;&#x6389;&#x8FD9;&#x4E00;&#x6B65;&#x53EF;&#x4EE5;&#x52A0;&#x5FEB;&#x6DF7;&#x6DC6;&#x901F;&#x5EA6;</span>
+<span class="token operator">-</span>dontpreverify
+
+<span class="token comment">#&#x5C4F;&#x853D;&#x8B66;&#x544A;</span>
+<span class="token operator">-</span>ignorewarnings
+
+<span class="token comment">#&#x6307;&#x5B9A;&#x6DF7;&#x6DC6;&#x662F;&#x91C7;&#x7528;&#x7684;&#x7B97;&#x6CD5;&#xFF0C;&#x540E;&#x9762;&#x7684;&#x53C2;&#x6570;&#x662F;&#x4E00;&#x4E2A;&#x8FC7;&#x6EE4;&#x5668;</span>
+<span class="token comment">#&#x8FD9;&#x4E2A;&#x8FC7;&#x6EE4;&#x5668;&#x662F;&#x8C37;&#x6B4C;&#x63A8;&#x8350;&#x7684;&#x7B97;&#x6CD5;&#xFF0C;&#x4E00;&#x822C;&#x4E0D;&#x505A;&#x66F4;&#x6539;</span>
+<span class="token operator">-</span>optimizations <span class="token operator">!</span>code<span class="token operator">/</span>simplification<span class="token operator">/</span>arithmetic<span class="token punctuation">,</span><span class="token operator">!</span>field<span class="token operator">/</span><span class="token operator">*</span><span class="token punctuation">,</span><span class="token operator">!</span><span class="token keyword">class</span><span class="token operator">/</span>merging<span class="token operator">/</span><span class="token operator">*</span>
+
+<span class="token comment">#&#x907F;&#x514D;&#x6DF7;&#x6DC6;Annotation&#x3001;&#x5185;&#x90E8;&#x7C7B;&#x3001;&#x6CDB;&#x578B;&#x3001;&#x533F;&#x540D;&#x7C7B;</span>
+<span class="token operator">-</span>keepattributes <span class="token operator">*</span>Annotation<span class="token operator">*</span><span class="token punctuation">,</span>InnerClasses<span class="token punctuation">,</span>Signature<span class="token punctuation">,</span>EnclosingMethod
+
+<span class="token comment">#&#x8868;&#x793A;&#x4E0D;&#x6DF7;&#x6DC6;&#x58F0;&#x660E;&#x7684;&#x4E24;&#x4E2A;&#x7C7B;&#xFF0C;&#x8FD9;&#x4E24;&#x4E2A;&#x7C7B;&#x6211;&#x4EEC;&#x57FA;&#x672C;&#x4E5F;&#x7528;&#x4E0D;&#x4E0A;&#xFF0C;&#x662F;&#x63A5;&#x5165;Google&#x539F;&#x751F;&#x7684;&#x4E00;&#x4E9B;&#x670D;&#x52A1;&#x65F6;&#x4F7F;&#x7528;&#x7684;</span>
+<span class="token operator">-</span>keep <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">com<span class="token punctuation">.</span>google<span class="token punctuation">.</span>vending<span class="token punctuation">.</span>licensing<span class="token punctuation">.</span>ILicensingService</span>
+<span class="token operator">-</span>keep <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">com<span class="token punctuation">.</span>android<span class="token punctuation">.</span>vending<span class="token punctuation">.</span>licensing<span class="token punctuation">.</span>ILicensingService</span>
+
+<span class="token comment">#&#x629B;&#x51FA;&#x5F02;&#x5E38;&#x65F6;&#x4FDD;&#x7559;&#x4EE3;&#x7801;&#x884C;&#x53F7;</span>
+<span class="token operator">-</span>keepattributes SourceFile<span class="token punctuation">,</span>LineNumberTable
+<span class="token comment">#&#x91CD;&#x547D;&#x540D;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#x65F6;&#x7684;&#x6587;&#x4EF6;&#x540D;&#x79F0;,&#x70B9;&#x51FB;&#x9F20;&#x6807;&#x53EF;&#x4EE5;&#x5230;&#x8FBE;&#x9519;&#x8BEF;&#x6587;&#x4EF6;&#x4F4D;&#x7F6E;</span>
+<span class="token operator">-</span>renamesourcefileattribute SourceFile
+
+<span class="token comment">#&#x6DF7;&#x6DC6;&#x65F6;&#x662F;&#x5426;&#x8BB0;&#x5F55;&#x65E5;&#x5FD7;</span>
+<span class="token operator">-</span>verbose
+
+<span class="token comment">#&#x4E0D;&#x6DF7;&#x6DC6;R&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x9759;&#x6001;&#x5B57;&#x6BB5;&#xFF0C;&#x4EE5;&#x4FDD;&#x8BC1;&#x6B63;&#x786E;&#x627E;&#x5230;&#x6BCF;&#x4E2A;&#x8D44;&#x6E90;&#x7684;id</span>
+<span class="token operator">-</span>keepclassmembers <span class="token keyword">class</span> <span class="token operator">**</span><span class="token punctuation">.</span><span class="token constant">R</span>$<span class="token operator">*</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> static <span class="token operator">&lt;</span>fields<span class="token operator">&gt;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">#&#x4FDD;&#x7559;&#x56DB;&#x5927;&#x7EC4;&#x4EF6;&#xFF0C;&#x81EA;&#x5B9A;&#x4E49;&#x7684;Application&#x7B49;&#x8FD9;&#x4E9B;&#x7C7B;&#x4E0D;&#x88AB;&#x6DF7;&#x6DC6;</span>
+<span class="token operator">-</span>keep <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token operator">*</span> extends android<span class="token punctuation">.</span>app<span class="token punctuation">.</span>Activity
+<span class="token operator">-</span>keep <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token operator">*</span> extends android<span class="token punctuation">.</span>app<span class="token punctuation">.</span>Fragment
+<span class="token operator">-</span>keep <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token operator">*</span> extends android<span class="token punctuation">.</span>app<span class="token punctuation">.</span>Application
+<span class="token operator">-</span>keep <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token operator">*</span> extends android<span class="token punctuation">.</span>app<span class="token punctuation">.</span>Service
+<span class="token operator">-</span>keep <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token operator">*</span> extends android<span class="token punctuation">.</span>content<span class="token punctuation">.</span>BroadcastReceiver
+<span class="token operator">-</span>keep <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token operator">*</span> extends android<span class="token punctuation">.</span>content<span class="token punctuation">.</span>ContentProvider
+<span class="token operator">-</span>keep <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token operator">*</span> extends android<span class="token punctuation">.</span>app<span class="token punctuation">.</span>backup<span class="token punctuation">.</span>BackupAgentHelper
+<span class="token operator">-</span>keep <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token operator">*</span> extends android<span class="token punctuation">.</span>preference<span class="token punctuation">.</span>Preference
+<span class="token operator">-</span>keep <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token operator">*</span> extends android<span class="token punctuation">.</span>view<span class="token punctuation">.</span>View
+
+<span class="token comment">#&#x5904;&#x7406;support&#x5305;</span>
+<span class="token operator">-</span>keep <span class="token keyword">class</span> <span class="token class-name">android<span class="token punctuation">.</span>support<span class="token punctuation">.</span></span><span class="token operator">**</span> <span class="token punctuation">{</span><span class="token operator">*</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
+<span class="token operator">-</span>dontnote android<span class="token punctuation">.</span>support<span class="token punctuation">.</span><span class="token operator">**</span>
+<span class="token operator">-</span>dontwarn android<span class="token punctuation">.</span>support<span class="token punctuation">.</span><span class="token operator">**</span>
+
+<span class="token comment">#&#x4FDD;&#x7559;&#x7EE7;&#x627F;&#x7684;</span>
+<span class="token operator">-</span>keep <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token operator">*</span> extends android<span class="token punctuation">.</span>support<span class="token punctuation">.</span>v4<span class="token punctuation">.</span><span class="token operator">**</span>
+<span class="token operator">-</span>keep <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token operator">*</span> extends android<span class="token punctuation">.</span>support<span class="token punctuation">.</span>v7<span class="token punctuation">.</span><span class="token operator">**</span>
+<span class="token operator">-</span>keep <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token operator">*</span> extends android<span class="token punctuation">.</span>support<span class="token punctuation">.</span>annotation<span class="token punctuation">.</span><span class="token operator">**</span>
+
+<span class="token comment">#&#x4FDD;&#x7559;&#x672C;&#x5730;native&#x65B9;&#x6CD5;&#x4E0D;&#x88AB;&#x6DF7;&#x6DC6;</span>
+<span class="token operator">-</span>keepclasseswithmembernames <span class="token keyword">class</span> <span class="token operator">*</span> <span class="token punctuation">{</span>
+    native <span class="token operator">&lt;</span>methods<span class="token operator">&gt;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">#&#x4FDD;&#x7559;&#x679A;&#x4E3E;&#x7C7B;&#x4E0D;&#x88AB;&#x6DF7;&#x6DC6;</span>
+<span class="token operator">-</span>keepclassmembers enum <span class="token operator">*</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> static <span class="token operator">**</span><span class="token punctuation">[</span><span class="token punctuation">]</span> values<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> static <span class="token operator">**</span> valueOf<span class="token punctuation">(</span>java<span class="token punctuation">.</span>lang<span class="token punctuation">.</span><span class="token builtin">String</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">#&#x4FDD;&#x6301; Serializable &#x4E0D;&#x88AB;&#x6DF7;&#x6DC6;&#x5E76;&#x4E14;enum &#x7C7B;&#x4E5F;&#x4E0D;&#x88AB;&#x6DF7;&#x6DC6;</span>
+<span class="token operator">-</span>keepclassmembers <span class="token keyword">class</span> <span class="token operator">*</span> implements java<span class="token punctuation">.</span>io<span class="token punctuation">.</span>Serializable <span class="token punctuation">{</span>
+    static final long serialVersionUID<span class="token punctuation">;</span>
+    <span class="token keyword">private</span> static final java<span class="token punctuation">.</span>io<span class="token punctuation">.</span>ObjectStreamField<span class="token punctuation">[</span><span class="token punctuation">]</span> serialPersistentFields<span class="token punctuation">;</span>
+    <span class="token operator">!</span>static <span class="token operator">!</span>transient <span class="token operator">&lt;</span>fields<span class="token operator">&gt;</span><span class="token punctuation">;</span>
+    <span class="token operator">!</span><span class="token keyword">private</span> <span class="token operator">&lt;</span>fields<span class="token operator">&gt;</span><span class="token punctuation">;</span>
+    <span class="token operator">!</span><span class="token keyword">private</span> <span class="token operator">&lt;</span>methods<span class="token operator">&gt;</span><span class="token punctuation">;</span>
+    <span class="token keyword">private</span> void writeObject<span class="token punctuation">(</span>java<span class="token punctuation">.</span>io<span class="token punctuation">.</span>ObjectOutputStream<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">private</span> void readObject<span class="token punctuation">(</span>java<span class="token punctuation">.</span>io<span class="token punctuation">.</span>ObjectInputStream<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    java<span class="token punctuation">.</span>lang<span class="token punctuation">.</span><span class="token builtin">Object</span> writeReplace<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    java<span class="token punctuation">.</span>lang<span class="token punctuation">.</span><span class="token builtin">Object</span> readResolve<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">#&#x4FDD;&#x7559;Parcelable&#x5E8F;&#x5217;&#x5316;&#x7C7B;&#x4E0D;&#x88AB;&#x6DF7;&#x6DC6;</span>
+<span class="token operator">-</span>keep <span class="token keyword">class</span> <span class="token operator">*</span> implements android<span class="token punctuation">.</span>os<span class="token punctuation">.</span>Parcelable <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> static final android<span class="token punctuation">.</span>os<span class="token punctuation">.</span>Parcelable<span class="token variable">$Creator</span> <span class="token operator">*</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">#see http://proguard.sourceforge.net/manual/examples.html#beans</span>
+<span class="token comment">#&#x4E0D;&#x6DF7;&#x6DC6;View&#x4E2D;&#x7684;setXxx()&#x548C;getXxx()&#x65B9;&#x6CD5;&#xFF0C;&#x4EE5;&#x4FDD;&#x8BC1;&#x5C5E;&#x6027;&#x52A8;&#x753B;&#x6B63;&#x5E38;&#x5DE5;&#x4F5C;</span>
+<span class="token operator">-</span>keep <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token operator">*</span> extends android<span class="token punctuation">.</span>view<span class="token punctuation">.</span>View<span class="token punctuation">{</span>
+    <span class="token operator">**</span><span class="token operator">*</span> get<span class="token operator">*</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    void set<span class="token operator">*</span><span class="token punctuation">(</span><span class="token operator">**</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token operator">&lt;</span>init<span class="token operator">&gt;</span><span class="token punctuation">(</span>android<span class="token punctuation">.</span>content<span class="token punctuation">.</span>Context<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token operator">&lt;</span>init<span class="token operator">&gt;</span><span class="token punctuation">(</span>android<span class="token punctuation">.</span>content<span class="token punctuation">.</span>Context<span class="token punctuation">,</span> android<span class="token punctuation">.</span>util<span class="token punctuation">.</span>AttributeSet<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token operator">&lt;</span>init<span class="token operator">&gt;</span><span class="token punctuation">(</span>android<span class="token punctuation">.</span>content<span class="token punctuation">.</span>Context<span class="token punctuation">,</span> android<span class="token punctuation">.</span>util<span class="token punctuation">.</span>AttributeSet<span class="token punctuation">,</span> int<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">#&#x4E0D;&#x6DF7;&#x6DC6;Activity&#x4E2D;&#x53C2;&#x6570;&#x662F;View&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x4F8B;&#x5982;&#xFF0C;&#x4E00;&#x4E2A;&#x63A7;&#x4EF6;&#x901A;&#x8FC7;android:onClick=&quot;clickMethodName&quot;&#x7ED1;&#x5B9A;&#x70B9;&#x51FB;&#x4E8B;&#x4EF6;&#xFF0C;&#x6DF7;&#x6DC6;&#x540E;&#x4F1A;&#x5BFC;&#x81F4;&#x70B9;&#x51FB;&#x4E8B;&#x4EF6;&#x5931;&#x6548;</span>
+<span class="token operator">-</span>keepclassmembers <span class="token keyword">class</span> <span class="token operator">*</span> extends android<span class="token punctuation">.</span>app<span class="token punctuation">.</span>Activity <span class="token punctuation">{</span>
+   <span class="token keyword">public</span> void <span class="token operator">*</span><span class="token punctuation">(</span>android<span class="token punctuation">.</span>view<span class="token punctuation">.</span>View<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">#&#x4FDD;&#x7559;Keep&#x6CE8;&#x89E3;&#x7684;&#x7C7B;&#x540D;&#x548C;&#x65B9;&#x6CD5;(&#x6700;&#x65B0;&#x7684;proguard-android.txt&#x4E2D;&#x5305;&#x62EC;&#x4E86;&#x8FD9;&#x4E2A;)</span>
+<span class="token operator">-</span>keep <span class="token keyword">class</span> <span class="token class-name">android<span class="token punctuation">.</span>support<span class="token punctuation">.</span>annotation<span class="token punctuation">.</span>Keep</span>
+<span class="token operator">-</span>keep <span class="token variable">@android</span><span class="token punctuation">.</span>support<span class="token punctuation">.</span>annotation<span class="token punctuation">.</span>Keep <span class="token keyword">class</span> <span class="token operator">*</span> <span class="token punctuation">{</span><span class="token operator">*</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
+<span class="token operator">-</span>keepclasseswithmembers <span class="token keyword">class</span> <span class="token operator">*</span> <span class="token punctuation">{</span>
+    <span class="token variable">@android</span><span class="token punctuation">.</span>support<span class="token punctuation">.</span>annotation<span class="token punctuation">.</span>Keep <span class="token operator">&lt;</span>methods<span class="token operator">&gt;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token operator">-</span>keepclasseswithmembers <span class="token keyword">class</span> <span class="token operator">*</span> <span class="token punctuation">{</span>
+    <span class="token variable">@android</span><span class="token punctuation">.</span>support<span class="token punctuation">.</span>annotation<span class="token punctuation">.</span>Keep <span class="token operator">&lt;</span>fields<span class="token operator">&gt;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token operator">-</span>keepclasseswithmembers <span class="token keyword">class</span> <span class="token operator">*</span> <span class="token punctuation">{</span>
+    <span class="token variable">@android</span><span class="token punctuation">.</span>support<span class="token punctuation">.</span>annotation<span class="token punctuation">.</span>Keep <span class="token operator">&lt;</span>init<span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token operator">...</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">#&#x7B2C;&#x4E09;&#x65B9;jar&#x5305;&#x4E0D;&#x88AB;&#x6DF7;&#x6DC6;</span>
+<span class="token operator">-</span>keep <span class="token keyword">class</span> <span class="token class-name">com<span class="token punctuation">.</span>github<span class="token punctuation">.</span></span><span class="token operator">**</span> <span class="token punctuation">{</span><span class="token operator">*</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="4_命名规范.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 4_命名规范">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"5_混淆","level":"1.2.5","depth":2,"next":{"title":"第2章_GIT常用方法","level":"1.3","depth":1,"ref":"","articles":[{"title":"1_gitreset三种模式","level":"1.3.1","depth":2,"path":"第2章_GIT常用方法/1_gitreset三种模式.md","ref":"第2章_GIT常用方法/1_gitreset三种模式.md","articles":[]},{"title":"2_git撤销回滚操作","level":"1.3.2","depth":2,"path":"第2章_GIT常用方法/2_git撤销回滚操作.md","ref":"第2章_GIT常用方法/2_git撤销回滚操作.md","articles":[]},{"title":"3_HEAD和HEAD^的作用和区别","level":"1.3.3","depth":2,"path":"第2章_GIT常用方法/3_HEAD和HEAD^的作用和区别.md","ref":"第2章_GIT常用方法/3_HEAD和HEAD^的作用和区别.md","articles":[]},{"title":"4_Git_Tag相关操作","level":"1.3.4","depth":2,"path":"第2章_GIT常用方法/4_Git_Tag相关操作.md","ref":"第2章_GIT常用方法/4_Git_Tag相关操作.md","articles":[]}]},"previous":{"title":"4_命名规范","level":"1.2.4","depth":2,"path":"第1章_基础知识/4_命名规范.md","ref":"第1章_基础知识/4_命名规范.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","-lunr","-search","search-pro","anchor-navigation-ex","accordion","edit-link","prism","-highlight","hide-element","code"],"ignores":["_book","node_modules"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"search-pro":{},"accordion":{},"code":{"copyButtons":false},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"编辑此页面","base":"https://github.com/yulliam/funbook/edit/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"Yulliam","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Yulliam's Doc","language":"zh-hans","gitbook":"*","description":"record some thing"},"file":{"path":"第1章_基础知识/5_混淆.md","mtime":"2023-02-02T08:41:28.233Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-02-02T08:42:37.475Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-accordion/accordionSelector.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

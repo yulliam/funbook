@@ -1,0 +1,694 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1_Sychronize同步机制总结 · Yulliam's Doc</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Yulliam">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-accordion/accordion.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    第1章_基础知识
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../第1章_基础知识/1_学习的方法.html">
+            
+                <a href="../第1章_基础知识/1_学习的方法.html">
+            
+                    
+                    1_学习的方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../第1章_基础知识/2_markdown语法.html">
+            
+                <a href="../第1章_基础知识/2_markdown语法.html">
+            
+                    
+                    2_markdown语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../第1章_基础知识/3_gitbook使用方法.html">
+            
+                <a href="../第1章_基础知识/3_gitbook使用方法.html">
+            
+                    
+                    3_gitbook使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../第1章_基础知识/4_命名规范.html">
+            
+                <a href="../第1章_基础知识/4_命名规范.html">
+            
+                    
+                    4_命名规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../第1章_基础知识/5_混淆.html">
+            
+                <a href="../第1章_基础知识/5_混淆.html">
+            
+                    
+                    5_混淆
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    第2章_GIT常用方法
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../第2章_GIT常用方法/1_gitreset三种模式.html">
+            
+                <a href="../第2章_GIT常用方法/1_gitreset三种模式.html">
+            
+                    
+                    1_gitreset三种模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../第2章_GIT常用方法/2_git撤销回滚操作.html">
+            
+                <a href="../第2章_GIT常用方法/2_git撤销回滚操作.html">
+            
+                    
+                    2_git撤销回滚操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../第2章_GIT常用方法/3_HEAD和HEAD^的作用和区别.html">
+            
+                <a href="../第2章_GIT常用方法/3_HEAD和HEAD^的作用和区别.html">
+            
+                    
+                    3_HEAD和HEAD^的作用和区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../第2章_GIT常用方法/4_Git_Tag相关操作.html">
+            
+                <a href="../第2章_GIT常用方法/4_Git_Tag相关操作.html">
+            
+                    
+                    4_Git_Tag相关操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    第3章_设计模式
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../第3章_设计模式/1_android_MVP模式详解.html">
+            
+                <a href="../第3章_设计模式/1_android_MVP模式详解.html">
+            
+                    
+                    1_android_MVP模式详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    第4章_AndroidUI
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" >
+            
+                <span>
+            
+                    
+                    第1节_Fragment
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="../第4章_AndroidUI/第1节_Fragment/1_FragmentPagerAdapter和FragmentStatePagerAdapter区别.html">
+            
+                <a href="../第4章_AndroidUI/第1节_Fragment/1_FragmentPagerAdapter和FragmentStatePagerAdapter区别.html">
+            
+                    
+                    1_FragmentPagerAdapter和FragmentStatePagerAdapter区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="../第4章_AndroidUI/第1节_Fragment/2_fragment的onResume，setUserVisibleHint，onHiddenChanged，isVisible方法.html">
+            
+                <a href="../第4章_AndroidUI/第1节_Fragment/2_fragment的onResume，setUserVisibleHint，onHiddenChanged，isVisible方法.html">
+            
+                    
+                    2_fragment的onResume，setUserVisibleHint，onHiddenChanged，isVisible方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    第5章_JAVA知识
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.6.1" data-path="1_Sychronize同步机制总结.html">
+            
+                <a href="1_Sychronize同步机制总结.html">
+            
+                    
+                    1_Sychronize同步机制总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    第6章_技巧
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../第6章_技巧/1_app反调试.html">
+            
+                <a href="../第6章_技巧/1_app反调试.html">
+            
+                    
+                    1_app反调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >1_Sychronize同步机制总结</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#synchronized-&#x53C2;&#x6570;-&#x53CA;&#x5176;&#x542B;&#x4E49;"><b></b>synchronized &#x53C2;&#x6570; &#x53CA;&#x5176;&#x542B;&#x4E49;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4F8B;&#x5982;&#xFF1A;"><b></b>&#x4F8B;&#x5982;&#xFF1A;</a></li><li><span class="title-icon "></span><a href="#&#x89E3;&#x91CA;"><b></b>&#x89E3;&#x91CA;</a></li><li><span class="title-icon "></span><a href="#&#x9A8C;&#x8BC1;"><b></b>&#x9A8C;&#x8BC1;</a></li></ul></ul></div><a href="#synchronized-&#x53C2;&#x6570;-&#x53CA;&#x5176;&#x542B;&#x4E49;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="synchronized-&#x53C2;&#x6570;-&#x53CA;&#x5176;&#x542B;&#x4E49;"><a name="synchronized-&#x53C2;&#x6570;-&#x53CA;&#x5176;&#x542B;&#x4E49;" class="anchor-navigation-ex-anchor" href="#synchronized-&#x53C2;&#x6570;-&#x53CA;&#x5176;&#x542B;&#x4E49;"><i class="fa fa-link" aria-hidden="true"></i></a>synchronized &#x53C2;&#x6570; &#x53CA;&#x5176;&#x542B;&#x4E49;</h1>
+<p>&#x8F6C;&#x81EA;&#xFF1A;<a href="https://blog.csdn.net/a1064072510/article/details/84065646" target="_blank">https://blog.csdn.net/a1064072510/article/details/84065646</a></p>
+<p>&#x8FD9;&#x4E2A;&#x60F3;&#x5FC5;&#x5927;&#x5BB6;&#x90FD;&#x4E0D;&#x964C;&#x751F;&#xFF0C;java&#x91CC;&#x9762;&#x7684;&#x91CD;&#x91CF;&#x7EA7;&#x9501;&#x3002;&#x7528;&#x6765;&#x63A7;&#x5236;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x7684;&#x3002;&#x5728;long And long &#xFF0C;&#x6211;&#x521A;&#x5F00;&#x59CB;&#x63A5;&#x89E6;java&#x7684;&#x65F6;&#x5019; &#xFF0C;&#x6211;&#x5C31;&#x5BF9;&#x8FD9;&#x4E2A;&#x5173;&#x952E;&#x8BCD;&#x597D;&#x5947;&#x9887;&#x6DF1;&#x3002;&#x5C24;&#x5176;&#x662F; &#x5B83;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x6709;this&#x7684; &#x4E5F;&#x6709;&#x9759;&#x6001;&#x53D8;&#x91CF;&#x7684;&#x3002;&#x7F51;&#x4E0A;&#x5BF9;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x89E3;&#x91CA;&#x53C8;&#x592A;&#x8FC7;&#x672F;&#x8BED;&#x8BDD;&#x3002;</p>
+<h2 id="&#x4F8B;&#x5982;&#xFF1A;"><a name="&#x4F8B;&#x5982;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x4F8B;&#x5982;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F8B;&#x5982;&#xFF1A;</h2>
+<pre class="language-"><code>&#x4F5C;&#x7528;&#x4E8E;&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x9501;&#x4F4F;&#x7684;&#x662F;&#x5BF9;&#x8C61;&#x7684;&#x5B9E;&#x4F8B;(this)&#xFF1B;
+
+&#x5F53;&#x4F5C;&#x7528;&#x4E8E;&#x9759;&#x6001;&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x9501;&#x4F4F;&#x7684;&#x662F;Class&#x5B9E;&#x4F8B;&#xFF0C;&#x53C8;&#x56E0;&#x4E3A;Class&#x7684;&#x76F8;&#x5173;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x5728;&#x6C38;&#x4E45;&#x5E26;PermGen&#xFF08;jdk1.8&#x5219;&#x662F;metaspace&#xFF09;&#xFF0C;&#x6C38;&#x4E45;&#x5E26;&#x662F;&#x5168;&#x5C40;&#x5171;&#x4EAB;&#x7684;&#xFF0C;&#x56E0;&#x6B64;&#x9759;&#x6001;&#x65B9;&#x6CD5;&#x9501;&#x76F8;&#x5F53;&#x4E8E;&#x7C7B;&#x7684;&#x4E00;&#x4E2A;&#x5168;&#x5C40;&#x9501;&#xFF0C;&#x4F1A;&#x9501;&#x6240;&#x6709;&#x8C03;&#x7528;&#x8BE5;&#x65B9;&#x6CD5;&#x7684;&#x7EBF;&#x7A0B;&#xFF1B;
+
+&#x5F53;&#x4F5C;&#x7528;&#x4E8E;&#x4E00;&#x4E2A;&#x9759;&#x6001;&#x7C7B;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4E0D;&#x7BA1;&#x662F;&#x4E0D;&#x662F;&#x672C;&#x8EAB;&#x5185;&#x90E8;&#x7684;&#x9759;&#x6001;&#x7C7B;&#xFF0C;&#x8FD8;&#x662F;&#x522B;&#x4EBA;&#x7684;&#x9759;&#x6001;&#x7C7B;&#xFF0C;&#x90FD;&#x53EF;&#x4EE5;&#x5B8C;&#x6210;&#x9501;&#x4F4F;&#x7684;&#x6548;&#x679C;&#xFF08;ps &#x4E0A;&#x9501;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;&#x4E00;&#x7FA4;&#x4EBA; &#x62FF;&#x628A;&#x9501;&#x627E;&#x4E2A;&#x4E1C;&#x897F;&#x4E0A;&#x9501;
+
+synchronized&#x4F5C;&#x7528;&#x4E8E;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x5B9E;&#x4F8B;&#x65F6;&#xFF0C;&#x9501;&#x4F4F;&#x7684;&#x662F;&#x6240;&#x6709;&#x4EE5;&#x8BE5;&#x5BF9;&#x8C61;&#x4E3A;&#x9501;&#x7684;&#x4EE3;&#x7801;&#x5757;&#x3002;
+</code></pre><p>&#x8FD9;&#x4E0D;&#x7BA1;&#x662F;&#x5BF9;&#x4E8E;&#x521D;&#x5B66;&#x8005;&#xFF0C;&#x8FD8;&#x662F;&#x8001;&#x9E1F; &#x3002;&#x90FD;&#x611F;&#x89C9;&#x6C89;&#x957F;&#x65E0;&#x5473;&#x3002;</p>
+<p>&#x6700;&#x8FD1;&#xFF0C;&#x6211;&#x7684;&#x9879;&#x76EE;&#x6D89;&#x53CA;&#x5230;&#x8FD9;&#x4E00;&#x5757;&#xFF0C;&#x6211;&#x5BF9;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x6709;&#x4E86;&#x987F;&#x609F;&#xFF0C;&#x5199;&#x4E0B;&#x6765; &#x4F20;&#x4E4B;&#x540E;&#x4E16;
+&#x6211;&#x5BF9;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x7684;&#x7406;&#x89E3;&#x662F;&#x8FD9;&#x6837;&#x7684;&#x3002;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">synchronized</span><span class="token punctuation">(</span>&#x83B7;&#x53D6;&#x9501;&#x7684;&#x5730;&#x65B9;<span class="token punctuation">)</span><span class="token punctuation">{</span>
+&#x5DE5;&#x4F5C;&#x5185;&#x5BB9;
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x662F;&#x7684; &#xFF0C;&#x4F60;&#x4EEC;&#x6CA1;&#x770B;&#x9519; &#xFF08;&#xFF09;&#x91CC;&#x9762;&#x7684;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x201C;&#x83B7;&#x53D6;&#x9501;&#x7684;&#x5730;&#x65B9;&#x201D;&#x3002;{ }&#x91CC;&#x9762;&#x662F;&#x5DE5;&#x4F5C;&#x5185;&#x5BB9;&#x3002; &#x4ED6;&#x4EEC;&#x6709;&#x8FD9;&#x51E0;&#x6761;&#x5173;&#x7CFB;&#x3002;</p>
+<ul>
+<li><p>&#x83B7;&#x53D6;&#x9501;&#x7684;&#x5730;&#x65B9; &#x548C; &#x5DE5;&#x4F5C;&#x5185;&#x5BB9; &#x662F;&#x4E0D;&#x5FC5;&#x9700;&#x8981; &#x6709;&#x4EFB;&#x4F55;&#x5173;&#x8054;&#x7684;&#x3002; &#x53EF;&#x4EE5;&#x6709;&#x5173;&#x8054;&#xFF0C;&#x4F46;&#x6CA1;&#x6709;&#x5173;&#x8054; &#x4E5F;&#x6CA1;&#x4E8B;</p>
+</li>
+<li><p>&#x83B7;&#x53D6;&#x9501;&#x7684;&#x5730;&#x65B9; &#xFF1A;&#x53EA;&#x662F;&#x4E00;&#x4E2A;&#x8BA9;synchronized &#x6574;&#x4F53; &#x653E;&#x7F6E;&#x9501;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x4E00;&#x4E2A;&#x201C;&#x83B7;&#x53D6;&#x9501;&#x7684;&#x5730;&#x65B9;&#x201D; &#x53EA;&#x6709;&#x4E00;&#x628A;&#x9501;&#x3002;</p>
+</li>
+<li><p>&#x5DE5;&#x4F5C;&#x5185;&#x5BB9;&#xFF1A; &#x8981;&#x8FDB;&#x884C;&#x5DE5;&#x4F5C;&#x7684;**&#x524D;&#x63D0;&#x662F; synchronized&#x6574;&#x4F53;&#xFF0C;&#x627E;&#x5230;&#x4E00;&#x4E2A;&#x201C;&#x83B7;&#x53D6;&#x9501;&#x7684;&#x5730;&#x65B9;&#x201D;&#xFF0C;&#x5728; &#x201C;&#x83B7;&#x53D6;&#x9501;&#x7684;&#x5730;&#x65B9;&#x201D; &#x83B7;&#x53D6;&#x5230;&#x4E86;&#x9501;&#xFF0C; &#x5982;&#x679C; &#x201C;&#x83B7;&#x53D6;&#x9501;&#x7684;&#x5730;&#x65B9;&#x201D;&#x7684;&#x9501;&#xFF0C;&#x5DF2;&#x7ECF;&#x88AB;&#x522B;&#x4EBA;&#x62FF;&#x53BB;&#x4E86;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x53EA;&#x80FD;&#x7B49;&#x5F85;&#x522B;&#x4EBA; &#x628A;&#x9501;&#x8FD8;&#x7ED9; &#x201C;&#x83B7;&#x53D6;&#x9501;&#x7684;&#x5730;&#x65B9;&#x201D;&#x3002;&#x7136;&#x540E; &#x518D;&#x83B7;&#x53D6;&#x9501;&#x3002;</p>
+</li>
+<li><p>synchronized &#x4F1A;&#x4F7F;&#x7528;&#x8FD0;&#x884C;&#x5DE5;&#x4F5C;&#x5185;&#x5BB9;&#x7684;&#x524D;&#x63D0;&#xFF0C;&#x5FC5;&#x987B;&#x83B7;&#x53D6;&#x5230;&#x9501;&#x3002;&#x8FD9;&#x4E2A;&#x610F;&#x601D;&#x5462;&#xFF0C;&#x5C31;&#x662F;&#x4F8B;&#x5982;&#xFF0C;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;synchronized &#x83B7;&#x53D6;&#x5230;&#x4E86;objec A&#x7684;&#x9501;&#xFF0C;&#x90A3;&#x4E48;&#x5176;&#x4ED6;&#x7EBF;&#x7A0B;&#x8FD8;&#x53EF;&#x4EE5;&#x66F4;&#x6539; A &#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#x4E48;?&#x3002; &#x8FD9;&#x4E2A;&#x5F97;&#x5230;&#x5206;&#x4E24;&#x79CD;&#x60C5;&#x51B5;&#xFF0C;&#x5982;&#x679C;&#x5176;&#x4ED6;&#x7EBF;&#x7A0B;&#x4EE3;&#x7801; &#x662F;&#x88AB;synchronized &#x6240;&#x5305;&#x88F9;&#x7684;&#xFF0C;&#x90A3;&#x4E48;&#x53EA;&#x80FD;&#x7B49; objec A&#x88AB;&#x91CA;&#x653E;&#x4E86;&#xFF0C;&#x624D;&#x80FD;&#x66F4;&#x6539;&#x3002;&#x5982;&#x679C;&#xFF0C;&#x5176;&#x4ED6;&#x7EBF;&#x7A0B;&#x4EE3;&#x7801;&#x6CA1;&#x6709;&#x88AB;synchronized&#x5305;&#x88F9;&#xFF0C;&#x5979;&#x53EF;&#x4EE5;&#x4E0D;&#x9700;&#x8981;&#x6709;&#x9501;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5BF9;objec A&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#x3002;</p>
+</li>
+</ul>
+<h2 id="&#x89E3;&#x91CA;"><a name="&#x89E3;&#x91CA;" class="anchor-navigation-ex-anchor" href="#&#x89E3;&#x91CA;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x89E3;&#x91CA;</h2>
+<p>  &#x5148;&#x6253;&#x4E2A;&#x6BD4;&#x65B9;&#xFF0C;&#x6211;&#x4EEC;&#x628A; synchronized&#x8FD9;&#x4E2A;&#x770B;&#x6210;&#x4E00;&#x4E2A;&#x6574;&#x4F53;&#xFF0C;&#x90A3;&#x4E48;&#x5728;&#x591A;&#x7EBF;&#x7A0B;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C31;&#x4F1A;&#x6709;&#x5F88;&#x591A;&#x4E2A; synchronized&#x6574;&#x4F53;&#x3002; &#x8FD9;&#x4E2A;&#x6574;&#x4F53;&#x5F00;&#x59CB;&#x5DE5;&#x4F5C;&#x7684;&#x524D;&#x63D0;&#x662F; &#x5B83;&#x53EF;&#x4EE5;&#x4ECE; &#x201C;&#x83B7;&#x53D6;&#x9501;&#x7684;&#x5730;&#x65B9;&#x201D;&#x62FF;&#x5230;&#x9501;&#x3002;&#x90A3;&#x4E48;&#x4ED6;&#x5C31;&#x53EF;&#x4EE5;&#x505A;&#x5DE5;&#x4F5C;&#x4E86;&#x3002;&#x5982;&#x679C; &#x60F3;&#x8981; &#x201C;&#x83B7;&#x53D6;&#x9501;&#x7684;&#x5730;&#x65B9;&#x201D;&#x7684;&#x9501;&#xFF0C;&#x5DF2;&#x7ECF;&#x88AB;&#x522B;&#x4EBA;&#x62FF;&#x8D70;&#x4E86;&#x3002;&#x90A3;&#x4E48;&#x53EA;&#x80FD;&#x7B49;&#x522B;&#x4EBA;&#x628A;&#x9501;&#x6362;&#x56DE;&#x6765;&#xFF0C;&#x624D;&#x884C;&#x3002;&#x3002;</p>
+<p>&#x4E0A;&#x9762;&#x8FD9;&#x4E2A;&#x8FD8;&#x662F;&#x6709;&#x70B9;&#x62BD;&#x8C61;&#x3002;&#x5C31;&#x8FD9;&#x4E48;&#x8BF4;&#x5427; &#x5728;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x591A;&#x7EBF;&#x7A0B;&#x7684;&#xFF0C;&#x4F1A;&#x4EA7;&#x751F;&#x597D;&#x591A;synchronized&#x6574;&#x4F53;&#x3002;&#x5C31;&#x53EB;&#x5C0F;&#x660E;&#xFF0C;&#x5C0F;&#x7EA2;&#xFF0C;&#x5C0F;&#x82B3;&#xFF0C;&#x5C0F;&#x82B1;&#x2026;&#x7B49;&#x3002;&#x4ED6;&#x4EEC;&#x73B0;&#x5728;&#x624B;&#x4E2D;&#x6CA1;&#x6709;&#x9501;&#xFF0C;&#x53EA;&#x6709;&#x624B;&#x4E2D;&#x6709;&#x9501;&#x7684;&#x65F6;&#x5019; &#x624D;&#x53EF;&#x4EE5;&#x5DE5;&#x4F5C;&#x3002; &#x73B0;&#x5728;&#x5C0F;&#x660E;&#xFF0C;&#x5C0F;&#x7EA2;&#x4ED6;&#x4EEC;&#x6765;&#x5230;&#x5DE5;&#x4F5C;&#x7684;&#x5730;&#x65B9;&#x3002;&#x83B7;&#x53D6;&#x9501;&#x7684;&#x5730;&#x65B9;&#x5C31;&#x662F;&#x8DEF;&#x8FB9;&#x7684;&#x4E00;&#x68F5;&#x6811;&#xFF1A;&#xFF1A;&#x6CE8;&#x610F;&#x73B0;&#x5728;&#x8DEF;&#x8FB9;&#x53EA;&#x6709;&#x8FD9;&#x4E00;&#x68F5;&#x6811;&#x3002;&#x5C0F;&#x7EA2;&#x62A2;&#x5148;&#x4E00;&#x6B65;&#x5C06;&#x6811;&#x4E0A;&#x7684;&#x9501;&#x62FF;&#x8D70;&#x4E86;&#x3002;&#x7136;&#x540E;&#x5C0F;&#x7EA2;&#x5DE5;&#x4F5C;&#x53BB;&#x4E86;&#xFF08;&#x5979;&#x7684;&#x5DE5;&#x4F5C; &#x4E0D;&#x7528;&#x548C;&#x6811;&#x6709;&#x5173;&#x7CFB;&#xFF0C;&#x5979;&#x53EF;&#x4EE5;&#x780D;&#x6811;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x53BB;&#x8DEF;&#x8FB9;&#x626B;&#x5730; &#xFF09;&#x3002;&#x5C0F;&#x660E;&#xFF0C;&#x5C0F;&#x82B3;&#x7B49;&#x5176;&#x4ED6;&#x4EBA;&#xFF0C;&#x56E0;&#x4E3A;&#x6CA1;&#x5730;&#x65B9;&#x83B7;&#x53D6;&#x9501;&#xFF08;&#x53EA;&#x6709;&#x4E00;&#x68F5;&#x6811; &#x5E76;&#x4E14;&#x6811;&#x7684;&#x9501; &#x5DF2;&#x7ECF;&#x88AB;&#x5C0F;&#x7EA2;&#x62FF;&#x8D70;&#x4E86;&#xFF09;&#x3002;&#x6240;&#x4EE5;&#x53EA;&#x80FD;&#x5728;&#x539F;&#x5730;&#x7B49;&#x5F85; &#xFF0C;&#x5C0F;&#x7EA2;&#x5DE5;&#x4F5C;&#x505A;&#x5B8C;&#x4E86; &#x628A;&#x9501;&#x8FD8;&#x7ED9;&#x6811; &#xFF0C;&#x5C0F;&#x660E;&#xFF0C;&#x5C0F;&#x82B3;&#x624D;&#x6709;&#x673A;&#x4F1A;&#x8FDB;&#x884C;&#x5DE5;&#x4F5C;&#x3002;&#x3001;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A; &#x4E0A;&#x9762;&#x662F;&#x8DEF;&#x8FB9;&#x53EA;&#x6709;&#x4E00;&#x68F5;&#x6811;&#xFF0C;&#x5982;&#x679C;&#x5B58;&#x5728;&#x597D;&#x51E0;&#x9897;&#x6811;&#x7684;&#x8BDD;&#xFF0C;&#x90A3;&#x4E48;&#x5C0F;&#x660E;&#xFF0C;&#x5C0F;&#x7EA2;&#x4ED6;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x653E;&#x7F6E;&#x83B7;&#x53D6;&#x9501; &#x4E00;&#x4E2A;&#x6570;&#x5BF9;&#x5E94;&#x4E00;&#x4E2A;&#x9501;&#xFF0C;&#x591A;&#x4E2A;&#x6811;&#x5C31;&#x591A;&#x4E2A;&#x9501;&#x3002;&#x8FD9;&#x4E2A;&#x5BF9;&#x5E94;&#x4E8E;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B; &#xFF08;&#x5B9E;&#x4F8B;&#x53EF;&#x4EE5;&#x6709;&#x597D;&#x591A;&#x4E2A;&#xFF09;</p>
+<h2 id="&#x9A8C;&#x8BC1;"><a name="&#x9A8C;&#x8BC1;" class="anchor-navigation-ex-anchor" href="#&#x9A8C;&#x8BC1;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9A8C;&#x8BC1;</h2>
+<p>&#x6211;&#x4EEC;&#x9996;&#x5148;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;Runnable &#xFF0C;&#x56E0;&#x4E3A; &#x591A;&#x7EBF;&#x7A0B;&#x7684;&#x8BDD; &#x6700;&#x597D;&#x8FD8;&#x662F;&#x7528;Runnable,&#x81F3;&#x4E8E;&#x4E3A;&#x4EC0;&#x4E48;&#x5462;&#xFF1F;&#x767E;&#x5EA6;&#x53BB;&#x3002;</p>
+<pre class="language-"><code class="lang-java">  <span class="token keyword">static</span> <span class="token keyword">class</span> <span class="token class-name">LockRunable</span> <span class="token keyword">implements</span> <span class="token class-name">Runnable</span> <span class="token punctuation">{</span>
+        <span class="token keyword">private</span> <span class="token keyword">int</span> num<span class="token punctuation">;</span>
+        <span class="token keyword">private</span> <span class="token class-name">LockNormal</span> lockNormal<span class="token punctuation">;</span>
+        <span class="token keyword">public</span> <span class="token class-name">LockRunable</span><span class="token punctuation">(</span><span class="token keyword">int</span> num<span class="token punctuation">,</span> <span class="token class-name">LockNormal</span> lockNormal<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>num <span class="token operator">=</span> num<span class="token punctuation">;</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>lockNormal <span class="token operator">=</span> lockNormal<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token annotation punctuation">@Override</span>
+        <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+                    <span class="token keyword">if</span> <span class="token punctuation">(</span>num <span class="token operator">&lt;=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        <span class="token keyword">break</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+                    <span class="token keyword">try</span> <span class="token punctuation">{</span>
+                        <span class="token class-name">Thread</span><span class="token punctuation">.</span><span class="token function">sleep</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">InterruptedException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+                    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token class-name">Thread</span><span class="token punctuation">.</span><span class="token function">currentThread</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">&quot;    &quot;</span> <span class="token operator">+</span> num<span class="token operator">--</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x7C7B;&#x5462; &#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x6574;&#x6570;&#xFF0C;&#x4E00;&#x4E2A;LockNormal&#x6211;&#x81EA;&#x5DF1;&#x5B9A;&#x4E49;&#x7684;&#x7C7B;&#xFF0C;&#x5728;run&#x91CC;&#x9762;&#x5462;&#x5148;&#x5BF9; num&#x8FDB;&#x884C;&#x5224;&#x65AD;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;0&#x7684;&#x8BDD;&#xFF0C;&#x5C31;&#x9000;&#x51FA;&#xFF0C;&#x5426;&#x5219;&#x51CF;&#x4E00;&#x3002; &#x8FD0;&#x884C;&#x4E00;&#x4E0B;</p>
+<pre class="language-"><code class="lang-java">  <span class="token class-name">LockNormal</span> lockNormal <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">LockNormal</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">LockRunable</span> one <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">LockRunable</span><span class="token punctuation">(</span><span class="token number">15</span><span class="token punctuation">,</span> lockNormal<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">new</span> <span class="token class-name">Thread</span><span class="token punctuation">(</span>one<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">new</span> <span class="token class-name">Thread</span><span class="token punctuation">(</span>one<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">new</span> <span class="token class-name">Thread</span><span class="token punctuation">(</span>one<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">new</span> <span class="token class-name">Thread</span><span class="token punctuation">(</span>one<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">new</span> <span class="token class-name">Thread</span><span class="token punctuation">(</span>one<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p><img src="https://img-blog.csdnimg.cn/20181114114025614.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2ExMDY0MDcyNTEw,size_16,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></p>
+<p>num&#x7ADF;&#x7136;&#x53D8;&#x6210;&#x8D1F;&#x7684;&#x4E86;&#xFF0C;&#x8FD9;&#x662F;&#x56E0;&#x4E3A; &#x4E94;&#x4E2A;&#x7EBF;&#x7A0B;&#x540C;&#x65F6;&#x5BF9;&#x4ED6;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#xFF0C;&#x9020;&#x6210;&#x7684;&#x3002;&#x8981;&#x907F;&#x514D;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#xFF0C;&#x53EA;&#x80FD;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x64CD;&#x4F5C;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x522B;&#x7684;&#x7EBF;&#x7A0B;&#x5C31;&#x4E0D;&#x80FD;&#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x7ED9;&#x7A0B;&#x5E8F;&#x52A0;&#x9501;&#x8BD5;&#x4E00;&#x4E0B;&#x3002;&#x9996;&#x5148;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A; &#x9759;&#x6001;&#x6210;&#x5458;&#xFF0C;&#x9759;&#x6001;&#x6210;&#x5458;&#x6709;&#x4E00;&#x4E2A;&#x7279;&#x70B9;&#x662F;&#x7CFB;&#x7EDF;&#x521D;&#x59CB;&#x5316;&#x7684;&#xFF0C;&#x5168;&#x5C40;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#x3002;&#x5C31;&#x76F8;&#x5F53;&#x4E8E;&#x4E0A;&#x9762;&#x7684; &#x53EA;&#x6709;&#x4E00;&#x68F5;&#x6811;&#x3002;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token keyword">transient</span> <span class="token class-name">Object</span> lock <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Object</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>&#x5BF9; &#x5DE5;&#x4F5C;&#x5185;&#x5BB9;&#x52A0;&#x9501;</p>
+<pre class="language-"><code class="lang-java">    <span class="token annotation punctuation">@Override</span>
+        <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">synchronized</span> <span class="token punctuation">(</span>lock<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token keyword">if</span> <span class="token punctuation">(</span>num <span class="token operator">&lt;=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        <span class="token keyword">break</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+                    <span class="token keyword">try</span> <span class="token punctuation">{</span>
+                        <span class="token class-name">Thread</span><span class="token punctuation">.</span><span class="token function">sleep</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">InterruptedException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+                    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token class-name">Thread</span><span class="token punctuation">.</span><span class="token function">currentThread</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">&quot;    &quot;</span> <span class="token operator">+</span> num<span class="token operator">--</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+</code></pre>
+<p>&#x8FD0;&#x884C;</p>
+<p><img src="https://img-blog.csdnimg.cn/20181114114606978.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2ExMDY0MDcyNTEw,size_16,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></p>
+<p>&#x8FD9;&#x6B21;&#x5C31;&#x548C;&#x9884;&#x671F;&#x7ED3;&#x679C;&#x76F8;&#x7B49;&#x4E86;&#x3002;&#x4F46;&#x662F; &#x6211;&#x4EEC;&#x53EF;&#x53D1;&#x73B0; &#x90FD;&#x662F;&#x90FD;&#x662F;&#x540C;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#x7684;&#xFF0C;&#x8FD9;&#x662F;&#x56E0;&#x4E3A; sleep&#x65F6;&#x5019;&#x4E0D;&#x4F1A;&#x91CA;&#x653E;&#x9501;&#xFF0C;&#x5176;&#x4ED6;&#x7EBF;&#x7A0B;&#x4E5F;&#x65E0;&#x6CD5;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;</p>
+<p>&#x4F20;&#x5165;&#x5B9E;&#x4F8B;</p>
+<pre class="language-"><code class="lang-java">    <span class="token keyword">static</span> <span class="token keyword">class</span> <span class="token class-name">LockRunable</span> <span class="token keyword">implements</span> <span class="token class-name">Runnable</span> <span class="token punctuation">{</span>
+
+        <span class="token keyword">private</span> <span class="token keyword">int</span> num<span class="token punctuation">;</span>
+
+        <span class="token keyword">private</span> <span class="token class-name">LockNormal</span> lockNormal<span class="token punctuation">;</span>
+
+        <span class="token keyword">public</span> <span class="token class-name">LockRunable</span><span class="token punctuation">(</span><span class="token keyword">int</span> num<span class="token punctuation">,</span> <span class="token class-name">LockNormal</span> lockNormal<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>num <span class="token operator">=</span> num<span class="token punctuation">;</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>lockNormal <span class="token operator">=</span> lockNormal<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token annotation punctuation">@Override</span>
+        <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">synchronized</span> <span class="token punctuation">(</span>lockNormal<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token keyword">if</span> <span class="token punctuation">(</span>num <span class="token operator">&lt;=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        <span class="token keyword">break</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+                    <span class="token keyword">try</span> <span class="token punctuation">{</span>
+                        <span class="token class-name">Thread</span><span class="token punctuation">.</span><span class="token function">sleep</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">InterruptedException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+                    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token class-name">Thread</span><span class="token punctuation">.</span><span class="token function">currentThread</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">&quot;    &quot;</span> <span class="token operator">+</span> num<span class="token operator">--</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+</code></pre>
+<p>&#x7ED3;&#x679C;&#xFF1A;</p>
+<p>&#x4E5F;&#x662F;&#x540C;&#x6837;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x5982;&#x679C; &#x6211;&#x4EEC;&#x4F20;&#x5165;this&#x7684;&#x8BDD; &#x8FD0;&#x884C;&#x8FD8;&#x662F;&#x4E00;&#x6837;&#x7684;&#x7ED3;&#x679C;&#x3002;&#x8FD9;&#x5C31;&#x662F;&#x4E0A;&#x9762;&#x6811;&#x7684;&#x95EE;&#x9898;&#x4E86;&#xFF0C;&#x4E0D;&#x7BA1;&#x662F;&#x4F20;&#x5165;&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x8FD8;&#x662F;this&#x672C;&#x8EAB;&#x5B9E;&#x4F8B;&#x3002;&#x53EA;&#x6709;&#x80FD;&#x4FDD;&#x8BC1;&#x5B83;&#x4EEC;&#x672C;&#x8EAB;&#x662F;&#x552F;&#x4E00;&#x7684;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x201C;&#x83B7;&#x53D6;&#x9501;&#x7684;&#x5730;&#x65B9;&#x201D;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#xFF0C;&#x540C;&#x4E00;&#x65F6;&#x95F4;&#x5185;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x4EBA;&#x80FD;&#x6210;&#x529F;&#x83B7;&#x53D6;&#x5230;&#x9501; &#x8FDB;&#x884C;&#x5DE5;&#x4F5C;&#x3002;&#x5C31;&#x548C;&#x9501;&#x9759;&#x6001;&#x6210;&#x5458;&#x662F;&#x4E00;&#x6837;&#x7684;&#x6548;&#x679C;&#x5982;&#x679C;&#x6211;&#x4EEC; new &#x4E24;&#x4E2A;Runnable&#x7684;&#x8BDD;&#xFF0C;&#x5E76;&#x4E14;&#x4F20;&#x5165;this&#x5B9E;&#x4F8B;&#x7684;&#x8BDD;&#xFF0C;&#x5C31;&#x4F1A;&#x6709;&#x4E24;&#x4E2A;&#x201C;&#x83B7;&#x53D6;&#x9501;&#x7684;&#x5730;&#x65B9;&#x201D; &#xFF0C;&#x53EF;&#x4EE5;&#x6709;&#x4E24;&#x4E2A;&#x4EBA;&#x540C;&#x65F6;&#x5DE5;&#x4F5C;&#x3002;</p>
+<p>&#x603B;&#x7ED3;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">synchronized</span><span class="token punctuation">(</span>&#x653E;&#x9501;&#x7684;&#x5730;&#x65B9;<span class="token punctuation">)</span><span class="token punctuation">{</span>
+&#x5DE5;&#x4F5C;&#x5185;&#x5BB9;
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x53EA;&#x8981;&#x6211;&#x4EEC;&#x4FDD;&#x8BC1;&#x201C;&#x83B7;&#x53D6;&#x9501;&#x7684;&#x5730;&#x65B9;&#x201D;&#x662F;&#x552F;&#x4E00;&#x7684;&#xFF0C;&#x90A3;&#x4E48;&#x5728;&#x540C;&#x4E00;&#x65F6;&#x523B;&#xFF0C;&#x5C31;&#x53EA;&#x80FD;&#x6709;&#x4E00;&#x4E2A;&#x5DE5;&#x4F5C;&#x5185;&#x5BB9;&#x4F1A;&#x88AB;&#x6267;&#x884C;&#x3002;&#x5982;&#x679C;&#xFF0C;&#x201C;&#x83B7;&#x53D6;&#x9501;&#x7684;&#x5730;&#x65B9;&#x201D;&#x4E0D;&#x662F;&#x552F;&#x4E00;&#x7684;&#xFF08;&#x4E00;&#x4E2A;&#x7C7B;new&#x5F88;&#x591A;&#x5B9E;&#x4F8B;&#xFF0C;&#x9501;&#x4F4F;this&#x5B9E;&#x4F8B;&#xFF0C;&#x90A3;&#x4E48;&#x540C;&#x4E00;&#x65F6;&#x523B;&#x5C31;&#x4F1A;&#x6709;&#x5F88;&#x591A;&#x653E;&#x9501;&#x7684;&#x5730;&#x65B9;&#xFF09;&#xFF0C;&#x5728;&#x540C;&#x4E00;&#x65F6;&#x523B;&#x5C31;&#x4F1A;&#x6709;&#x597D;&#x591A; &#x5DE5;&#x4F5C;&#x5185;&#x5BB9;&#x88AB;&#x6267;&#x884C;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1_Sychronize同步机制总结","level":"1.6.1","depth":2,"next":{"title":"第6章_技巧","level":"1.7","depth":1,"ref":"","articles":[{"title":"1_app反调试","level":"1.7.1","depth":2,"path":"第6章_技巧/1_app反调试.md","ref":"第6章_技巧/1_app反调试.md","articles":[]}]},"previous":{"title":"第5章_JAVA知识","level":"1.6","depth":1,"ref":"","articles":[{"title":"1_Sychronize同步机制总结","level":"1.6.1","depth":2,"path":"第5章_JAVA知识/1_Sychronize同步机制总结.md","ref":"第5章_JAVA知识/1_Sychronize同步机制总结.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","-lunr","-search","search-pro","anchor-navigation-ex","accordion","edit-link","prism","-highlight","hide-element","code"],"ignores":["_book","node_modules"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"search-pro":{},"accordion":{},"code":{"copyButtons":false},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"编辑此页面","base":"https://github.com/yulliam/funbook/edit/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"Yulliam","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Yulliam's Doc","language":"zh-hans","gitbook":"*","description":"record some thing"},"file":{"path":"第5章_JAVA知识/1_Sychronize同步机制总结.md","mtime":"2023-02-02T08:41:28.233Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-02-02T08:42:37.475Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-accordion/accordionSelector.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

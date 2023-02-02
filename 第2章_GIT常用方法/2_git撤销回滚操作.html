@@ -1,0 +1,722 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2_git撤销回滚操作 · Yulliam's Doc</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Yulliam">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-accordion/accordion.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="3_HEAD和HEAD^的作用和区别.html" />
+    
+    
+    <link rel="prev" href="1_gitreset三种模式.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    第1章_基础知识
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../第1章_基础知识/1_学习的方法.html">
+            
+                <a href="../第1章_基础知识/1_学习的方法.html">
+            
+                    
+                    1_学习的方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../第1章_基础知识/2_markdown语法.html">
+            
+                <a href="../第1章_基础知识/2_markdown语法.html">
+            
+                    
+                    2_markdown语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../第1章_基础知识/3_gitbook使用方法.html">
+            
+                <a href="../第1章_基础知识/3_gitbook使用方法.html">
+            
+                    
+                    3_gitbook使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../第1章_基础知识/4_命名规范.html">
+            
+                <a href="../第1章_基础知识/4_命名规范.html">
+            
+                    
+                    4_命名规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../第1章_基础知识/5_混淆.html">
+            
+                <a href="../第1章_基础知识/5_混淆.html">
+            
+                    
+                    5_混淆
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    第2章_GIT常用方法
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="1_gitreset三种模式.html">
+            
+                <a href="1_gitreset三种模式.html">
+            
+                    
+                    1_gitreset三种模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2" data-path="2_git撤销回滚操作.html">
+            
+                <a href="2_git撤销回滚操作.html">
+            
+                    
+                    2_git撤销回滚操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="3_HEAD和HEAD^的作用和区别.html">
+            
+                <a href="3_HEAD和HEAD^的作用和区别.html">
+            
+                    
+                    3_HEAD和HEAD^的作用和区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="4_Git_Tag相关操作.html">
+            
+                <a href="4_Git_Tag相关操作.html">
+            
+                    
+                    4_Git_Tag相关操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    第3章_设计模式
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../第3章_设计模式/1_android_MVP模式详解.html">
+            
+                <a href="../第3章_设计模式/1_android_MVP模式详解.html">
+            
+                    
+                    1_android_MVP模式详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    第4章_AndroidUI
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" >
+            
+                <span>
+            
+                    
+                    第1节_Fragment
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="../第4章_AndroidUI/第1节_Fragment/1_FragmentPagerAdapter和FragmentStatePagerAdapter区别.html">
+            
+                <a href="../第4章_AndroidUI/第1节_Fragment/1_FragmentPagerAdapter和FragmentStatePagerAdapter区别.html">
+            
+                    
+                    1_FragmentPagerAdapter和FragmentStatePagerAdapter区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="../第4章_AndroidUI/第1节_Fragment/2_fragment的onResume，setUserVisibleHint，onHiddenChanged，isVisible方法.html">
+            
+                <a href="../第4章_AndroidUI/第1节_Fragment/2_fragment的onResume，setUserVisibleHint，onHiddenChanged，isVisible方法.html">
+            
+                    
+                    2_fragment的onResume，setUserVisibleHint，onHiddenChanged，isVisible方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    第5章_JAVA知识
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../第5章_JAVA知识/1_Sychronize同步机制总结.html">
+            
+                <a href="../第5章_JAVA知识/1_Sychronize同步机制总结.html">
+            
+                    
+                    1_Sychronize同步机制总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    第6章_技巧
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../第6章_技巧/1_app反调试.html">
+            
+                <a href="../第6章_技巧/1_app反调试.html">
+            
+                    
+                    1_app反调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >2_git撤销回滚操作</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#git&#x64A4;&#x9500;&#x56DE;&#x6EDA;&#x64CD;&#x4F5C;git-reset-&#x548C;-get-revert"><b></b>Git&#x64A4;&#x9500;&amp;&#x56DE;&#x6EDA;&#x64CD;&#x4F5C;(git reset &#x548C; get revert)</a></li><li><span class="title-icon "></span><a href="#git&#x7684;&#x5DE5;&#x4F5C;&#x6D41;"><b></b>git&#x7684;&#x5DE5;&#x4F5C;&#x6D41;</a></li><li><span class="title-icon "></span><a href="#&#x4EE3;&#x7801;&#x56DE;&#x6EDA;"><b></b> &#x4EE3;&#x7801;&#x56DE;&#x6EDA;</a></li><li><span class="title-icon "></span><a href="#&#x64A4;&#x9500;"><b></b>&#x64A4;&#x9500;</a></li><li><span class="title-icon "></span><a href="#&#x56DE;&#x6EDA;"><b></b>&#x56DE;&#x6EDA;</a></li><li><span class="title-icon "></span><a href="#&#x5220;&#x9664;&#x67D0;&#x6B21;&#x63D0;&#x4EA4;"><b></b>&#x5220;&#x9664;&#x67D0;&#x6B21;&#x63D0;&#x4EA4;</a></li></ul></div><a href="#git&#x64A4;&#x9500;&#x56DE;&#x6EDA;&#x64CD;&#x4F5C;git-reset-&#x548C;-get-revert" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="git&#x64A4;&#x9500;&#x56DE;&#x6EDA;&#x64CD;&#x4F5C;git-reset-&#x548C;-get-revert"><a name="git&#x64A4;&#x9500;&#x56DE;&#x6EDA;&#x64CD;&#x4F5C;git-reset-&#x548C;-get-revert" class="anchor-navigation-ex-anchor" href="#git&#x64A4;&#x9500;&#x56DE;&#x6EDA;&#x64CD;&#x4F5C;git-reset-&#x548C;-get-revert"><i class="fa fa-link" aria-hidden="true"></i></a>Git&#x64A4;&#x9500;&amp;&#x56DE;&#x6EDA;&#x64CD;&#x4F5C;(git reset &#x548C; get revert)</h1>
+<p><a href="https://blog.csdn.net/asoar/article/details/84111841" target="_blank">https://blog.csdn.net/asoar/article/details/84111841</a></p>
+<p>&#x200C;</p>
+<h1 id="git&#x7684;&#x5DE5;&#x4F5C;&#x6D41;"><a name="git&#x7684;&#x5DE5;&#x4F5C;&#x6D41;" class="anchor-navigation-ex-anchor" href="#git&#x7684;&#x5DE5;&#x4F5C;&#x6D41;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>git&#x7684;&#x5DE5;&#x4F5C;&#x6D41;</strong></h1>
+<p>&#x200C;</p>
+<p>&#x5DE5;&#x4F5C;&#x533A;&#xFF1A;&#x5373;&#x81EA;&#x5DF1;&#x5F53;&#x524D;&#x5206;&#x652F;&#x6240;&#x4FEE;&#x6539;&#x7684;&#x4EE3;&#x7801;&#xFF0C;git add xx &#x4E4B;&#x524D;&#x7684;&#xFF01;&#x4E0D;&#x5305;&#x62EC; git add xx &#x548C; git commit xxx &#x4E4B;&#x540E;&#x7684;&#x3002;</p>
+<p>&#x200C;</p>
+<p>&#x6682;&#x5B58;&#x533A;&#xFF1A;&#x5DF2;&#x7ECF; git add xxx &#x8FDB;&#x53BB;&#xFF0C;&#x4E14;&#x672A; git commit xxx &#x7684;&#x3002;</p>
+<p>&#x200C;</p>
+<p>&#x672C;&#x5730;&#x5206;&#x652F;&#xFF1A;&#x5DF2;&#x7ECF;git commit -m xxx &#x63D0;&#x4EA4;&#x5230;&#x672C;&#x5730;&#x5206;&#x652F;&#x7684;&#x3002; &#x8FD9;&#x91CC;&#x5199;&#x56FE;&#x7247;&#x63CF;&#x8FF0;</p>
+<p><img src="https://gblobscdn.gitbook.com/assets%2F-MVxhDL96fVN_Pxj0l04%2F-MWY_8iqBP7UHN0mvj8A%2F-MWY__wEPEr635bwAtSm%2Fimage.png?alt=media&amp;token=db717835-4d43-41d2-b746-8b4d1b41f2e4" alt="img"></p>
+<p>&#x200C;</p>
+<h1 id="&#x4EE3;&#x7801;&#x56DE;&#x6EDA;"><a name="&#x4EE3;&#x7801;&#x56DE;&#x6EDA;" class="anchor-navigation-ex-anchor" href="#&#x4EE3;&#x7801;&#x56DE;&#x6EDA;"><i class="fa fa-link" aria-hidden="true"></i></a><strong><img src="https://img-blog.csdn.net/20170517142150678?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbGVvcngwMQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="img"> &#x4EE3;&#x7801;&#x56DE;&#x6EDA;</strong></h1>
+<p>&#x200C;</p>
+<p>&#x5728;&#x4E0A;&#x4F20;&#x4EE3;&#x7801;&#x5230;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4E0D;&#x514D;&#x4F1A;&#x51FA;&#x73B0;&#x95EE;&#x9898;&#xFF0C;&#x4EFB;&#x4F55;&#x8FC7;&#x7A0B;&#x90FD;&#x6709;&#x53EF;&#x80FD;&#x8981;&#x56DE;&#x6EDA;&#x4EE3;&#x7801;&#xFF1A;</p>
+<p>&#x200C;</p>
+<p>1&#x3001;&#x5728;&#x5DE5;&#x4F5C;&#x533A;&#x7684;&#x4EE3;&#x7801;</p>
+<pre class="language-"><code>git checkout -- a.txt   # &#x4E22;&#x5F03;&#x67D0;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x6216;&#x8005;
+git checkout -- .       # &#x4E22;&#x5F03;&#x5168;&#x90E8;
+</code></pre><pre class="language-"><code>// &#x5220;&#x9664;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x4E0B;&#x6240;&#x6709;&#x6CA1;&#x6709; track &#x8FC7;&#x7684;&#x6587;&#x4EF6;
+// &#x4E0D;&#x4F1A;&#x5220;&#x9664; .gitignore &#x6587;&#x4EF6;&#x91CC;&#x9762;&#x6307;&#x5B9A;&#x7684;&#x6587;&#x4EF6;&#x5939;&#x548C;&#x6587;&#x4EF6;, &#x4E0D;&#x7BA1;&#x8FD9;&#x4E9B;&#x6587;&#x4EF6;&#x6709;&#x6CA1;&#x6709;&#x88AB; track &#x8FC7;
+git clean -f
+git clean -df #&#x8FD4;&#x56DE;&#x5230;&#x67D0;&#x4E2A;&#x8282;&#x70B9;&#xFF0C;&#xFF08;&#x672A;&#x8DDF;&#x8E2A;&#x6587;&#x4EF6;&#x7684;&#x5220;&#x9664;&#xFF09;
+git clean &#x53C2;&#x6570;
+    -n &#x4E0D;&#x5B9E;&#x9645;&#x5220;&#x9664;&#xFF0C;&#x53EA;&#x662F;&#x8FDB;&#x884C;&#x6F14;&#x7EC3;&#xFF0C;&#x5C55;&#x793A;&#x5C06;&#x8981;&#x8FDB;&#x884C;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x6709;&#x54EA;&#x4E9B;&#x6587;&#x4EF6;&#x5C06;&#x8981;&#x88AB;&#x5220;&#x9664;&#x3002;&#xFF08;&#x53EF;&#x5148;&#x4F7F;&#x7528;&#x8BE5;&#x547D;&#x4EE4;&#x53C2;&#x6570;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x51B3;&#x5B9A;&#x662F;&#x5426;&#x6267;&#x884C;&#xFF09;
+    -f &#x5220;&#x9664;&#x6587;&#x4EF6;
+    -i &#x663E;&#x793A;&#x5C06;&#x8981;&#x5220;&#x9664;&#x7684;&#x6587;&#x4EF6;
+    -d &#x9012;&#x5F52;&#x5220;&#x9664;&#x76EE;&#x5F55;&#x53CA;&#x6587;&#x4EF6;&#xFF08;&#x672A;&#x8DDF;&#x8E2A;&#x7684;&#xFF09;
+    -q &#x4EC5;&#x663E;&#x793A;&#x9519;&#x8BEF;&#xFF0C;&#x6210;&#x529F;&#x5220;&#x9664;&#x7684;&#x6587;&#x4EF6;&#x4E0D;&#x663E;&#x793A;
+</code></pre><p>&#x200C;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;git checkout &#x2013; . &#x4E22;&#x5F03;&#x5168;&#x90E8;&#xFF0C;&#x4E5F;&#x5305;&#x62EC;&#xFF1A;&#x65B0;&#x589E;&#x7684;&#x6587;&#x4EF6;&#x4F1A;&#x88AB;&#x5220;&#x9664;&#x3001;&#x5220;&#x9664;&#x7684;&#x6587;&#x4EF6;&#x4F1A;&#x6062;&#x590D;&#x56DE;&#x6765;&#x3001;&#x4FEE;&#x6539;&#x7684;&#x6587;&#x4EF6;&#x4F1A;&#x56DE;&#x53BB;&#x3002;&#x8FD9;&#x51E0;&#x4E2A;&#x524D;&#x63D0;&#x90FD;&#x8BF4;&#x7684;&#x662F;&#xFF0C;&#x56DE;&#x5230;&#x6682;&#x5B58;&#x533A;&#x4E4B;&#x524D;&#x7684;&#x6837;&#x5B50;&#x3002;&#x5BF9;&#x4E4B;&#x524D;&#x4FDD;&#x5B58;&#x5728;&#x6682;&#x5B58;&#x533A;&#x91CC;&#x7684;&#x4EE3;&#x7801;&#x4E0D;&#x4F1A;&#x6709;&#x4EFB;&#x4F55;&#x5F71;&#x54CD;&#x3002;&#x5BF9;commit&#x63D0;&#x4EA4;&#x5230;&#x672C;&#x5730;&#x5206;&#x652F;&#x7684;&#x4EE3;&#x7801;&#x5C31;&#x66F4;&#x6CA1;&#x5F71;&#x54CD;&#x4E86;&#x3002;&#x5F53;&#x7136;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x4E4B;&#x524D;&#x538B;&#x6839;&#x90FD;&#x6CA1;&#x6709;&#x6682;&#x5B58;&#x6216;commit&#xFF0C;&#x90A3;&#x5C31;&#x662F;&#x56DE;&#x5230;&#x4F60;&#x4E0A;&#x6B21;pull&#x4E0B;&#x6765;&#x7684;&#x6837;&#x5B50;&#x4E86;&#x3002;</p>
+<p>&#x200C;</p>
+<p>2&#x3001;&#x4EE3;&#x7801;git add&#x5230;&#x7F13;&#x5B58;&#x533A;&#xFF0C;&#x5E76;&#x672A;commit&#x63D0;&#x4EA4;</p>
+<pre class="language-"><code>git reset HEAD .  &#x6216;&#x8005;
+git reset HEAD a.txt
+</code></pre><p>&#x200C;</p>
+<p>&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x4EC5;&#x6539;&#x53D8;&#x6682;&#x5B58;&#x533A;&#xFF0C;&#x5E76;&#x4E0D;&#x6539;&#x53D8;&#x5DE5;&#x4F5C;&#x533A;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x5728;&#x65E0;&#x4EFB;&#x4F55;&#x5176;&#x4ED6;&#x64CD;&#x4F5C;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5DE5;&#x4F5C;&#x533A;&#x4E2D;&#x7684;&#x5B9E;&#x9645;&#x6587;&#x4EF6;&#x540C;&#x8BE5;&#x547D;&#x4EE4;&#x8FD0;&#x884C;&#x4E4B;&#x524D;&#x65E0;&#x4EFB;&#x4F55;&#x53D8;&#x5316;</p>
+<p>&#x200C;</p>
+<p>3&#x3001;git commit&#x5230;&#x672C;&#x5730;&#x5206;&#x652F;&#x3001;&#x4F46;&#x6CA1;&#x6709;git push&#x5230;&#x8FDC;&#x7A0B;</p>
+<p>&#x200C;</p>
+<p>git log # &#x5F97;&#x5230;&#x4F60;&#x9700;&#x8981;&#x56DE;&#x9000;&#x4E00;&#x6B21;&#x63D0;&#x4EA4;&#x7684;commit id git reset --hard  # &#x56DE;&#x5230;&#x5176;&#x4E2D;&#x4F60;&#x60F3;&#x8981;&#x7684;&#x67D0;&#x4E2A;&#x7248; &#x6216;&#x8005; git reset --hard HEAD^  # &#x56DE;&#x5230;&#x6700;&#x65B0;&#x7684;&#x4E00;&#x6B21;&#x63D0;&#x4EA4; &#x6216;&#x8005; git reset HEAD^  # &#x6B64;&#x65F6;&#x4EE3;&#x7801;&#x4FDD;&#x7559;&#xFF0C;&#x56DE;&#x5230; git add &#x4E4B;&#x524D;</p>
+<p>&#x200C;</p>
+<p>4&#x3001;git push&#x628A;&#x4FEE;&#x6539;&#x63D0;&#x4EA4;&#x5230;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93; 1&#xFF09;&#x901A;&#x8FC7;git reset&#x662F;&#x76F4;&#x63A5;&#x5220;&#x9664;&#x6307;&#x5B9A;&#x7684;commit</p>
+<p>&#x200C;</p>
+<p>git log # &#x5F97;&#x5230;&#x4F60;&#x9700;&#x8981;&#x56DE;&#x9000;&#x4E00;&#x6B21;&#x63D0;&#x4EA4;&#x7684;commit id git reset --hard git push origin HEAD --force # &#x5F3A;&#x5236;&#x63D0;&#x4EA4;&#x4E00;&#x6B21;&#xFF0C;&#x4E4B;&#x524D;&#x9519;&#x8BEF;&#x7684;&#x63D0;&#x4EA4;&#x5C31;&#x4ECE;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#x5220;&#x9664;</p>
+<p>&#x200C;</p>
+<p>2&#xFF09;&#x901A;&#x8FC7;git revert&#x662F;&#x7528;&#x4E00;&#x6B21;&#x65B0;&#x7684;commit&#x6765;&#x56DE;&#x6EDA;&#x4E4B;&#x524D;&#x7684;commit</p>
+<p>&#x200C;</p>
+<p>git log # &#x5F97;&#x5230;&#x4F60;&#x9700;&#x8981;&#x56DE;&#x9000;&#x4E00;&#x6B21;&#x63D0;&#x4EA4;&#x7684;commit id git revert  # &#x64A4;&#x9500;&#x6307;&#x5B9A;&#x7684;&#x7248;&#x672C;&#xFF0C;&#x64A4;&#x9500;&#x4E5F;&#x4F1A;&#x4F5C;&#x4E3A;&#x4E00;&#x6B21;&#x63D0;&#x4EA4;&#x8FDB;&#x884C;&#x4FDD;&#x5B58;</p>
+<p>&#x200C;</p>
+<p>3&#xFF09; git revert &#x548C; git reset&#x7684;&#x533A;&#x522B; - git revert&#x662F;&#x7528;&#x4E00;&#x6B21;&#x65B0;&#x7684;commit&#x6765;&#x56DE;&#x6EDA;&#x4E4B;&#x524D;&#x7684;commit&#xFF0C;&#x6B64;&#x6B21;&#x63D0;&#x4EA4;&#x4E4B;&#x524D;&#x7684;commit&#x90FD;&#x4F1A;&#x88AB;&#x4FDD;&#x7559;&#xFF1B; - git reset&#x662F;&#x56DE;&#x5230;&#x67D0;&#x6B21;&#x63D0;&#x4EA4;&#xFF0C;&#x63D0;&#x4EA4;&#x53CA;&#x4E4B;&#x524D;&#x7684;commit&#x90FD;&#x4F1A;&#x88AB;&#x4FDD;&#x7559;&#xFF0C;&#x4F46;&#x662F;&#x6B64;commit id&#x4E4B;&#x540E;&#x7684;&#x4FEE;&#x6539;&#x90FD;&#x4F1A;&#x88AB;&#x5220;&#x9664;</p>
+<p>&#x200C;</p>
+<p><strong>&#x5F00;&#x53D1;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x4F60;&#x80AF;&#x5B9A;&#x4F1A;&#x9047;&#x5230;&#x8FD9;&#x6837;&#x7684;&#x573A;&#x666F;&#xFF1A;</strong></p>
+<p>&#x200C;</p>
+<p><strong>&#x573A;&#x666F;&#x4E00;&#xFF1A;</strong></p>
+<blockquote>
+<p>&#x7CDF;&#x4E86;&#xFF0C;&#x6211;&#x521A;&#x628A;&#x4E0D;&#x60F3;&#x8981;&#x7684;&#x4EE3;&#x7801;&#xFF0C;commit&#x5230;&#x672C;&#x5730;&#x4ED3;&#x5E93;&#x4E2D;&#x4E86;&#xFF0C;&#x4F46;&#x662F;&#x8FD8;&#x6CA1;&#x6709;&#x505A;push&#x64CD;&#x4F5C;&#xFF01;</p>
+</blockquote>
+<p>&#x200C;</p>
+<p><strong>&#x573A;&#x666F;&#x4E8C;&#xFF1A;</strong></p>
+<blockquote>
+<p>&#x5F7B;&#x5E95;&#x5B8C;&#x4E86;&#xFF0C;&#x521A;&#x7EBF;&#x4E0A;&#x66F4;&#x65B0;&#x7684;&#x4EE3;&#x7801;&#x51FA;&#x73B0;&#x95EE;&#x9898;&#x4E86;&#xFF0C;&#x9700;&#x8981;&#x8FD8;&#x539F;&#x8FD9;&#x6B21;&#x63D0;&#x4EA4;&#x7684;&#x4EE3;&#x7801;&#xFF01;</p>
+</blockquote>
+<p>&#x200C;</p>
+<p><strong>&#x573A;&#x666F;&#x4E09;&#xFF1A;</strong></p>
+<blockquote>
+<p>&#x521A;&#x624D;&#x6211;&#x53D1;&#x73B0;&#x4E4B;&#x524D;&#x7684;&#x67D0;&#x6B21;&#x63D0;&#x4EA4;&#x592A;&#x611A;&#x8822;&#x4E86;&#xFF0C;&#x73B0;&#x5728;&#x60F3;&#x8981;&#x5E72;&#x6389;&#x5B83;&#xFF01;</p>
+</blockquote>
+<p>&#x200C;</p>
+<h1 id="&#x64A4;&#x9500;"><a name="&#x64A4;&#x9500;" class="anchor-navigation-ex-anchor" href="#&#x64A4;&#x9500;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>&#x64A4;&#x9500;</strong></h1>
+<p>&#x200C;</p>
+<p>&#x4E0A;&#x8FF0;<strong>&#x573A;&#x666F;&#x4E00;</strong>&#xFF0C;&#x5728;&#x672A;&#x8FDB;&#x884C;<code>git push</code>&#x524D;&#x7684;&#x6240;&#x6709;&#x64CD;&#x4F5C;&#xFF0C;&#x90FD;&#x662F;&#x5728;&#x201C;&#x672C;&#x5730;&#x4ED3;&#x5E93;&#x201D;&#x4E2D;&#x6267;&#x884C;&#x7684;&#x3002;&#x6211;&#x4EEC;&#x6682;&#x4E14;&#x5C06;&#x201C;&#x672C;&#x5730;&#x4ED3;&#x5E93;&#x201D;&#x7684;&#x4EE3;&#x7801;&#x8FD8;&#x539F;&#x64CD;&#x4F5C;&#x53EB;&#x505A;&#x201C;&#x64A4;&#x9500;&#x201D;&#xFF01;</p>
+<p>&#x200C;</p>
+<p><strong>&#x60C5;&#x51B5;&#x4E00;&#xFF1A;&#x6587;&#x4EF6;&#x88AB;&#x4FEE;&#x6539;&#x4E86;&#xFF0C;&#x4F46;&#x672A;&#x6267;&#x884C;</strong><code>**git add**</code><strong>&#x64CD;&#x4F5C;(working tree&#x5185;&#x64A4;&#x9500;)</strong></p>
+<pre class="language-"><code>git checkout fileName
+git checkout .
+</code></pre><p>&#x200C;</p>
+<p><strong>&#x60C5;&#x51B5;&#x4E8C;&#xFF1A;&#x540C;&#x65F6;&#x5BF9;&#x591A;&#x4E2A;&#x6587;&#x4EF6;&#x6267;&#x884C;&#x4E86;</strong><code>**git add**</code><strong>&#x64CD;&#x4F5C;&#xFF0C;&#x4F46;&#x672C;&#x6B21;&#x53EA;&#x60F3;&#x63D0;&#x4EA4;&#x5176;&#x4E2D;&#x4E00;&#x90E8;&#x5206;&#x6587;&#x4EF6;</strong></p>
+<pre class="language-"><code>$ git add *
+$ git status
+# &#x53D6;&#x6D88;&#x6682;&#x5B58;
+$ git reset HEAD
+</code></pre><p>&#x200C;</p>
+<p><strong>&#x60C5;&#x51B5;&#x4E09;&#xFF1A;&#x6587;&#x4EF6;&#x6267;&#x884C;&#x4E86;</strong><code>**git add**</code><strong>&#x64CD;&#x4F5C;&#xFF0C;&#x4F46;&#x60F3;&#x64A4;&#x9500;&#x5BF9;&#x5176;&#x7684;&#x4FEE;&#x6539;&#xFF08;index&#x5185;&#x56DE;&#x6EDA;&#xFF09;</strong></p>
+<pre class="language-"><code># &#x53D6;&#x6D88;&#x6682;&#x5B58;
+git reset HEAD fileName
+# &#x64A4;&#x9500;&#x4FEE;&#x6539;
+git checkout fileName
+</code></pre><p>&#x200C;</p>
+<p><strong>&#x60C5;&#x51B5;&#x56DB;&#xFF1A;&#x4FEE;&#x6539;&#x7684;&#x6587;&#x4EF6;&#x5DF2;&#x88AB;</strong><code>**git commit**</code><strong>&#xFF0C;&#x4F46;&#x60F3;&#x518D;&#x6B21;&#x4FEE;&#x6539;&#x4E0D;&#x518D;&#x4EA7;&#x751F;&#x65B0;&#x7684;Commit</strong></p>
+<pre class="language-"><code># &#x4FEE;&#x6539;&#x6700;&#x540E;&#x4E00;&#x6B21;&#x63D0;&#x4EA4; 
+$ git add sample.txt
+$ git commit --amend -m&quot;&#x8BF4;&#x660E;&quot;
+</code></pre><p>&#x200C;</p>
+<p><strong>&#x60C5;&#x51B5;&#x4E94;&#xFF1A;&#x5DF2;&#x5728;&#x672C;&#x5730;&#x8FDB;&#x884C;&#x4E86;&#x591A;&#x6B21;</strong><code>**git commit**</code><strong>&#x64CD;&#x4F5C;&#xFF0C;&#x73B0;&#x5728;&#x60F3;&#x64A4;&#x9500;&#x5230;&#x5176;&#x4E2D;&#x67D0;&#x6B21;Commit</strong></p>
+<pre class="language-"><code>git reset [--hard|soft|mixed|merge|keep] [commit|HEAD]
+</code></pre><p>&#x200C;</p>
+<p>&#x5177;&#x4F53;&#x53C2;&#x6570;&#x548C;&#x4F7F;&#x7528;&#x8BF4;&#x660E;&#xFF0C;&#x8BF7;&#x67E5;&#x770B;&#xFF1A;<a href="http://blog.csdn.net/ligang2585116/article/details/51816372#t7" target="_blank">Git Pro&#x6DF1;&#x5165;&#x6D45;&#x51FA;&#xFF08;&#x4E8C;&#xFF09;&#x4E2D;&#x7684;&#x91CD;&#x7F6E;&#x63ED;&#x79D8;&#x90E8;&#x5206;</a></p>
+<p>&#x200C;</p>
+<h1 id="&#x56DE;&#x6EDA;"><a name="&#x56DE;&#x6EDA;" class="anchor-navigation-ex-anchor" href="#&#x56DE;&#x6EDA;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>&#x56DE;&#x6EDA;</strong></h1>
+<p>&#x200C;</p>
+<p>&#x4E0A;&#x8FF0;<strong>&#x573A;&#x666F;&#x4E8C;</strong>&#xFF0C;&#x5DF2;&#x8FDB;&#x884C;<code>git push</code>&#xFF0C;&#x5373;&#x5DF2;&#x63A8;&#x9001;&#x5230;&#x201C;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#x201D;&#x4E2D;&#x3002;&#x6211;&#x4EEC;&#x5C06;&#x5DF2;&#x88AB;&#x63D0;&#x4EA4;&#x5230;&#x201C;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#x201D;&#x7684;&#x4EE3;&#x7801;&#x8FD8;&#x539F;&#x64CD;&#x4F5C;&#x53EB;&#x505A;&#x201C;&#x56DE;&#x6EDA;&#x201D;&#xFF01;<strong>&#x6CE8;&#x610F;&#xFF1A;&#x5BF9;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#x505A;&#x56DE;&#x6EDA;&#x64CD;&#x4F5C;&#x662F;&#x6709;&#x98CE;&#x9669;&#x7684;&#xFF0C;&#x9700;&#x63D0;&#x524D;&#x505A;&#x597D;&#x5907;&#x4EFD;&#x548C;&#x901A;&#x77E5;&#x5176;&#x4ED6;&#x56E2;&#x961F;&#x6210;&#x5458;&#xFF01;</strong></p>
+<p>&#x200C;</p>
+<p><em>&#x5982;&#x679C;&#x4F60;&#x6BCF;&#x6B21;&#x66F4;&#x65B0;&#x7EBF;&#x4E0A;&#xFF0C;&#x90FD;&#x4F1A;&#x6253;</em><a href="http://blog.csdn.net/ligang2585116/article/details/46468709" target="_blank"><em>tag</em></a><em>&#xFF0C;&#x90A3;&#x606D;&#x559C;&#x4F60;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5F88;&#x5FEB;&#x7684;&#x5904;&#x7406;&#x4E0A;&#x8FF0;<strong><strong>&#x573A;&#x666F;&#x4E8C;\</strong></strong>&#x7684;&#x60C5;&#x51B5;</em></p>
+<pre class="language-"><code>git checkout
+</code></pre><p>&#x200C;</p>
+<p><em>&#x5982;&#x679C;&#x4F60;&#x56DE;&#x5230;&#x5F53;&#x524D;HEAD&#x6307;&#x5411;</em></p>
+<pre class="language-"><code>git checkout
+</code></pre><p>&#x200C;</p>
+<p><strong>&#x60C5;&#x51B5;&#x4E00;&#xFF1A;&#x64A4;&#x9500;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x5230;&#x6307;&#x5B9A;&#x7248;&#x672C;</strong></p>
+<pre class="language-"><code># &#x67E5;&#x770B;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x7684;&#x5386;&#x53F2;&#x7248;&#x672C;
+git log 
+# &#x56DE;&#x6EDA;&#x5230;&#x6307;&#x5B9A;commitID
+git checkout
+</code></pre><p>&#x200C;</p>
+<p><strong>&#x60C5;&#x51B5;&#x4E8C;&#xFF1A;&#x5220;&#x9664;&#x6700;&#x540E;&#x4E00;&#x6B21;&#x8FDC;&#x7A0B;&#x63D0;&#x4EA4;</strong></p>
+<p>&#x200C;</p>
+<p><em>&#x65B9;&#x5F0F;&#x4E00;&#xFF1A;&#x4F7F;&#x7528;revert</em></p>
+<pre class="language-"><code>git revert HEAD
+git push origin master
+</code></pre><p>&#x200C;</p>
+<p><em>&#x65B9;&#x5F0F;&#x4E8C;&#xFF1A;&#x4F7F;&#x7528;reset</em></p>
+<pre class="language-"><code>git reset --hard HEAD^
+git push origin master -f
+</code></pre><p>&#x200C;</p>
+<p><em>&#x4E8C;&#x8005;&#x533A;&#x522B;&#xFF1A;</em></p>
+<p>&#x200C;</p>
+<ul>
+<li><strong>revert</strong>&#x662F;&#x653E;&#x5F03;&#x6307;&#x5B9A;&#x63D0;&#x4EA4;&#x7684;&#x4FEE;&#x6539;&#xFF0C;&#x4F46;&#x662F;&#x4F1A;&#x751F;&#x6210;&#x4E00;&#x6B21;&#x65B0;&#x7684;&#x63D0;&#x4EA4;&#xFF0C;&#x9700;&#x8981;&#x586B;&#x5199;&#x63D0;&#x4EA4;&#x6CE8;&#x91CA;&#xFF0C;&#x4EE5;&#x524D;&#x7684;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x90FD;&#x5728;&#xFF1B;</li>
+<li><strong>reset</strong>&#x662F;&#x6307;&#x5C06;HEAD&#x6307;&#x9488;&#x6307;&#x5230;&#x6307;&#x5B9A;&#x63D0;&#x4EA4;&#xFF0C;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x4E2D;&#x4E0D;&#x4F1A;&#x51FA;&#x73B0;&#x653E;&#x5F03;&#x7684;&#x63D0;&#x4EA4;&#x8BB0;&#x5F55;&#x3002;</li>
+</ul>
+<p>&#x200C;</p>
+<p><strong>&#x60C5;&#x51B5;&#x4E09;&#xFF1A;&#x56DE;&#x6EDA;&#x67D0;&#x6B21;&#x63D0;&#x4EA4;</strong></p>
+<pre class="language-"><code># &#x627E;&#x5230;&#x8981;&#x56DE;&#x6EDA;&#x7684;commitID
+git log
+git revert commitID
+</code></pre><p>&#x200C;</p>
+<h1 id="&#x5220;&#x9664;&#x67D0;&#x6B21;&#x63D0;&#x4EA4;"><a name="&#x5220;&#x9664;&#x67D0;&#x6B21;&#x63D0;&#x4EA4;" class="anchor-navigation-ex-anchor" href="#&#x5220;&#x9664;&#x67D0;&#x6B21;&#x63D0;&#x4EA4;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>&#x5220;&#x9664;&#x67D0;&#x6B21;&#x63D0;&#x4EA4;</strong></h1>
+<pre class="language-"><code>git log --oneline -n5
+</code></pre><p><img src="https://gblobscdn.gitbook.com/assets%2F-MVxhDL96fVN_Pxj0l04%2F-MWY_8iqBP7UHN0mvj8A%2F-MWb9_GLybtf2XOeGs9n%2Fimage.png?alt=media&amp;token=8c8ac787-f01e-498a-9c2e-b0b4639737a3" alt="img"></p>
+<pre class="language-"><code>git rebase -i &quot;commit id&quot;^
+</code></pre><p>&#x200C;</p>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;</strong>&#x9700;&#x8981;&#x6CE8;&#x610F;&#x6700;&#x540E;&#x7684;<em>^</em>&#x53F7;&#xFF0C;&#x610F;&#x601D;&#x662F;commit id&#x7684;&#x524D;&#x4E00;&#x6B21;&#x63D0;&#x4EA4;</p>
+<pre class="language-"><code>git rebase -i &quot;5b3ba7a&quot;^
+</code></pre><p><img src="https://gblobscdn.gitbook.com/assets%2F-MVxhDL96fVN_Pxj0l04%2F-MWY_8iqBP7UHN0mvj8A%2F-MWbASTiy3Ien3HtZ2C7%2Fimage.png?alt=media&amp;token=06568cb0-6809-4054-a696-f7d0326f806c" alt="img"></p>
+<p>&#x200C;</p>
+<p>&#x5728;&#x7F16;&#x8F91;&#x6846;&#x4E2D;&#x5220;&#x9664;&#x76F8;&#x5173;commit&#xFF0C;&#x5982;<code>pick 5b3ba7a test2</code>&#xFF0C;&#x7136;&#x540E;&#x4FDD;&#x5B58;&#x9000;&#x51FA;&#xFF08;&#x5982;&#x679C;&#x9047;&#x5230;&#x51B2;&#x7A81;&#x9700;&#x8981;&#x5148;&#x89E3;&#x51B3;&#x51B2;&#x7A81;&#xFF09;&#xFF01;</p>
+<pre class="language-"><code>git push origin master -f
+</code></pre><p>&#x200C;</p>
+<p><strong>&#x901A;&#x8FC7;&#x4E0A;&#x8FF0;&#x64CD;&#x4F5C;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x5BF9;&#x5386;&#x53F2;&#x591A;&#x4E2A;commit&#x8FDB;&#x884C;&#x5904;&#x7406;&#x6216;&#x8005;&#xFF0C;&#x53EF;&#x4EE5;&#x9009;&#x62E9;</strong><code>**git rebase -i**</code><strong>&#xFF0C;&#x53EA;&#x9700;&#x5220;&#x9664;&#x5BF9;&#x5E94;&#x7684;&#x8BB0;&#x5F55;&#x5C31;&#x597D;&#x3002;rebase&#x8FD8;&#x53EF;&#x5BF9; commit &#x6D88;&#x606F;&#x8FDB;&#x884C;&#x7F16;&#x8F91;&#xFF0C;&#x4EE5;&#x53CA;&#x5408;&#x5E76;&#x591A;&#x4E2A;commit&#x3002;</strong></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="1_gitreset三种模式.html" class="navigation navigation-prev " aria-label="Previous page: 1_gitreset三种模式">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="3_HEAD和HEAD^的作用和区别.html" class="navigation navigation-next " aria-label="Next page: 3_HEAD和HEAD^的作用和区别">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2_git撤销回滚操作","level":"1.3.2","depth":2,"next":{"title":"3_HEAD和HEAD^的作用和区别","level":"1.3.3","depth":2,"path":"第2章_GIT常用方法/3_HEAD和HEAD^的作用和区别.md","ref":"第2章_GIT常用方法/3_HEAD和HEAD^的作用和区别.md","articles":[]},"previous":{"title":"1_gitreset三种模式","level":"1.3.1","depth":2,"path":"第2章_GIT常用方法/1_gitreset三种模式.md","ref":"第2章_GIT常用方法/1_gitreset三种模式.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","-lunr","-search","search-pro","anchor-navigation-ex","accordion","edit-link","prism","-highlight","hide-element","code"],"ignores":["_book","node_modules"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"search-pro":{},"accordion":{},"code":{"copyButtons":false},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"编辑此页面","base":"https://github.com/yulliam/funbook/edit/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"Yulliam","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Yulliam's Doc","language":"zh-hans","gitbook":"*","description":"record some thing"},"file":{"path":"第2章_GIT常用方法/2_git撤销回滚操作.md","mtime":"2023-02-02T08:41:28.233Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-02-02T08:42:37.475Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-accordion/accordionSelector.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
